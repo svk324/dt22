@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from coderthemes.com/studyzen/index.html by HTTrack Website Copier/3.x [XR&CO'2017], Tue, 09 Jan 2024 16:04:41 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <title>StudyZen - Tailwind Study Client & Admin Manage HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="description" />
+    <meta content="coderthemes" name="author" />
+    
+    <!-- Theme favicon -->
+    <link rel="shortcut icon" href="assets/favicon-8fd74f43.ico">
+    
+    <!--&lt;!&ndash; Head js &ndash;&gt;-->
+    
+  <script type="module" crossorigin src="assets/theme-e4584917.js"></script>
+  <link rel="stylesheet" href="assets/theme-d32f8eb8.css">
+</head>
+
+<body>
+
+    <!-- =========== Navbar Start =========== -->
+    <header id="navbar" class="fixed top-0 inset-x-0 z-40 w-full transition-all duration-300 border-b border-transparent [&.nav-sticky]:bg-white/90 [&.nav-sticky]:backdrop-blur-3xl [&.nav-sticky]:shadow-md dark:[&.nav-sticky]:bg-default-50/80">
+        <div class="h-full flex items-center py-4">
+            <div class="container">
+                <nav class="flex items-center justify-between flex-wrap lg:flex-nowrap gap-4">
+                    <div class="w-full lg:w-auto flex items-center justify-between">
+                        <!-- Navbar Brand Logo -->
+                        <a href="home.html">
+                            <img src="assets/logo-dark-befc834f.png" alt="logo" class="h-10 flex dark:hidden">
+                            <img src="assets/logo-light-43c180d2.png" alt="logo" class="h-10 hidden dark:flex">
+                        </a>
+        
+                        <!-- Mobile Menu Toggle Button -->
+                        <button class="hs-collapse-toggle lg:hidden inline-block" id="hs-unstyled-collapse" data-hs-collapse="#mobileMenu" data-hs-type="collapse">
+                            <i data-lucide="menu" class="w-7 h-7 text-default-600 hover:text-default-900"></i>
+                        </button>
+                    </div>
+
+                    <!-- Navigation Menu -->
+                    <div id="mobileMenu" class="hs-collapse transition-all duration-300 lg:basis-auto basis-full grow hidden lg:flex items-center justify-center mx-auto mt-2 lg:mt-0 overflow-hidden">
+                        <ul class="menu flex lg:items-center justify-center flex-col lg:flex-row gap-y-2">
+                            <!-- Contact us Link -->
+                            <li class="menu-item text-sm lg:text-base font-medium text-default-800 transition-all duration-300 hover:text-primary-600 [&.active]:text-primary">
+                                <a class="inline-flex items-center py-2 px-4 rounded-full" href="#home">Home</a>
+                            </li>
+                            <!-- Contact us Link -->
+                            <li class="menu-item text-sm lg:text-base font-medium  text-default-800 transition-all duration-300 hover:text-primary-600 [&.active]:text-primary">
+                                <a class="inline-flex items-center py-2 px-4 rounded-full" href="#demo">Demos</a>
+                            </li>
+                            <!-- Contact us Link -->
+                            <li class="menu-item text-sm lg:text-base font-medium  text-default-800 transition-all duration-300 hover:text-primary-600 [&.active]:text-primary">
+                                <a class="inline-flex items-center py-2 px-4 rounded-full" href="#features">Features</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="ms-auto shrink hidden lg:inline-flex gap-2">
+                        <a href="#" class="py-1.5 px-6 inline-flex items-center gap-2 rounded-full text-base text-white bg-primary-500 hover:bg-primary-600 transition-all duration-500">
+                            <i data-lucide="download-cloud" class="h-4 w-4 fill-white/40"></i>
+                            <span class="hidden sm:block">Download</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-6 sm:py-10 md:py-44 2xl:py-64 relative border-b border-default-100 bg-gradient-to-b from-primary-500/40 to-primary-500/20" id="home">
+        <div class="container relative">
+            <div class="grid 2xl:grid-cols-12 lg:grid-cols-2 gap-12">
+                <div class="z-10 self-center 2xl:col-span-5">
+                    <div class="text-center lg:text-start">
+                        <h1 class="lg:text-4xl/normal md:text-3xl/normal text-2xl font-bold capitalize  text-primary-950 dark:text-primary-50">
+                            Discover Expert-Led Courses for Your Learning Journey with <span class="text-primary">StudyZen</span>.
+                        </h1>
+        
+                        <p class="text-base font-medium text-default-600 my-5">Discover Expert-Led Courses for Your Learning Journey. Explore specialized courses guided by industry experts.</p>
+        
+                        <div class="mt-10">
+                            <p class="text-default-900 text-xl font-semibold">Developed Used</p>
+                            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2 mt-4">
+                                <div class="hs-tooltip inline-block [--trigger:hover] [--placement:top]">
+                                    <div class="hs-tooltip-toggle w-14 h-14 flex justify-center items-center rounded-lg bg-white dark:bg-default-100">
+                                        <img src="assets/tailwindcss-2bf27cfc.svg" class="w-8 h-8">
+                                    </div>
+                                    <div class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible transition-opacity opacity-0 relative px-3 py-1 rounded bg-default-950 text-default-200 font-semibold z-50 hidden" role="tooltip" data-popper-placement="top">
+                                        Tailwindcss
+                                        <div class="bg-default-950 w-2.5 h-2.5 rotate-45 absolute -bottom-1 start-1/2 -translate-x-1/2 -z-10 rounded-[1px]"></div>
+                                    </div>
+                                </div>
+                                <div class="hs-tooltip inline-block [--trigger:hover] [--placement:top]">
+                                    <div class="hs-tooltip-toggle w-14 h-14 flex justify-center items-center rounded-lg bg-white dark:bg-default-100">
+                                        <img src="assets/html-3e647926.svg" class="w-8 h-8">
+                                    </div>
+                                    <div class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible transition-opacity opacity-0 relative px-3 py-1 rounded bg-default-950 text-default-200 font-semibold z-50 hidden" role="tooltip" data-popper-placement="top">
+                                        HTML5
+                                        <div class="bg-default-950 w-2.5 h-2.5 rotate-45 absolute -bottom-1 start-1/2 -translate-x-1/2 -z-10 rounded-[1px]"></div>
+                                    </div>
+                                </div>
+                                <div class="hs-tooltip inline-block [--trigger:hover] [--placement:top]">
+                                    <div class="hs-tooltip-toggle w-14 h-14 flex justify-center items-center rounded-lg bg-white dark:bg-default-100">
+                                        <img src="assets/css-c2f7b421.svg" class="w-8 h-8">
+                                    </div>
+                                    <div class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible transition-opacity opacity-0 relative px-3 py-1 rounded bg-default-950 text-default-200 font-semibold z-50 hidden" role="tooltip" data-popper-placement="top">
+                                        CSS3
+                                        <div class="bg-default-950 w-2.5 h-2.5 rotate-45 absolute -bottom-1 start-1/2 -translate-x-1/2 -z-10 rounded-[1px]"></div>
+                                    </div>
+                                </div>
+                                <div class="hs-tooltip inline-block [--trigger:hover] [--placement:top]">
+                                    <div class="hs-tooltip-toggle w-14 h-14 flex justify-center items-center rounded-lg bg-white dark:bg-default-100">
+                                        <img src="assets/javascript-c9408ba3.svg" class="w-8 h-8">
+                                    </div>
+                                    <div class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible transition-opacity opacity-0 relative px-3 py-1 rounded bg-default-950 text-default-200 font-semibold z-50 hidden" role="tooltip" data-popper-placement="top">
+                                        Javascript
+                                        <div class="bg-default-950 w-2.5 h-2.5 rotate-45 absolute -bottom-1 start-1/2 -translate-x-1/2 -z-10 rounded-[1px]"></div>
+                                    </div>
+                                </div>
+                                <div class="hs-tooltip inline-block [--trigger:hover] [--placement:top]">
+                                    <div class="hs-tooltip-toggle w-14 h-14 flex justify-center items-center rounded-lg bg-white dark:bg-default-100">
+                                        <img src="assets/bun-99abbfd0.svg" class="w-8 h-8">
+                                    </div>
+                                    <div class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible transition-opacity opacity-0 relative px-3 py-1 rounded bg-default-950 text-default-200 font-semibold z-50 hidden" role="tooltip" data-popper-placement="top">
+                                        Bun
+                                        <div class="bg-default-950 w-2.5 h-2.5 rotate-45 absolute -bottom-1 start-1/2 -translate-x-1/2 -z-10 rounded-[1px]"></div>
+                                    </div>
+                                </div>
+                                <div class="hs-tooltip inline-block [--trigger:hover] [--placement:top]">
+                                    <div class="hs-tooltip-toggle w-14 h-14 flex justify-center items-center rounded-lg bg-white dark:bg-default-100">
+                                        <img src="assets/vitejs-logo-17e50649.svg" class="w-8 h-8">
+                                    </div>
+                                    <div class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible transition-opacity opacity-0 relative px-3 py-1 rounded bg-default-950 text-default-200 font-semibold z-50 hidden" role="tooltip" data-popper-placement="top">
+                                        ViteJs
+                                        <div class="bg-default-950 w-2.5 h-2.5 rotate-45 absolute -bottom-1 start-1/2 -translate-x-1/2 -z-10 rounded-[1px]"></div>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 mt-10">
+                                <a href="#demo" class="inline-flex items-center justify-center px-6 py-2 font-semibold backdrop-blur-2xl bg-primary-500 text-white rounded-lg transition-all duration-500 hover:bg-primary-600"> StudyZen Demos <i data-lucide="eye" class="h-5 w-5 ms-3"></i></a>
+                                <a href="admin-dashboard.html" target="_blank" class="inline-flex items-center justify-center px-6 py-2 font-semibold backdrop-blur-2xl bg-primary-500/20 text-primary-500 rounded-lg transition-all duration-500 hover:bg-primary-500 hover:text-white"> Admin Demos <i data-lucide="airplay" class="h-5 w-5 ms-3"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="2xl:col-span-7 relative flex items-center justify-center">
+                    <img src="assets/home-16f84270.png" class="block dark:hidden mx-auto shadow-lg rounded-lg">
+                    <img src="assets/home-dark-4dc394e2.png" class="hidden dark:block mx-auto shadow-lg rounded-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="demo" class="pt-32 pb-20">
+        <div class="mx-20">
+            <div class=" mx-auto text-center mb-14">
+                <span class="inline-flex text-base border-x-2 border-x-primary-500 text-primary-500 font-semibold px-2 rounded-lg bg-primary-500/20 mb-2">Apps & Components </span>
+                <h2 class="text-3xl font-semibold text-default-950 mb-2.5">Client, Admin & Components</h2>
+                <p class="text-base font-medium text-default-900">
+                    Elevate Your Presence: Unveiling the Power of Our StudyZen Demo!
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 justify-content-center" >
+                <a class="" href="home.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="dark:hidden w-full rounded-lg" src="assets/main-home-f2c5ad5c.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/main-home-dark-3a76e480.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Home</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+                <a class="" href="admin-dashboard.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="dark:hidden w-full rounded-lg" src="assets/dashboard-85b6212c.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/dashboard-dark-a3f03245.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Admin</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+                <a class="" href="ui-accordion.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="dark:hidden w-full rounded-lg" src="assets/component-30331519.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/component-dark-5ef5802d.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Ui Components</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+            </div><!-- end grid -->
+        </div>
+    </section>
+
+    <section class="py-20">
+        <div class="mx-20">
+            <div class=" mx-auto text-center mb-14">
+                <span class="inline-flex text-base border-x-2 border-x-primary-500 text-primary-500 font-semibold px-2 rounded-lg bg-primary-500/20 mb-2">StudyZen Demos</span>
+                <h2 class="text-3xl font-semibold text-default-950 mb-2.5">Client App</h2>
+                <p class="text-base font-medium text-default-900 max-w-lg mx-auto">
+                    Empower your future with our dynamic study program tailored for success and innovation.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 justify-content-center" >
+                <a class="" href="home.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="dark:hidden w-full rounded-lg" src="assets/home-16f84270.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/home-dark-4dc394e2.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Home</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+                <a class="" href="home-2.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="dark:hidden w-full rounded-lg" src="assets/home-2-09571dd9.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/home-2-dark-f36926a5.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Home 2</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+                <a class="" href="course.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="dark:hidden w-full rounded-lg" src="assets/course-352de1b5.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/course-dark-de36ee3a.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Course</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+                <a class="" href="course-detail.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="dark:hidden w-full rounded-lg" src="assets/course-detail-1ccebde5.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/course-detail-dark-2b8a25a1.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Course Detail</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+                <a class="" href="course-create.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="dark:hidden w-full rounded-lg" src="assets/creat-course-5726a6ac.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/creat-course-dark-7baf2842.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Course Create</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+                <a class="" href="instructor.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="dark:hidden w-full rounded-lg" src="assets/instructor-e3e46b00.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/instructor-dark-d641043e.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Instructor</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+                <a class="" href="error-404.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="dark:hidden w-full rounded-lg" src="assets/404-78ec4a8f.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/404-dark-8d82e424.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Error 404</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+                <a class="" href="faq.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="dark:hidden w-full rounded-lg" src="assets/faq-c29390e7.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/faq-dark-b222c5b5.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">FAQs</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+                <a class="" href="contact-us.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="dark:hidden w-full rounded-lg" src="assets/contact-us-0aaddf62.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/contact-us-dark-f276982b.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Contact Us</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+            </div><!-- end grid -->
+        </div>
+    </section>
+
+    <section id="admin-demo" class="py-20">
+        <div class="mx-20">
+            <div class=" mx-auto text-center mb-14">
+                <span class="inline-flex text-base border-x-2 border-x-primary-600 text-primary-700 font-semibold px-2 rounded-lg bg-primary/20 mb-2">Control</span>
+                <h2 class="text-3xl font-semibold text-default-950 mb-2.5">Admin Panal</h2>
+                <p class="text-base font-medium text-default-900">
+                    Effortless Education Management: Elevate Your Culinary Business with Our Admin Web App!
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 justify-content-center" >
+                <a class="" href="admin-dashboard.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="dark:hidden w-full rounded-lg" src="assets/dashboard-85b6212c.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/dashboard-dark-a3f03245.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Dashboard</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+                
+                <a class="" href="admin-chat.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="dark:hidden w-full rounded-lg" src="assets/chat-68dbab6d.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/chat-dark-e9f6851e.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Chat</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+                
+                <a class="" href="admin-calender.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="dark:hidden w-full rounded-lg" src="assets/calendar-ec2d6b0e.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/calendar-dark-0f96943e.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Calendar</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+                
+                <a class="" href="admin-student-list.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="dark:hidden w-full rounded-lg" src="assets/student-list-22f46dab.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/student-list-dark-44b4b06c.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Student List</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+
+                <a class="" href="admin-student-detail.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="dark:hidden w-full rounded-lg" src="assets/student-detail-f0f7d93d.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/student-detail-dark-70056deb.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Student Details</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+
+                <a class="" href="admin-student-add.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="dark:hidden w-full rounded-lg" src="assets/add-student-e47a194e.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/add-student-dark-581bfdbe.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Student Add</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+
+                <a class="" href="admin-student-edit.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="dark:hidden w-full rounded-lg" src="assets/edit-student-b525e6ef.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/edit-student-dark-84627f81.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Student edit</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+                
+                <a class="" href="admin-teacher-list.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="dark:hidden w-full rounded-lg" src="assets/teachers-list-4e65c479.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/teachers-list-dark-afd6b29f.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Teacher List</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+                
+                <a class="" href="admin-teacher-detail.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="dark:hidden w-full rounded-lg" src="assets/teachers-detail-308b0cb6.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/teachers-detail-dark-5bd2b3c6.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Teacher Details</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+                
+                <a class="" href="admin-teacher-add.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="dark:hidden w-full rounded-lg" src="assets/add-teacher-732c3505.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/add-teacher-dark-d47686f1.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Teacher Add</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+                
+                <a class="" href="admin-teacher-edit.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="dark:hidden w-full rounded-lg" src="assets/edit-teacher-28d35312.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/edit-teacher-dark-725ab4de.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Teacher edit</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+                
+                <a class="" href="admin-course-list.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="dark:hidden w-full rounded-lg" src="assets/course-list-2fb19603.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/course-list-dark-9d00fff2.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Course List</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+
+                <a class="" href="admin-course-detail.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="dark:hidden w-full rounded-lg" src="assets/course-detail-075014bc.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/course-detail-dark-c34200c4.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Course Details</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+
+                <a class="" href="admin-course-add.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="dark:hidden w-full rounded-lg" src="assets/add-course-574a4f8c.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/add-course-dark-4bb0001f.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Course Add</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+
+                <a class="" href="admin-course-edit.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="dark:hidden w-full rounded-lg" src="assets/edit-course-c87f03ca.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/edit-course-dark-6d7b7852.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Course edit</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+                
+                <a class="" href="admin-blog-list.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="dark:hidden w-full rounded-lg" src="assets/blog-list-c6309987.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/blog-list-dark-51d7ba24.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Blog List</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+
+                <a class="" href="admin-blog-detail.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="dark:hidden w-full rounded-lg" src="assets/blog-detail-6cddf142.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/blog-detail-dark-1b8d8075.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Blog Details</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+
+                <a class="" href="admin-blog-add.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="dark:hidden w-full rounded-lg" src="assets/add-blog-17aa3e27.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/add-blog-dark-55caa328.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Blog Add</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+
+                <a class="" href="admin-blog-edit.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="dark:hidden w-full rounded-lg" src="assets/edit-blog-8a8a8ec1.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/edit-blog-dark-8221e54b.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Blog edit</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+
+                <a class="" href="admin-fees-collect.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="dark:hidden w-full rounded-lg" src="assets/fees-collect-67729a03.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/fees-collect-dark-6f4f40ba.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Fees Collect</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+
+                <a class="" href="admin-salary-list.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="dark:hidden w-full rounded-lg" src="assets/salary-07292baa.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/salary-dark-9486b06e.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Salary List</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+
+                <a class="" href="admin-fees-add.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="dark:hidden w-full rounded-lg" src="assets/add-fees-f6556dff.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/add-fees-dark-fe499602.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Fees Add</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+
+                <a class="" href="admin-salary-add.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="dark:hidden w-full rounded-lg" src="assets/add-salary-cfde767f.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/add-salary-dark-b1794dd6.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Salary Add</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+            </div><!-- end grid -->
+        </div><!-- end container -->
+    </section>
+
+    <section class="py-20">
+        <div class="mx-20">
+            <div class=" mx-auto text-center mb-14">
+                <span class="inline-flex text-base border-x-2 border-x-primary-600 text-primary-700 font-semibold px-2 rounded-lg bg-primary/20 mb-2">Extras</span>
+                <h2 class="text-3xl font-semibold text-default-950 mb-2.5">Extra Pages</h2>
+                <p class="text-base font-medium text-default-900">
+                    Instant Flavor, Effortless Ordering: Your Culinary Journey Starts Here with Our Study Client Web App!
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 justify-content-center" >
+                <a class="" href="pages-pricing.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="block dark:hidden w-full rounded-lg" src="assets/pricing-5db1e994.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/pricing-dark-0f75d803.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Sign In</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+
+                <a class="" href="pages-timeline.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="block dark:hidden w-full rounded-lg" src="assets/timeline-8953e3ca.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/timeline-dark-3c2f292a.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Timeline</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+
+                <a class="" href="pages-maintenance.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="block dark:hidden w-full rounded-lg" src="assets/maintenance-202902f4.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/maintenance-dark-697fb067.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Maintenance</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+
+                <div class="lg:col-span-3 lg:flex gap-3 justify-center">
+                   <div class="lg:w-1/3">
+                     <a class="" href="pages-coming-soon.html" target="_blank">
+                        <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                            <div class="p-4">
+                                <div class="relative rounded-lg overflow-hidden ">
+                                    <img alt="demo-img" class="block dark:hidden w-full rounded-lg" src="assets/coming-soon-97e7cc4e.png">
+                                    <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/coming-soon-dark-5e292b64.png">
+                                    <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                        <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                            Live Preview
+                                            <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Coming Soon</h5>
+                            </div>
+                        </div>
+                    </a><!-- end grid-col -->
+                   </div>
+                </div>
+
+            </div><!-- end grid -->
+        </div><!-- end container -->
+    </section>
+
+    <section class="py-20">
+        <div class="mx-20">
+            <div class=" mx-auto text-center mb-14">
+                <span class="inline-flex text-base border-x-2 border-x-primary-600 text-primary-700 font-semibold px-2 rounded-lg bg-primary/20 mb-2">Security</span>
+                <h2 class="text-3xl font-semibold text-default-950 mb-2.5">Auth Pages</h2>
+                <p class="text-base font-medium text-default-900">
+                    Instant Flavor, Effortless Ordering: Your Culinary Journey Starts Here with Our Study Client Web App!
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 justify-content-center" >
+                <a class="" href="auth-login.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="block dark:hidden w-full rounded-lg" src="assets/login-0f73ff92.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/login-dark-6458b3ef.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Sign In</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+
+                <a class="" href="auth-register.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="block dark:hidden w-full rounded-lg" src="assets/register-62a0349f.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/register-dark-21ab249e.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Sign Up</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+
+                <a class="" href="auth-logout.html" target="_blank">
+                    <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                        <div class="p-4">
+                            <div class="relative rounded-lg overflow-hidden ">
+                                <img alt="demo-img" class="block dark:hidden w-full rounded-lg" src="assets/logout-80f01507.png">
+                                <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/logout-dark-74b79e40.png">
+                                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                    <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                        Live Preview
+                                        <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Logout</h5>
+                        </div>
+                    </div>
+                </a><!-- end grid-col -->
+
+                <div class="lg:col-span-3 lg:flex gap-3 justify-center">
+                   <div class="lg:w-1/3">
+                     <a class="" href="auth-recoverpw.html" target="_blank">
+                        <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                            <div class="p-4">
+                                <div class="relative rounded-lg overflow-hidden ">
+                                    <img alt="demo-img" class="block dark:hidden w-full rounded-lg" src="assets/password-forgot-3c447f43.png">
+                                    <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/password-forgot-dark-ec40689e.png">
+                                    <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                        <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                            Live Preview
+                                            <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Forgot Password</h5>
+                            </div>
+                        </div>
+                    </a><!-- end grid-col -->
+                   </div>
+
+                    <div class="lg:w-1/3">
+                        <a class="" href="auth-reset-password.html" target="_blank">
+                            <div class="relative group rounded-xl text-center transition-all duration-500 drop-shadow-md bg-white dark:bg-default-50 hover:-translate-y-1">
+                                <div class="p-4">
+                                    <div class="relative rounded-lg overflow-hidden ">
+                                        <img alt="demo-img" class="block dark:hidden w-full rounded-lg" src="assets/password-reset-161a6331.png">
+                                        <img alt="demo-img" class="hidden dark:block w-full rounded-lg" src="assets/password-reset-dark-ec6d1388.png">
+                                        <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-zinc-800/20 opacity-0 transition-all duration-300 group-hover:opacity-100 cursor-pointer">
+                                            <div class="relative overflow-hidden py-2 ps-6 pe-12 inline-flex items-center justify-center font-semibold align-middle duration-500 text-base text-center bg-primary-600 text-white rounded-full">
+                                                Live Preview
+                                                <span class="absolute top-1/2 -translate-y-1/2 end-0 h-full w-10 inline-flex items-center justify-center bg-white/10 text-white ms-3"><i class="ph-duotone ph-paper-plane-tilt text-lg"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h5 class="mt-4 text-lg font-semibold text-default-900 text-center capitalize">Reset Password</h5>
+                                </div>
+                            </div>
+                        </a><!-- end grid-col -->
+                    </div>
+                </div>
+
+            </div><!-- end grid -->
+        </div><!-- end container -->
+    </section>
+
+    <section class="py-20" id="features">
+        <div class="mx-20">
+            <div class=" mx-auto text-center mb-14">
+                <span class="inline-flex text-base border-x-2 border-x-primary-600 text-primary-700 font-semibold px-2 rounded-lg bg-primary/20 mb-2">Features</span>
+                <h2 class="text-3xl font-semibold text-default-950 mb-2.5">Awesome Template Features</h2>
+            </div>
+
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-6">
+                <div class="bg-white dark:bg-default-50 rounded-xl border border-default-200 hover:shadow-lg transition-all duration-300">
+                    <div class="p-6">
+                        <div class="flex flex-col justify-center items-center text-center gap-4">
+                            <div class="shrink">
+                                <div class="inline-flex items-center justify-center h-12 w-12 bg-primary-500/20 text-primary-600 rounded-md">
+                                    <img src="assets/tailwindcss-2bf27cfc.svg" class="h-6 w-6">
+                                </div>
+                            </div>
+                            <div class="grow">
+                                <h4 class="text-lg font-semibold text-default-950 mb-2">Built With Tailwind CSS</h4>
+                                <p class="text-sm font-medium text-default-600">Rapidly build modern websites without ever leaving your HTML.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white dark:bg-default-50 rounded-xl border border-default-200 hover:shadow-lg transition-all duration-300">
+                    <div class="p-6">
+                        <div class="flex flex-col justify-center items-center text-center gap-4">
+                            <div class="shrink">
+                                <div class="inline-flex items-center justify-center h-12 w-12 bg-primary/20 text-primary-600 rounded-md">
+                                    <i class="h-6 w-6" data-lucide="airplay"></i>
+                                </div>
+                            </div>
+                            <div class="grow">
+                                <h4 class="text-lg font-semibold text-default-950 mb-2">Ultra Responsive</h4>
+                                <p class="text-sm font-medium text-default-600">Our fully Responsive design ensures your
+                                    content is beautifully presented no matter what device your audience is using.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-default-50 rounded-xl border border-default-200 hover:shadow-lg transition-all duration-300">
+                    <div class="p-6">
+                        <div class="flex flex-col justify-center items-center text-center gap-4">
+                            <div class="shrink">
+                                <div class="inline-flex items-center justify-center h-12 w-12 bg-primary/20 text-primary-600 rounded-md">
+                                    <i class="h-6 w-6" data-lucide="sun-moon"></i>
+                                </div>
+                            </div>
+                            <div class="grow">
+                                <h4 class="text-lg font-semibold text-default-950 mb-2">Dark Demo Support</h4>
+                                <p class="text-sm font-medium text-default-600">Embark on a Rich Experience: Unveiling a Host of Advanced Features within Our Dark Demo Support Environment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-default-50 rounded-xl border border-default-200 hover:shadow-lg transition-all duration-300">
+                    <div class="p-6">
+                        <div class="flex flex-col justify-center items-center text-center gap-4">
+                            <div class="shrink">
+                                <div class="inline-flex items-center justify-center h-12 w-12 bg-primary/20 text-primary-600 rounded-md">
+                                    <i class="h-6 w-6" data-lucide="package"></i>
+                                </div>
+                            </div>
+                            <div class="grow">
+                                <h4 class="text-lg font-semibold text-default-950 mb-2">Production Ready</h4>
+                                <p class="text-sm font-medium text-default-600">Our solutions have undergone extensive testing
+                                    to ensure they can handle the demands of a production environment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-default-50 rounded-xl border border-default-200 hover:shadow-lg transition-all duration-300">
+                    <div class="p-6">
+                        <div class="flex flex-col justify-center items-center text-center gap-4">
+                            <div class="shrink">
+                                <div class="inline-flex items-center justify-center h-12 w-12 bg-primary/20 text-primary-600 rounded-md">
+                                    <i class="h-6 w-6" data-lucide="figma"></i>
+                                </div>
+                            </div>
+                            <div class="grow">
+                                <h4 class="text-lg font-semibold text-default-950 mb-2">Hygienic Design</h4>
+                                <p class="text-sm font-medium text-default-600">Our designs feature smooth and continuous
+                                    surfaces, minimizing areas where dirt, bacteria, or contaminants can accumulate.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-default-50 rounded-xl border border-default-200 hover:shadow-lg transition-all duration-300">
+                    <div class="p-6">
+                        <div class="flex flex-col justify-center items-center text-center gap-4">
+                            <div class="shrink">
+                                <div class="inline-flex items-center justify-center h-12 w-12 bg-primary/20 text-primary-600 rounded-md">
+                                    <i class="h-6 w-6" data-lucide="circuit-board"></i>
+                                </div>
+                            </div>
+                            <div class="grow">
+                                <h4 class="text-lg font-semibold text-default-950 mb-2">High Performance</h4>
+                                <p class="text-sm font-medium text-default-600">We understand that your requirements are
+                                    unique. Our high-performance solutions are customizable to match your specific
+                                    goals.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-default-50 rounded-xl border border-default-200 hover:shadow-lg transition-all duration-300">
+                    <div class="p-6">
+                        <div class="flex flex-col justify-center items-center text-center gap-4">
+                            <div class="shrink">
+                                <div class="inline-flex items-center justify-center h-12 w-12 bg-primary/20 text-primary-600 rounded-md">
+                                    <i class="h-6 w-6" data-lucide="globe-2"></i>
+                                </div>
+                            </div>
+                            <div class="grow">
+                                <h4 class="text-lg font-semibold text-default-950 mb-2">Multi Browser Support</h4>
+                                <p class="text-sm font-medium text-default-600">Our e-commerce store is rigorously tested and
+                                    optimized to work flawlessly on all major web browsers, offering a consistent shopping
+                                    experience to all our customers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-default-50 rounded-xl border border-default-200 hover:shadow-lg transition-all duration-300">
+                    <div class="p-6">
+                        <div class="flex flex-col justify-center items-center text-center gap-4">
+                            <div class="shrink">
+                                <div class="inline-flex items-center justify-center h-12 w-12 bg-primary/20 text-primary-600 rounded-md">
+                                    <i class="h-6 w-6" data-lucide="file-text"></i>
+                                </div>
+                            </div>
+                            <div class="grow">
+                                <h4 class="text-lg font-semibold text-default-950 mb-2">Well Documented</h4>
+                                <p class="text-sm font-medium text-default-600">Our documentation is a treasure trove of
+                                    valuable information, from getting started guides to advanced tutorials. It's all there
+                                    to help you make the most of our services.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-default-50 rounded-xl border border-default-200 hover:shadow-lg transition-all duration-300">
+                    <div class="p-6">
+                        <div class="flex flex-col justify-center items-center text-center gap-4">
+                            <div class="shrink">
+                                <div class="inline-flex items-center justify-center h-12 w-12 bg-primary/20 text-primary-600 rounded-md">
+                                    <i class="h-6 w-6" data-lucide="users-2"></i>
+                                </div>
+                            </div>
+                            <div class="grow">
+                                <h4 class="text-lg font-semibold text-default-950 mb-2">Great Support</h4>
+                                <p class="text-sm font-medium text-default-600">Our support team is always ready to help.
+                                    Whether you have questions, encounter issues, or need guidance, we're just a message or
+                                    call away.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-default-50 rounded-xl border border-default-200 hover:shadow-lg transition-all duration-300">
+                    <div class="p-6">
+                        <div class="flex flex-col justify-center items-center text-center gap-4">
+                            <div class="shrink">
+                                <div class="inline-flex items-center justify-center h-12 w-12 bg-primary/20 text-primary-600 rounded-md">
+                                    <i class="h-6 w-6" data-lucide="move"></i>
+                                </div>
+                            </div>
+                            <div class="grow">
+                                <h4 class="text-lg font-semibold text-default-950 mb-2">Highly Customizable</h4>
+                                <p class="text-sm font-medium text-default-600">Our product is designed to adapt to your
+                                    specific requirements. Whether you're an individual, a business, or an organization, we
+                                    provide the tools to customize it to your liking.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-default-50 rounded-xl border border-default-200 hover:shadow-lg transition-all duration-300">
+                    <div class="p-6">
+                        <div class="flex flex-col justify-center items-center text-center gap-4">
+                            <div class="shrink">
+                                <div class="inline-flex items-center justify-center h-12 w-12 bg-primary/20 text-primary-600 rounded-md">
+                                    <i class="h-6 w-6" data-lucide="feather"></i>
+                                </div>
+                            </div>
+                            <div class="grow">
+                                <h4 class="text-lg font-semibold text-default-950 mb-2">Light as a Feather</h4>
+                                <p class="text-sm font-medium text-default-600">From our years of experience and expertise in Development, we know users vary, they could have slow of fast network.
+                                    They all deserve seamless experience in shopping with you.
+                                    That's why our product is developed with fewer lines.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-default-50 rounded-xl border border-default-200 hover:shadow-lg transition-all duration-300">
+                    <div class="p-6">
+                        <div class="flex flex-col justify-center items-center text-center gap-4">
+                            <div class="shrink">
+                                <div class="inline-flex items-center justify-center h-12 w-12 bg-primary/20 text-primary-600 rounded-md">
+                                    <i class="h-6 w-6" data-lucide="star"></i>
+                                </div>
+                            </div>
+                            <div class="grow">
+                                <h4 class="text-lg font-semibold text-default-950 mb-2">UX Considered</h4>
+                                <p class="text-sm font-medium text-default-600">A good design does not need any explanation because a good design can speak for itself. Out app doesn't only have a good User Interface, we also have considered User experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-base text-center mt-6 font-medium text-primary-900">Empower Your Journey with Our Engaging StudyZen Demo.🔥</p>
+        </div>
+    </section>
+
+    <footer class="relative border-t border-default-200">
+        <div class="container relative">
+            <p class="py-6 text-center font-medium text-default-900">
+                <script>document.write(new Date().getFullYear().toString());</script>
+                © AeroPage.
+                Crafted and Coded with <span class="text-red-500">❤️</span> by <a class="text-primary-700" href="../../external.html?link=https://coderthemes.com/" target="_blank">Coderthemes</a>
+            </p>
+        </div>
+    </footer>
+
+    <div class="fixed bottom-5 end-5 flex flex-col items-center bg-primary/25 rounded-full z-10 print:hidden">
+        <button class="h-0 w-8 opacity-0 flex justify-center items-center transition-all duration-500 translate-y-5 z-10" data-toggle="back-to-top">
+            <i class="h-5 w-5 text-primary-500 mt-1" data-lucide="chevron-up"></i>
+        </button>
+        <button class="rounded-full h-10 w-10 bg-primary text-white flex justify-center items-center z-20">
+            <i class="h-5 w-5" data-lucide="sun" id="light-theme"></i>
+            <i class="h-5 w-5" data-lucide="moon" id="dark-theme"></i>
+        </button>
+    </div>
+    <!-- Theme Js -->
+    
+</body>
+
+
+<!-- Mirrored from coderthemes.com/studyzen/index.html by HTTrack Website Copier/3.x [XR&CO'2017], Tue, 09 Jan 2024 16:06:36 GMT -->
+</html>

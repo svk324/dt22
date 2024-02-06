@@ -1,0 +1,1817 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from coderthemes.com/studyzen/course.html by HTTrack Website Copier/3.x [XR&CO'2017], Tue, 09 Jan 2024 16:00:19 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <title>StudyZen - Tailwind Study Client & Admin Manage HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="description" />
+    <meta content="coderthemes" name="author" />
+    
+    <!-- Theme favicon -->
+    <link rel="shortcut icon" href="assets/favicon-8fd74f43.ico">
+    
+    <!--&lt;!&ndash; Head js &ndash;&gt;-->
+    
+  <script type="module" crossorigin src="assets/course-667ef88e.js"></script>
+  <link rel="modulepreload" crossorigin href="assets/theme-e4584917.js">
+  <link rel="modulepreload" crossorigin href="assets/nouislider-752e2917.js">
+  <link rel="stylesheet" href="assets/theme-d32f8eb8.css">
+</head>
+
+<body>
+
+    <!-- Offer/Help Menu -->
+    <div class="h-10 hidden lg:flex items-center bg-primary-950 text-white z-20">
+        <div class="container">
+            <nav class="flex items-center justify-between gap-4">
+                <!-- Language Dropdown -->
+                <div class="flex relative">
+                    <div class="hs-dropdown relative inline-flex [--trigger:hover] [--placement:bottom]">
+                        <a class="hs-dropdown-toggle after:absolute hover:after:-bottom-10 after:inset-0 relative flex items-center text-base" href="#">
+                            <img alt="Image" class="h-3.5 me-3" src="data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAA8AAD/4QMpaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjAtYzA2MCA2MS4xMzQ3NzcsIDIwMTAvMDIvMTItMTc6MzI6MDAgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo5NTM4RDUxQjYxM0IxMUU3ODM5NTg5Qjc3NkUwNEZFMSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo5NTM4RDUxQzYxM0IxMUU3ODM5NTg5Qjc3NkUwNEZFMSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjk1MzhENTE5NjEzQjExRTc4Mzk1ODlCNzc2RTA0RkUxIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjk1MzhENTFBNjEzQjExRTc4Mzk1ODlCNzc2RTA0RkUxIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/+4ADkFkb2JlAGTAAAAAAf/bAIQABgQEBAUEBgUFBgkGBQYJCwgGBggLDAoKCwoKDBAMDAwMDAwQDA4PEA8ODBMTFBQTExwbGxscHx8fHx8fHx8fHwEHBwcNDA0YEBAYGhURFRofHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f/8AAEQgAKgBAAwERAAIRAQMRAf/EAJkAAQABBQEAAAAAAAAAAAAAAAAHAgMEBQYBAQEAAgMBAQAAAAAAAAAAAAAAAgYBBAUDBxAAAAQBBwkHBAMBAAAAAAAAAQIDBAAREhMFBhYHMaHRkpPTFVVWIUGRIjIzFFFhQtKCIyVFEQAAAgMQAgIBBQAAAAAAAAAAAfACAxEhMVGBoRJSghNTBBRUBRVBcZHRMmHhIkJD/9oADAMBAAIRAxEAPwDlhqtFarm7o4qNFlE3Cx3LoRonRkzgAJthKQRE/b2zhyxa6ThuQwQePY1hmjZ9nxYyXx3cwFDJ8G/6QACFJSiFHMmTs0RvDo+PfiEHBjN6jaGamEywqz/iDxFKcLVr8gRA5HUpJwGCT8YkbQ3fl7yfoBubIVNU94KpSrBVdk0cJuqesREKBaiE4EM3ESAM3ygAy98c7lHFmC1I3nvZDp8O2as8wqbJWku+9G8JNuvhv1Ep4l/SKpdMqwufZcjgFP8AYXXw36iU8S/pC6ZVg7LkcAp/sLr4b9RKeJf0hdMqwdlyOAU/2PS2Zw5KYDFtGoBgGUBASgICH8IXTKsMHyPIn/gSSiHmhQQqZFU4fFBw1dkKu7AF0nAgoUJjYkwaFQMk+XL3hF6WfWjfKDx7jHzobIW3+gNX/GXpQcnPwmcXiRQ+JLSfMo5BT75mbvjzdedd8Q/1hiAWG5iHTSdgoRQjYtXFO/RSAjVsM4fK8b0f95gk9XfJ3xI4o6T3k/R+AGdZo9UNLRVO8rZis4q5Ur0xjJmCgX8yhSnbJf1URSmylljR5JZUmC1J8v4vefEI6fDs2y+YVJidFd9w5PRiR7w4V8iceAb6KreMaqfIueg5TGVSyF4cK+ROPAN9C8Y1U+Q0HKYyqWQvDhXyJx4BvoXjGqnyGg5TGVSyF4cK+ROPAN9C8Y1U+Q0HKYyqWRGhLF2+aNSt2lnHiLgyazd8vNFUqyahgEAKUQEpJACScUe2LrqGRm6axfoPndAxfGylsxcCldR7walFctXeeeCgpUc75E2ky+aTJEb9m5+ZUo/2CgcQoTsviKBSrK2eeKVi2BuWr3YJzQRK2ERApkwLMVl7O02eMm3Y1icfdlCgsNvZCobb1XaJhWwWXcA6blcC7UVA1GsdedIYCSABJANJIWNPkMwrcmSp0jecIb3HZdRdsRNFqCj7piSr0W96YLqH0xXL1pVFk63I7icgvRb3pguofTC9aVQ63I7icgvRb3pguofTC9aVQ63I7icgvRb3pguofTC9aVQ63I7ichXwTFnnTXNuIUG0ZJII6zisJdLYcExZ501zbiFBtGSSBrOKwl0thwTFnnTXNuIUG0ZJIGs4rCXS2HBMWedNc24hQbRkkgazisJdLYcExZ501zbiFBtGSSBrOKwl0thwTFnnTXNuIUG0ZJIGs4rCXS2HBMWedNc24hQbRkkgazisJdLYcExZ501zbiFBtGSSBrOKwl0tjT3Xsd1aO0JpjzulKw6HZZzbTGF17HdWjtCaYXSlYOyzm2mMLr2O6tHaE0wulKwdlnNtMYXXsd1aO0JphdKVg7LObaYwuvY7q0doTTC6UrB2Wc20xhdex3Vo7QmmF0pWDss5tpjC69jurR2hNMLpSsHZZzbTGF17HdWjtCaYXSlYOyzm2mMcE499T2/Ub2/Rl/H7fSNMxaVPxKGWEW9WMCQasADVgAasADVgAasAFxv76ft+ovuejL+X2+sZIRX/ABOGSEf/2Q==">
+                            <span class="font-medium text-primary text-xs">English (USA)</span>
+                        </a>
+    
+                        <div class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-[140px] transition-[opacity,margin] mt-4 opacity-0 hidden z-50 bg-white shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-lg border border-default-100 p-1.5 dark:bg-default-50">
+                            <ul class="flex flex-col gap-1">
+                                <li>
+                                    <a class="flex items-center gap-2 font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="#"><img alt="flag" class="h-4" src="data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAA8AAD/4QMpaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjAtYzA2MCA2MS4xMzQ3NzcsIDIwMTAvMDIvMTItMTc6MzI6MDAgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo5NTM4RDUxQjYxM0IxMUU3ODM5NTg5Qjc3NkUwNEZFMSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo5NTM4RDUxQzYxM0IxMUU3ODM5NTg5Qjc3NkUwNEZFMSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjk1MzhENTE5NjEzQjExRTc4Mzk1ODlCNzc2RTA0RkUxIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjk1MzhENTFBNjEzQjExRTc4Mzk1ODlCNzc2RTA0RkUxIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/+4ADkFkb2JlAGTAAAAAAf/bAIQABgQEBAUEBgUFBgkGBQYJCwgGBggLDAoKCwoKDBAMDAwMDAwQDA4PEA8ODBMTFBQTExwbGxscHx8fHx8fHx8fHwEHBwcNDA0YEBAYGhURFRofHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f/8AAEQgAKgBAAwERAAIRAQMRAf/EAJkAAQABBQEAAAAAAAAAAAAAAAAHAgMEBQYBAQEAAgMBAQAAAAAAAAAAAAAAAgYBBAUDBxAAAAQBBwkHBAMBAAAAAAAAAQIDBAAREhMFBhYHMaHRkpPTFVVWIUGRIjIzFFFhQtKCIyVFEQAAAgMQAgIBBQAAAAAAAAAAAfACAxEhMVGBoRJSghNTBBRUBRVBcZHRMmHhIkJD/9oADAMBAAIRAxEAPwDlhqtFarm7o4qNFlE3Cx3LoRonRkzgAJthKQRE/b2zhyxa6ThuQwQePY1hmjZ9nxYyXx3cwFDJ8G/6QACFJSiFHMmTs0RvDo+PfiEHBjN6jaGamEywqz/iDxFKcLVr8gRA5HUpJwGCT8YkbQ3fl7yfoBubIVNU94KpSrBVdk0cJuqesREKBaiE4EM3ESAM3ygAy98c7lHFmC1I3nvZDp8O2as8wqbJWku+9G8JNuvhv1Ep4l/SKpdMqwufZcjgFP8AYXXw36iU8S/pC6ZVg7LkcAp/sLr4b9RKeJf0hdMqwdlyOAU/2PS2Zw5KYDFtGoBgGUBASgICH8IXTKsMHyPIn/gSSiHmhQQqZFU4fFBw1dkKu7AF0nAgoUJjYkwaFQMk+XL3hF6WfWjfKDx7jHzobIW3+gNX/GXpQcnPwmcXiRQ+JLSfMo5BT75mbvjzdedd8Q/1hiAWG5iHTSdgoRQjYtXFO/RSAjVsM4fK8b0f95gk9XfJ3xI4o6T3k/R+AGdZo9UNLRVO8rZis4q5Ur0xjJmCgX8yhSnbJf1URSmylljR5JZUmC1J8v4vefEI6fDs2y+YVJidFd9w5PRiR7w4V8iceAb6KreMaqfIueg5TGVSyF4cK+ROPAN9C8Y1U+Q0HKYyqWQvDhXyJx4BvoXjGqnyGg5TGVSyF4cK+ROPAN9C8Y1U+Q0HKYyqWRGhLF2+aNSt2lnHiLgyazd8vNFUqyahgEAKUQEpJACScUe2LrqGRm6axfoPndAxfGylsxcCldR7walFctXeeeCgpUc75E2ky+aTJEb9m5+ZUo/2CgcQoTsviKBSrK2eeKVi2BuWr3YJzQRK2ERApkwLMVl7O02eMm3Y1icfdlCgsNvZCobb1XaJhWwWXcA6blcC7UVA1GsdedIYCSABJANJIWNPkMwrcmSp0jecIb3HZdRdsRNFqCj7piSr0W96YLqH0xXL1pVFk63I7icgvRb3pguofTC9aVQ63I7icgvRb3pguofTC9aVQ63I7icgvRb3pguofTC9aVQ63I7ichXwTFnnTXNuIUG0ZJII6zisJdLYcExZ501zbiFBtGSSBrOKwl0thwTFnnTXNuIUG0ZJIGs4rCXS2HBMWedNc24hQbRkkgazisJdLYcExZ501zbiFBtGSSBrOKwl0thwTFnnTXNuIUG0ZJIGs4rCXS2HBMWedNc24hQbRkkgazisJdLYcExZ501zbiFBtGSSBrOKwl0tjT3Xsd1aO0JpjzulKw6HZZzbTGF17HdWjtCaYXSlYOyzm2mMLr2O6tHaE0wulKwdlnNtMYXXsd1aO0JphdKVg7LObaYwuvY7q0doTTC6UrB2Wc20xhdex3Vo7QmmF0pWDss5tpjC69jurR2hNMLpSsHZZzbTGF17HdWjtCaYXSlYOyzm2mMcE499T2/Ub2/Rl/H7fSNMxaVPxKGWEW9WMCQasADVgAasADVgAasAFxv76ft+ovuejL+X2+sZIRX/ABOGSEf/2Q=="> English</a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-2 font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="#"><img alt="flag" class="h-4" src="data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAA8AAD/4QMpaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjAtYzA2MCA2MS4xMzQ3NzcsIDIwMTAvMDIvMTItMTc6MzI6MDAgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoxMEY3OTk0MDYxM0MxMUU3ODQ3Rjk5RTY5NjQzOEY2MyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoxMEY3OTk0MTYxM0MxMUU3ODQ3Rjk5RTY5NjQzOEY2MyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjEwRjc5OTNFNjEzQzExRTc4NDdGOTlFNjk2NDM4RjYzIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjEwRjc5OTNGNjEzQzExRTc4NDdGOTlFNjk2NDM4RjYzIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/+4ADkFkb2JlAGTAAAAAAf/bAIQABgQEBAUEBgUFBgkGBQYJCwgGBggLDAoKCwoKDBAMDAwMDAwQDA4PEA8ODBMTFBQTExwbGxscHx8fHx8fHx8fHwEHBwcNDA0YEBAYGhURFRofHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f/8AAEQgAKgBAAwERAAIRAQMRAf/EAIAAAAMBAAMAAAAAAAAAAAAAAAAGBwgBAgMBAAIDAQEBAAAAAAAAAAAAAAAHAwUGBAECEAABAwAIBAMJAAAAAAAAAAAAAQIDMbEyM3Q2BwgRUbM0kgREIWFxEkJicwYWEQEAAAMJAQEAAAAAAAAAAAAAATGBwTKCAzMENAUGEQL/2gAMAwEAAhEDEQA/AEB8sj3ue96ue5VVzlVVVVWlVU2PxyOvzO5qAU3b2qr+9zcV9BN1Iyu7PSqky5tIGfTgAjWrKr/VJ7fTR1uKzd3zE8xxcUbCXxXmcrRfHLXva5HNcrXNXiiovBUVAeRhCKcjOI8AFO2957mwE3UjK7tNKqTLm0gZ9OACM6s5rTDR1uKzd3zE8xxcUbCYcrRAAnQziOABTtvee5sBN1Iyu7TSqky5tIGfTgAjOrOa0w0dbis3d8xPMcXFGwmHK0QAJ0M4jgAU7b3nubATdSMru00qpMubSBn04AIzqzmtMNHW4rN3fMTzHFxRsJhytEACdDOI4AFO2957mwE3UjK7tNKqTLm0gZ9OACM6s5rTDR1uKzd3zE8xxcUbCYcrRAAQ/N91Nc23XV3Stj7eQzISI55eA9Cmbfc9S2exmo/JGV3Z6VUmXNo8oE4AI1qxmpKO2jp+Lis3d8w/McXFGwmeE5Whenl7+O7tNvLFP1e7mewfP7uxnSb/2Q=="> French</a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-2 font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="#"><img alt="flag" class="h-4" src="data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAA8AAD/4QMpaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjAtYzA2MCA2MS4xMzQ3NzcsIDIwMTAvMDIvMTItMTc6MzI6MDAgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpENEQyQjUxRTYxM0IxMUU3QThGRDlFNzgyMDM4RjBCQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpENEQyQjUxRjYxM0IxMUU3QThGRDlFNzgyMDM4RjBCQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkQ0RDJCNTFDNjEzQjExRTdBOEZEOUU3ODIwMzhGMEJDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkQ0RDJCNTFENjEzQjExRTdBOEZEOUU3ODIwMzhGMEJDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/+4ADkFkb2JlAGTAAAAAAf/bAIQABgQEBAUEBgUFBgkGBQYJCwgGBggLDAoKCwoKDBAMDAwMDAwQDA4PEA8ODBMTFBQTExwbGxscHx8fHx8fHx8fHwEHBwcNDA0YEBAYGhURFRofHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f/8AAEQgAKgBAAwERAAIRAQMRAf/EAHkAAQEBAAMAAAAAAAAAAAAAAAABBgIFBwEBAAIDAQAAAAAAAAAAAAAAAAEFAgQGBxAAAQIBDQADAQAAAAAAAAAAAAECAzFRkRKi0qPjVAVVFhchQYEyEQEAAAMHBQEAAAAAAAAAAAAA4WKiUaGx0QJSFgEDBBQVMf/aAAwDAQACEQMRAD8A82fFive573uc9yqrnKqqqqvyqqqmwhKzp1JCs6dQFZ06gKzp1AVnTqArOnUCsixWPa9j3Ne1UVrkVUVFT5RUVCB2XWd701uHeNb3O1biuePebsq05nWd701uHeHudq3E495uyrTmdZ3vTW4d4e52rcTj3m7KtOZ1ne9Nbh3h7natxOPebsq05nWd701uHeHudq3E495uyrTmdZ3vTW4d4e52rcTj3m7KtOZ1ne9Nbh3h7natxOPebsq05nWd701uHeHudq3E495uyrTm3RRvTgAAAAAAADd+XpyeBmFJ9iS+Dm+QyVQPL05PAzB9iS+ByGSqB5enJ4GYPsSXwOQyVQPL05PAzB9iS+ByGSqB5enJ4GYPsSXwOQyVQPL05PAzB9iS+ByGSqB5enJ4GYPsSXwOQyVQPL05PAzB9iS+ByGSqDdlI5sAAAAAAAA5O/pZJfqT8M9f71/EdEoMQoAUAKAFACgCt/pJJfuT9MtH70/Dq//Z"> German</a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-2 font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="#"><img alt="flag" class="h-4" src="data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAA8AAD/4QMpaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjAtYzA2MCA2MS4xMzQ3NzcsIDIwMTAvMDIvMTItMTc6MzI6MDAgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyODQ3Mjc2MTYxM0MxMUU3ODJENDgwMDE3MDIxNjRGOCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoyODQ3Mjc2MjYxM0MxMUU3ODJENDgwMDE3MDIxNjRGOCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjI4NDcyNzVGNjEzQzExRTc4MkQ0ODAwMTcwMjE2NEY4IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjI4NDcyNzYwNjEzQzExRTc4MkQ0ODAwMTcwMjE2NEY4Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/+4ADkFkb2JlAGTAAAAAAf/bAIQABgQEBAUEBgUFBgkGBQYJCwgGBggLDAoKCwoKDBAMDAwMDAwQDA4PEA8ODBMTFBQTExwbGxscHx8fHx8fHx8fHwEHBwcNDA0YEBAYGhURFRofHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f/8AAEQgAKgBAAwERAAIRAQMRAf/EAI4AAQACAgMAAAAAAAAAAAAAAAAEBQEDAgYHAQEAAgMBAQAAAAAAAAAAAAAAAgYDBAUBBxAAAQMBBgMFCAMAAAAAAAAAAQIDBAAREpMFVQZR0RYyktIzFTFBIkJiExQ0YXGREQACAQEGBQMDBQAAAAAAAAAAAQIDETGRUhMUIUFREgRxoSJhgTLwscHRBf/aAAwDAQACEQMRAD8ApFOOLUVKUVKUbVKJJJJ95rln0xIxeVxNALyuJoBeVxNALyuJoBeVxNALyuJoDKXHEKCkqKVJNqVAkEEe8UDR7x6BkWnRcFvw1R9zVzSxZXdafV4nFeS7babW7Ihw2GGkqW46tlsJSlItJPw1m8edarNRU2rfqzx1qnJybKyBL2JNnrhNxGmXb9xhciGGkOKtu3bxT8JvggBVnD2105+FUsfbVeN/D1/SJz14xUndzslbYWvoGRadFwW/DXG3NXNLFkdafV4j0DItOi4LfhpuauaWLGtPq8R6BkWnRcFvw03NXNLFjWn1eI9AyLTouC34abmrmlixrT6vEegZFp0XBb8NNzVzSxY1p9XiT6wGM6vuF8QkFMWJLiflvoVmMlX47iS2oFF5KG1POAKCRZeb/wAqwLxYqEJW2vstSfX6Xe7Njxvm+Li+26/+bFgzOxsz2q4p9qQuL+XFlqBelXY6xHKQEFJIZBVeCrRZaKsFD/LhoRlWj+azP+zR8rynOpKFNy+KuSt+XuXMERVyHpbUKQw7IN2Q+6uOptZaN1ASGnHFAhJ+YCqr53jqnRptO3jL0v5cLfW37Gbul+LaaXrbx9V+xOrkgUAoBQCgKSREczGG9CGVpyq8QtUkfaV91YcCiVhtRUSeJrt1/JppU7JqXarOCljxSRHx6s1NuSl92vYhP7FQiOlMaW0VvtluaS0oG0qcsWiwi8brtnxe8A/xWat51Hsj8pSceXLl1uuNil5Vkm3CzD3LmKsmXc9ITF+2lSDmFrRW6kKF0KuEr/q2tTy6sJUIRU4uUeSUrePHmrOF15pwlPudttnqrPtx5k+uSZhQCgFAeFdUbj1OVjL51dtnRyRwLDoU8qHVG49TlYy+dNnRyRwGhTyodUbj1OVjL502dHJHAaFPKh1RuPU5WMvnTZ0ckcBoU8qHVG49TlYy+dNnRyRwGhTyodUbj1OVjL502dHJHAaFPKh1RuPU5WMvnTZ0ckcBoU8qHVG49TlYy+dNnRyRwGhTyohyf2XfK7avK7Ht+T6eFbTJRuV5r7teEh3aAd2gHdoB3aAd2gNkb9lryu2nzex7fn+njXqIyud5/9k="> Spanish</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                <h5 class="text-xs text-primary-50 font-medium tracking-widest text-center"><span class="text-base">👋</span> Big Sale Alert! Get 95% off! Limited time only.</h5>
+    
+                <ul class="flex items-center justify-end gap-4">
+                    <li class="flex menu-item">
+                        <a class="text-xs text-primary-50 font-medium transition-all hover:text-primary" href="faqs.html">Help</a>
+                    </li>
+    
+                    <li class="flex menu-item">
+                        <a class="text-xs text-primary-50 font-medium transition-all hover:text-primary" href="contact-us.html">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <!-- Main Navigation Menu -->
+    <header id="navbar" class="fixed lg:top-10 top-0 inset-x-0 z-20 transition-all [&.nav-sticky]:top-0 [&.nav-sticky]:bg-white dark:[&.nav-sticky]:bg-default-50">
+        <div class="h-20 flex items-center">
+            <div class="container">
+                <div class="grid lg:grid-cols-4 grid-cols-2 items-center gap-4">
+                    <div class="flex">
+                        <!-- Mobile Menu Toggle Button -->
+                        <button class="lg:hidden block " data-hs-overlay="#mobile-menu">
+                            <i data-lucide="menu" class="w-7 h-7 text-default-600 me-4 hover:text-primary"></i>
+                        </button>
+    
+                        <!-- Navbar Brand Logo -->
+                        <a href="home.html">
+                            <img src="assets/logo-dark-befc834f.png" alt="logo" class="h-12 flex dark:hidden">
+                            <img src="assets/logo-light-43c180d2.png" alt="logo" class="h-12 hidden dark:flex">
+                        </a>
+                    </div>
+    
+                    <!-- Nevigation Menu -->
+                    <ul class="menu hidden lg:flex items-center justify-center relative col-span-2">
+                        <!-- Home Menu -->
+                        <li class="menu-item">
+                            <div class="hs-dropdown relative inline-flex [--trigger:hover] [--placement:bottom]">
+                                <a class="hs-dropdown-toggle after:absolute hover:after:-bottom-10 after:inset-0 inline-flex items-center text-sm lg:text-base font-medium text-default-700 py-2 px-4 rounded-full hover:text-primary" href="#">
+                                    Home <i class="w-4 h-4 ms-2" data-lucide="chevron-down"></i>
+                                </a>
+    
+                                <div class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-48 transition-[opacity,margin] mt-4 opacity-0 hidden z-10 bg-white shadow-lg rounded-lg border border-default-100 p-1.5 dark:bg-default-50">
+                                    <ul class="flex flex-col gap-1">
+                                        <li>
+                                            <a class="flex items-center text-sm font-medium text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="home.html">Home One</a>
+                                        </li>
+                                        <li>
+                                            <a class="flex items-center text-sm font-medium text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="home-2.html">Home Two</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+    
+                        <!-- Course Menu -->
+                        <li class="menu-item">
+                            <div class="hs-dropdown relative inline-flex [--trigger:hover] [--placement:bottom]">
+                                <a class="hs-dropdown-toggle after:absolute hover:after:-bottom-10 after:inset-0 inline-flex items-center text-sm lg:text-base font-medium text-default-700 py-2 px-4 rounded-full hover:text-primary" href="#">
+                                    Course <i class="w-4 h-4 ms-2" data-lucide="chevron-down"></i>
+                                </a>
+    
+                                <div class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-48 transition-[opacity,margin] mt-4 opacity-0 hidden z-10 bg-white shadow-lg rounded-lg border border-default-100 p-1.5 dark:bg-default-50">
+                                    <ul class="flex flex-col gap-1">
+                                        <li>
+                                            <a class="flex items-center text-sm font-medium text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="course.html">Course Grid</a>
+                                        </li>
+                                        <li>
+                                            <a class="flex items-center text-sm font-medium text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="course-detail.html">Course Detail</a>
+                                        </li>
+                                        <li>
+                                            <a class="flex items-center text-sm font-medium text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="course-create.html">Course Create</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+    
+                        <!-- Pages Menu -->
+                        <li class="menu-item">
+                            <div class="hs-dropdown relative inline-flex [--trigger:hover] [--placement:bottom]">
+                                <a class="hs-dropdown-toggle after:absolute hover:after:-bottom-10 after:inset-0 inline-flex items-center text-sm lg:text-base font-medium text-default-700 py-2 px-4 rounded-full hover:text-primary" href="#">
+                                    Pages <i class="w-4 h-4 ms-2" data-lucide="chevron-down"></i>
+                                </a>
+    
+                                <div class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-48 transition-[opacity,margin] mt-4 opacity-0 hidden z-10 bg-white shadow-md rounded-lg border border-default-100 p-1.5 dark:bg-default-50">
+                                    <ul class="flex flex-col gap-1">
+                                        <li>
+                                            <a class="flex items-center text-sm font-medium text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="instructor.html">Instructor</a>
+                                        </li>
+                                        <li>
+                                            <a class="flex items-center text-sm font-medium text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="error-404.html">Error 404</a>
+                                        </li>
+                                        <li>
+                                            <a class="flex items-center text-sm font-medium text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="faq.html">FAQs</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+    
+                        <!-- Contact Us Link -->
+                        <li class="menu-item">
+                            <a href="contact-us.html" class="inline-flex items-center text-sm lg:text-base font-medium text-default-700 py-2 px-4 rounded-full hover:text-primary">Contact Us</a>
+                        </li>
+                    </ul>
+    
+                    <ul class="flex items-center justify-end gap-x-6">
+                        <!-- Search Modal Button -->
+                        <li class="flex menu-item">
+                            <button class="relative flex text-base transition-all text-default-600 hover:text-primary" data-hs-overlay="#search-sidebar">
+                                <i class="w-5 h-5" data-lucide="search"></i>
+                            </button>
+                        </li>
+    
+                        <!-- Admin Link -->
+                        <li class="hs-tooltip flex menu-item [--trigger:hover] [--placement:left]">
+                            <a href="admin-dashboard.html" target="_blank" class="hs-tooltip-toggle inline-flex items-center text-sm lg:text-base font-medium text-default-700 py-2 px-4 rounded-full hover:text-primary">
+                                <i class="w-5 h-5" data-lucide="user"></i>
+                            </a>
+                            <div class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible transition-opacity opacity-0 relative px-3 py-1 rounded bg-default-950 text-default-200 font-semibold z-50 duration-500 hidden" role="tooltip" data-popper-placement="top">
+                                Admin
+                                <div class="bg-default-950 w-2.5 h-2.5 rotate-45 absolute top-1/2 -end-1 -translate-y-1/2 -z-10 rounded-[1px]"></div>
+                            </div>
+                        </li>
+    
+                        <span class="w-px h-6 bg-default-300 lg:flex hidden"></span>
+    
+                        <div class="lg:flex hidden">
+                            <button class="inline-flex items-center gap-2 text-sm font-medium py-2.5 px-4 lg:px-6 rounded-full text-white bg-primary-500 hover:bg-primary-600 transition-all duration-200">Enroll Now <i class="ph ph-arrow-arc-right"></i></button>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu (Sidebar Menu) -->
+    <div id="mobile-menu" class="hs-overlay hs-overlay-open:translate-x-0 hidden -translate-x-full fixed top-0 left-0 transition-all transform h-full max-w-[270px] w-full z-[60] bg-white border-r border-default-200 dark:bg-default-50" tabindex="-1">
+        <div class="flex justify-center items-center border-b border-dashed border-default-300 h-16 transition-all duration-300">
+            <a href="home.html">
+                <img src="assets/logo-dark-befc834f.png" alt="logo" class="h-10 flex dark:hidden">
+                <img src="assets/logo-light-43c180d2.png" alt="logo" class="h-10 hidden dark:flex">
+            </a>
+        </div>
+    
+        <div class="custom-scroll h-[calc(100%-4rem)]">
+            <nav class="hs-accordion-group p-4 w-full flex flex-col flex-wrap">
+                <ul class="space-y-2.5">
+                    <li>
+                        <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm font-medium text-default-700 rounded-md hover:bg-default-400/10" href="home.html">
+                            Home
+                        </a>
+                    </li>
+    
+                    <li class="hs-accordion" id="product-categories-accordion">
+                        <a class="hs-accordion-toggle flex items-center gap-x-3.5 py-2 px-2.5 hs-accordion-active:text-primary hs-accordion-active:bg-default-400/10 text-sm font-medium text-default-700 rounded-md hover:bg-default-400/10" href="javascript:;">
+                            Product <i data-lucide="chevron-down" class="w-5 h-5 ms-auto hs-accordion-active:rotate-180 transition-all"></i>
+                        </a>
+    
+                        <div id="product-categories-accordion" class="hs-accordion-content w-full overflow-hidden transition-[height] hidden">
+                            <ul class="pt-2 ps-2">
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm font-medium text-default-700 rounded-md hover:bg-default-400/10" href="course.html">
+                                        Courses
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm font-medium text-default-700 rounded-md hover:bg-default-400/10" href="course-detail.html">
+                                        Course Detail
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm font-medium text-default-700 rounded-md hover:bg-default-400/10" href="course-create.html">
+                                        Course Create
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+    
+                    <li>
+                        <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm font-medium text-default-700 rounded-md hover:bg-default-400/10" href="contact-us.html">
+                            Contact Us
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm font-medium text-default-700 rounded-md hover:bg-default-400/10" href="instructor.html">
+                            Instructor
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm font-medium text-default-700 rounded-md hover:bg-default-400/10" href="faqs.html">
+                            FAQs
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm font-medium text-default-700 rounded-md hover:bg-default-400/10" href="error-404.html">
+                            Error Page
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <!-- Search Modal -->
+    <div id="search-sidebar" class="hs-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto">
+        <div class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto">
+            <div class="flex flex-col bg-white shadow-sm rounded-xl overflow-hidden dark:bg-default-50">
+                <div class="px-4 py-3 border-b border-dashed border-default-200">
+                    <div class="relative flex items-center gap-1 w-full">
+                        <span class="absolute start-4 top-1/2 -translate-y-1/2">
+                            <i class="ph ph-magnifying-glass text-lg text-primary-500 align-middle"></i>
+                        </span>
+                        <input class="shrink ps-10 pe-2.5 py-2.5 block w-full border-default-200 placeholder-default-600 rounded-md text-sm bg-default-100 text-default-900" placeholder="Search for items..." type="search">
+                        <button class="grow h-10 w-10 inline-flex items-center justify-center rounded-md hover:bg-primary-500/20" data-hs-overlay="#search-sidebar">
+                            <i class="w-6 h-6 text-primary-500" data-lucide="x"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h4 class="text-base font-medium text-default-900">Recent</h4>
+                </div>
+    
+                <div class="pb-4 px-4 mb-4 max-h-[260px] overflow-y-auto
+                    [&::-webkit-scrollbar]:w-1
+                    [&::-webkit-scrollbar-track]:rounded-full
+                    [&::-webkit-scrollbar-track]:bg-transparent
+                    [&::-webkit-scrollbar-thumb]:rounded-full
+                    [&::-webkit-scrollbar-thumb]:bg-default-300">
+                    <div class="flex flex-col gap-2">
+                        <div id="close" class="flex items-center gap-2 bg-default-100 rounded-md px-4 py-3">
+                            <i class="ph ph-clock-counter-clockwise shrink text-lg text-default-700"></i>
+                            <span class="grow inline-block text-base font-medium text-default-700 transition-all hover:text-default-900">Courses</span>
+                            <div class="flex items-center gap-2">
+                                <a href="#">
+                                    <i class="ph ph-arrow-up-right text-lg align-middle text-default-700 transition-all hover:text-default-950"></i>
+                                </a>
+                                <span class="shrink" data-hs-remove-element="#close">
+                                    <i class="ph-bold ph-x text-lg align-middle text-default-700 hover:text-red-500"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div id="close-two" class="flex items-center gap-2 bg-default-100 rounded-md px-4 py-3">
+                            <i class="ph ph-clock-counter-clockwise shrink text-lg text-default-700"></i>
+                            <span class="grow inline-block text-base font-medium text-default-700 transition-all hover:text-default-900">Course Detail</span>
+                            <div class="flex items-center gap-2">
+                                <a href="#">
+                                    <i class="ph ph-arrow-up-right text-lg align-middle text-default-700 transition-all hover:text-default-950"></i>
+                                </a>
+                                <span class="shrink" data-hs-remove-element="#close-two">
+                                    <i class="ph-bold ph-x text-lg align-middle text-default-700 hover:text-red-500"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div id="close-three" class="flex items-center gap-2 bg-default-100 rounded-md px-4 py-3">
+                            <i class="ph ph-clock-counter-clockwise shrink text-lg text-default-700"></i>
+                            <span class="grow inline-block text-base font-medium text-default-700 transition-all hover:text-default-900">Top Categorys</span>
+                            <div class="flex items-center gap-2">
+                                <a href="#">
+                                    <i class="ph ph-arrow-up-right text-lg align-middle text-default-700 transition-all hover:text-default-950"></i>
+                                </a>
+                                <span class="shrink" data-hs-remove-element="#close-three">
+                                    <i class="ph-bold ph-x text-lg align-middle text-default-700 hover:text-red-500"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div id="close-four" class="flex items-center gap-2 bg-default-100 rounded-md px-4 py-3">
+                            <i class="ph ph-clock-counter-clockwise shrink text-lg text-default-700"></i>
+                            <span class="grow inline-block text-base font-medium text-default-700 transition-all hover:text-default-900">Best Instructors</span>
+                            <div class="flex items-center gap-2">
+                                <a href="#">
+                                    <i class="ph ph-arrow-up-right text-lg align-middle text-default-700 transition-all hover:text-default-950"></i>
+                                </a>
+                                <span class="shrink" data-hs-remove-element="#close-four">
+                                    <i class="ph-bold ph-x text-lg align-middle text-default-700 hover:text-red-500"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div id="close-five" class="flex items-center gap-2 bg-default-100 rounded-md px-4 py-3">
+                            <i class="ph ph-clock-counter-clockwise shrink text-lg text-default-700"></i>
+                            <span class="grow inline-block text-base font-medium text-default-700 transition-all hover:text-default-900">Contact</span>
+                            <div class="flex items-center gap-2">
+                                <a href="#">
+                                    <i class="ph ph-arrow-up-right text-lg align-middle text-default-700 transition-all hover:text-default-950"></i>
+                                </a>
+                                <span class="shrink" data-hs-remove-element="#close-five">
+                                    <i class="ph-bold ph-x text-lg align-middle text-default-700 hover:text-red-500"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="flex items-center bg-default-400/10 h-14 mt-20">
+        <div class="container">
+            <div class="flex items-center">
+                <ol aria-label="Breadcrumb" class="flex items-center whitespace-nowrap min-w-0 gap-2">
+                    <li class="text-sm">
+                        <a class="flex items-center gap-2 align-middle text-default-800 transition-all leading-none hover:text-primary-500" href="#">
+                            <i class="ph-duotone ph-house text-lg"></i>
+                            Home
+                            <i class="ph-bold ph-caret-right text-base"></i>
+                        </a>
+                    </li>
+                    <li class="text-sm">
+    
+                        <a class="flex items-center gap-2 align-middle text-default-800 transition-all leading-none hover:text-primary-500" href="#">
+                            Course
+                            <i class="ph-bold ph-caret-right text-base"></i>
+                        </a>
+                    </li>
+    
+                    <li aria-current="page" class="text-sm font-medium text-primary truncate leading-none hover:text-primary-500">
+                        Grid
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section class="lg:py-8 py-6">
+        <div class="container">
+            <div class="">
+                <div class="flex items-center justify-between mb-6">
+                    <div>
+                        <span class="text-base text-default-950 me-3">Sort By :</span>
+                        <div class="hs-dropdown relative inline-flex [--placement:bottom-left]">
+                            <button class="hs-dropdown-toggle flex items-center gap-2 font-medium text-default-950 text-sm py-2.5 px-4 xl:px-5 rounded border border-default-200 transition-all" type="button">
+                                Latest <i class="h-4 w-4" data-lucide="chevron-down"></i>
+                            </button><!-- end dropdown button -->
+
+                            <div class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-[200px] transition-[opacity,margin] mt-4 opacity-0 hidden z-20 bg-white shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-lg border border-default-200 dark:bg-default-50 p-1.5">
+                                <ul class="flex flex-col gap-0.5">
+                                    <li>
+                                        <a class="flex items-center gap-3 font-normal py-2 px-3 transition-all text-default-700 bg-default-100 rounded" href="#">Latest</a>
+                                    </li>
+                                    <li>
+                                        <a class="flex items-center gap-3 font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-100 rounded" href="#">Featured</a>
+                                    </li>
+                                    <li>
+                                        <a class="flex items-center gap-3 font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-100 rounded" href="#">Release Date</a>
+                                    </li>
+                                    <li>
+                                        <a class="flex items-center gap-3 font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-100 rounded" href="#">Avg. Rating</a>
+                                    </li>
+                                </ul><!-- end dropdown items -->
+                            </div><!-- end dropdown menu -->
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <button class="relative flex items-center gap-2 font-medium text-default-950 text-sm py-2.5 px-4 xl:px-5 rounded border border-default-200 transition-all" type="button">
+                            <span class="lg:hidden absolute inset-0" data-hs-overlay="#filterSidebar"></span>
+                            <i class="ph ph-faders text-xl/none"></i> Filter <span class="px-2 py-0.5 ms-2 text-xs rounded bg-primary/30 text-primary-400">0</span>
+                        </button><!-- end dropdown button -->
+
+                        <div class="2xl:flex relative menu-item hidden">
+                            <input class="ps-10 pe-4 py-2.5 block w-64 border border-default-200 rounded text-sm text-default-800 bg-transparent" placeholder="Web Design..." type="search">
+                            <span class="absolute start-4 top-3">
+                                <i class="ph ph-magnifying-glass"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap justify-between gap-6 mb-6">
+                    <div class="">
+                        <h4>154 results find for “Web design”</h4>
+                    </div>
+
+
+                    <div class="">
+                        <div class="flex items-center gap-2">
+                            <span class="text-base text-default-950 me-3">Sort By :</span>
+
+                            <div class="flex flex-wrap items-center gap-2">
+                                <a href="#" class="text-primary">user interface</a>
+                                <a href="#" class="text-primary">web design</a>
+                                <a href="#" class="text-primary">app</a>
+                                <a href="#" class="text-primary">user experience</a>
+                                <a href="#" class="text-primary">interface</a>
+                            </div><!-- end flex -->
+                        </div><!-- end flex -->
+                    </div>
+                </div><!-- end flex -->
+            </div>
+
+            <div class="lg:flex gap-6">
+                <div class="hs-overlay hs-overlay-open:translate-x-0 hidden max-w-sm lg:max-w-full lg:w-1/4 w-full -translate-x-full fixed top-0 start-0 transition-all transform h-full z-[60] lg:z-auto bg-white lg:!bg-transparent lg:translate-x-0 lg:block lg:static lg:start-auto dark:bg-default-50" id="filterSidebar" tabindex="-1">
+                    <div class="flex justify-between items-center py-3 px-4 border-b border-default-200 lg:hidden">
+                        <h3 class="font-medium text-default-800">
+                            Filter Options
+                        </h3>
+
+                        <button class="inline-flex flex-shrink-0 justify-center items-center h-8 w-8 rounded-md text-default-500 hover:text-default-700 text-sm" data-hs-overlay="#filterSidebar" type="button">
+                            <i data-lucide="x" class="h-5 w-5"></i>
+                        </button>
+                    </div>
+
+                    <div class="space-y-5 custom-scroll h-[calc(100vh-128px)] overflow-y-auto lg:h-auto p-4 lg:p-0">
+                        <div class="border border-default-200 bg-white dark:bg-default-50 rounded">
+                            <button class="hs-collapse-toggle p-4 inline-flex justify-between items-center gap-2 transition-all uppercase font-medium text-base text-default-900 w-full open" data-hs-collapse="#categoryfilter" id="hs-basic-collapse" type="button">
+                                Category
+                                <i class="ph ph-caret-down text-xl/none hs-collapse-open:rotate-180 transition-all duration-500"></i>
+                            </button>
+
+                            <div id="categoryfilter" class="hs-accordion-group w-full overflow-hidden transition-[height] duration-300 open">
+                                <div class="hs-accordion relative px-5 py-3 border-t border-default-200 flex flex-col active" id="developmentfilterBtn">
+                                    <button class="hs-accordion-toggle inline-flex items-center gap-2 transition-all font-medium text-sm text-default-900 w-full open" type="button">
+                                        <i class="ph ph-cpu text-2xl hs-accordion-active:text-primary"></i> Development <i class="ph ph-caret-right text-xl ms-auto hs-accordion-active:rotate-90 hs-accordion-active:text-primary transition-all duration-300"></i>
+                                    </button>
+
+                                    <div id="developmentfilter" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 open">
+                                        <div class="relative flex flex-col space-y-4 mt-6">
+                                            <div class="flex items-center text-sm">
+                                                <input checked="" class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="webDevelopment" name="webDevelopment" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center w-full gap-2 text-default-600 text-sm select-none cursor-pointer" for="webDevelopment">Web development <span class="ms-auto">574</span></label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="dataScience" name="dataScience" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center w-full gap-2 text-default-600 text-sm select-none cursor-pointer" for="dataScience">Data Science <span class="ms-auto">568</span></label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="mobileDevelopment" name="mobileDevelopment" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center w-full gap-2 text-default-600 text-sm select-none cursor-pointer" for="mobileDevelopment">Mobile Development <span class="ms-auto">1245</span></label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="softwareTesting" name="softwareTesting" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center w-full gap-2 text-default-600 text-sm select-none cursor-pointer" for="softwareTesting">Software Testing <span class="ms-auto">425</span></label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="softwareEngineering" name="softwareEngineering" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center w-full gap-2 text-default-600 text-sm select-none cursor-pointer" for="softwareEngineering">Software Engineering <span class="ms-auto">784</span></label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="softwareDevelopmentTools" name="softwareDevelopmentTools" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center w-full gap-2 text-default-600 text-sm select-none cursor-pointer" for="softwareDevelopmentTools">Software Development Tools <span class="ms-auto">25</span></label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="noNodeDevelopment" name="noNodeDevelopment" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center w-full gap-2 text-default-600 text-sm select-none cursor-pointer" for="noNodeDevelopment">No-Code Development <span class="ms-auto">124</span></label>
+                                            </div><!-- end checkbox -->
+                                        </div>
+                                    </div>
+                                </div><!-- end accordion-item -->
+
+                                <div class="hs-accordion relative px-5 py-3 border-t border-default-200 flex flex-col" id="businessfilterBtn">
+                                    <button class="hs-accordion-toggle inline-flex items-center gap-2 transition-all font-medium text-sm text-default-900 w-full" type="button">
+                                        <i class="ph ph-handshake text-2xl hs-accordion-active:text-primary"></i> Business <i class="ph ph-caret-right text-xl ms-auto hs-accordion-active:rotate-90 hs-accordion-active:text-primary transition-all duration-300"></i>
+                                    </button>
+
+                                    <div id="businessfilter" class="hs-accordion-content w-full overflow-hidden transition-[height] hidden duration-300">
+                                        <div class="relative flex flex-col space-y-4 mt-6">
+                                            <div class="flex items-center text-sm">
+                                                <input checked="" class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="softwareDevelopment" name="softwareDevelopment" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="softwareDevelopment">Software Development</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="hardwareManufacturers" name="hardwareManufacturers" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="hardwareManufacturers">Hardware Manufacturers</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="servicesConsulting" name="servicesConsulting" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="servicesConsulting">IT Services and Consulting Firms</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="cloudService" name="cloudService" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="cloudService">Cloud Service</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="dataCenters" name="dataCenters" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="dataCenters">Data Centers</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="ecommerce" name="ecommerce" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="ecommerce">E-commerce Products</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="socialMedia" name="socialMedia" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="socialMedia">Social Media Platform</label>
+                                            </div><!-- end checkbox -->
+                                        </div>
+                                    </div>
+                                </div><!-- end accordion-item -->
+
+                                <div class="hs-accordion relative px-5 py-3 border-t border-default-200 flex flex-col" id="financeAccountingfilterBtn">
+                                    <button class="hs-accordion-toggle inline-flex items-center gap-2 transition-all font-medium text-sm text-default-900 w-full" type="button">
+                                        <i class="ph ph-credit-card text-2xl hs-accordion-active:text-primary"></i> Finance &amp; Accounting <i class="ph ph-caret-right text-xl ms-auto hs-accordion-active:rotate-90 hs-accordion-active:text-primary transition-all duration-300"></i>
+                                    </button>
+
+                                    <div id="financeAccountingfilter" class="hs-accordion-content w-full overflow-hidden transition-[height] hidden duration-300">
+                                        <div class="relative flex flex-col space-y-4 mt-6">
+                                            <div class="flex items-center text-sm">
+                                                <input checked="" class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="corporateFinance" name="corporateFinance" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="corporateFinance">Corporate Finance</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="investmentBanking" name="investmentBanking" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="investmentBanking">Investment Banking</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="personalFinance" name="personalFinance" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="personalFinance">Personal Finance</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="assetManagement" name="assetManagement" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="assetManagement">Asset Management</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="financialPlanning" name="financialPlanning" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="financialPlanning">Financial Planning</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="realEstateFinance" name="realEstateFinance" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="realEstateFinance">Real Estate Finance</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="financialAccounting" name="financialAccounting" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="financialAccounting">Financial Accounting</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="managerialAccounting" name="managerialAccounting" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="managerialAccounting">Financial Accounting</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="auditing" name="auditing" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="auditing">Auditing</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="taxAccounting" name="taxAccounting" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="taxAccounting">Tax Accounting</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="forensicAccounting" name="forensicAccounting" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="forensicAccounting">Forensic Accounting</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="governmentalAccounting" name="governmentalAccounting" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="governmentalAccounting">Governmental Accounting</label>
+                                            </div><!-- end checkbox -->
+                                        </div>
+                                    </div>
+                                </div><!-- end accordion-item -->
+                                
+                                <div class="hs-accordion relative px-5 py-3 border-t border-default-200 flex flex-col" id="itSoftwareBtn">
+                                    <button class="hs-accordion-toggle inline-flex items-center gap-2 transition-all font-medium text-sm text-default-900 w-full" type="button">
+                                        <i class="ph ph-chart-bar-horizontal text-2xl hs-accordion-active:text-primary"></i> IT &amp; Software <i class="ph ph-caret-right text-xl ms-auto hs-accordion-active:rotate-90 hs-accordion-active:text-primary transition-all duration-300"></i>
+                                    </button>
+
+                                    <div id="itSoftware" class="hs-accordion-content w-full overflow-hidden transition-[height] hidden duration-300">
+                                        <div class="relative flex flex-col space-y-4 mt-6">
+                                            <div class="flex items-center text-sm">
+                                                <input checked="" class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="operatingSystems" name="operatingSystems" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="operatingSystems">Operating Systems</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="applicationSoftware" name="applicationSoftware" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="applicationSoftware">Application Software </label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="developmentSoftware" name="developmentSoftware" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="developmentSoftware">Development Software</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="databaseManagement" name="databaseManagement" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="databaseManagement">Database Management</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="customerRelationshipManagement" name="customerRelationshipManagement" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="customerRelationshipManagement">Customer Relationship Management</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="contentManagementSystems" name="contentManagementSystems" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="contentManagementSystems">Content Management Systems</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="securitySoftware" name="securitySoftware" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="securitySoftware">Security Software</label>
+                                            </div><!-- end checkbox -->
+                                        </div>
+                                    </div>
+                                </div><!-- end accordion-item -->
+                                
+                                <div class="hs-accordion relative px-5 py-3 border-t border-default-200 flex flex-col" id="officeProductivityfilterBtn">
+                                    <button class="hs-accordion-toggle inline-flex items-center gap-2 transition-all font-medium text-sm text-default-900 w-full" type="button">
+                                        <i class="ph ph-bug-droid text-2xl hs-accordion-active:text-primary"></i> Office Productivity <i class="ph ph-caret-right text-xl ms-auto hs-accordion-active:rotate-90 hs-accordion-active:text-primary transition-all duration-300"></i>
+                                    </button>
+
+                                    <div id="officeProductivityfilter" class="hs-accordion-content w-full overflow-hidden transition-[height] hidden duration-300">
+                                        <div class="relative flex flex-col space-y-4 mt-6">
+                                            <div class="flex items-center text-sm">
+                                                <input checked="" class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="wordProcessingSoftware" name="wordProcessingSoftware" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="wordProcessingSoftware">Word Processing Software</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="spreadsheetSoftware" name="spreadsheetSoftware" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="spreadsheetSoftware">Spreadsheet Software</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="presentationSoftware" name="presentationSoftware" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="presentationSoftware">Presentation Software</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="schedulingSoftware" name="schedulingSoftware" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="schedulingSoftware">Calendar and Scheduling Software</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="takingSoftware" name="takingSoftware" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="takingSoftware">Note-Taking Software</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="collaborationManagement" name="collaborationManagement" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="collaborationManagement">Document Collaboration and Management</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="databaseManagement+software" name="databaseManagement+software" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="databaseManagement+software">Database Management Software</label>
+                                            </div><!-- end checkbox -->
+                                        </div>
+                                    </div>
+                                </div><!-- end accordion-item -->
+                                
+                                <div class="hs-accordion relative px-5 py-3 border-t border-default-200 flex flex-col" id="personaldevelopmentfilterBtn">
+                                    <button class="hs-accordion-toggle inline-flex items-center gap-2 transition-all font-medium text-sm text-default-900 w-full" type="button">
+                                        <i class="ph ph-receipt text-2xl hs-accordion-active:text-primary"></i> Personal Development <i class="ph ph-caret-right text-xl ms-auto hs-accordion-active:rotate-90 hs-accordion-active:text-primary transition-all duration-300"></i>
+                                    </button>
+
+                                    <div id="personaldevelopmentfilter" class="hs-accordion-content w-full overflow-hidden transition-[height] hidden duration-300">
+                                        <div class="relative flex flex-col space-y-4 mt-6">
+                                            <div class="flex items-center text-sm">
+                                                <input checked="" class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="technicalSkills" name="technicalSkills" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="technicalSkills">Technical Skills</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="certificationsTraining" name="certificationsTraining" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="certificationsTraining">Certifications and Training</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="codingProgramming" name="codingProgramming" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="codingProgramming">Coding and Programming</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="cybersecurityAwareness" name="cybersecurityAwareness" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="cybersecurityAwareness">Cybersecurity Awareness</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="problemSolvingSkills" name="problemSolvingSkills" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="problemSolvingSkills">Problem-Solving Skills</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="projectManagement" name="projectManagement" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="projectManagement">Project Management</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="softSkills" name="softSkills" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="softSkills">Soft Skills</label>
+                                            </div><!-- end checkbox -->
+                                        </div>
+                                    </div>
+                                </div><!-- end accordion-item -->
+                                
+                                <div class="hs-accordion relative px-5 py-3 border-t border-default-200 flex flex-col" id="personaldevelopmentfilterBtn">
+                                    <button class="hs-accordion-toggle inline-flex items-center gap-2 transition-all font-medium text-sm text-default-900 w-full" type="button">
+                                        <i class="ph ph-pen-nib text-2xl hs-accordion-active:text-primary"></i> Design <i class="ph ph-caret-right text-xl ms-auto hs-accordion-active:rotate-90 hs-accordion-active:text-primary transition-all duration-300"></i>
+                                    </button>
+
+                                    <div id="personaldevelopmentfilter" class="hs-accordion-content w-full overflow-hidden transition-[height] hidden duration-300">
+                                        <div class="relative flex flex-col space-y-4 mt-6">
+                                            <div class="flex items-center text-sm">
+                                                <input checked="" class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="userInterface" name="userInterface" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="userInterface">User Interface</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="userexperience" name="userexperience" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="userexperience">User Experience</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="webdesign" name="webdesign" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="webdesign">Web Design</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="graphicdesign" name="graphicdesign" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="graphicdesign">Graphic Design</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="mobileAppdesign" name="mobileAppdesign" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="mobileAppdesign">Mobile App Design</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="responsivedesign" name="responsivedesign" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="responsivedesign">Responsive Design</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="informationArchitecture" name="informationArchitecture" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="informationArchitecture">Information Architecture</label>
+                                            </div><!-- end checkbox -->
+                                        </div>
+                                    </div>
+                                </div><!-- end accordion-item -->
+                                
+                                <div class="hs-accordion relative px-5 py-3 border-t border-default-200 flex flex-col" id="personaldevelopmentfilterBtn">
+                                    <button class="hs-accordion-toggle inline-flex items-center gap-2 transition-all font-medium text-sm text-default-900 w-full" type="button">
+                                        <i class="ph ph-megaphone-simple text-2xl hs-accordion-active:text-primary"></i> Marketing <i class="ph ph-caret-right text-xl ms-auto hs-accordion-active:rotate-90 hs-accordion-active:text-primary transition-all duration-300"></i>
+                                    </button>
+
+                                    <div id="personaldevelopmentfilter" class="hs-accordion-content w-full overflow-hidden transition-[height] hidden duration-300">
+                                        <div class="relative flex flex-col space-y-4 mt-6">
+                                            <div class="flex items-center text-sm">
+                                                <input checked="" class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="userInterface" name="userInterface" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="userInterface">User Interface</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="userexperience" name="userexperience" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="userexperience">User Experience</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="webdesign" name="webdesign" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="webdesign">Web Design</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="graphicdesign" name="graphicdesign" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="graphicdesign">Graphic Design</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="mobileAppdesign" name="mobileAppdesign" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="mobileAppdesign">Mobile App Design</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="responsivedesign" name="responsivedesign" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="responsivedesign">Responsive Design</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="informationArchitecture" name="informationArchitecture" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="informationArchitecture">Information Architecture</label>
+                                            </div><!-- end checkbox -->
+                                        </div>
+                                    </div>
+                                </div><!-- end accordion-item -->
+                                
+                                <div class="hs-accordion relative px-5 py-3 border-t border-default-200 flex flex-col" id="personaldevelopmentfilterBtn">
+                                    <button class="hs-accordion-toggle inline-flex items-center gap-2 transition-all font-medium text-sm text-default-900 w-full" type="button">
+                                        <i class="ph ph-package text-2xl hs-accordion-active:text-primary"></i> Lifestyle <i class="ph ph-caret-right text-xl ms-auto hs-accordion-active:rotate-90 hs-accordion-active:text-primary transition-all duration-300"></i>
+                                    </button>
+
+                                    <div id="personaldevelopmentfilter" class="hs-accordion-content w-full overflow-hidden transition-[height] hidden duration-300">
+                                        <div class="relative flex flex-col space-y-4 mt-6">
+                                            <div class="flex items-center text-sm">
+                                                <input checked="" class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="flexibleWorkhours" name="flexibleWorkhours" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="flexibleWorkhours">Flexible Work Hours</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="continuousLearning" name="continuousLearning" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="continuousLearning">Continuous Learning</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="techgadgetshobbies" name="techgadgetshobbies" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="techgadgetshobbies">Tech Gadgets and Hobbies</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="networkingconferences" name="networkingconferences" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="networkingconferences">Networking and Conferences</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="problemSolvingTroubleshooting" name="problemSolvingTroubleshooting" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="problemSolvingTroubleshooting">Problem Solving and Troubleshooting</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="codingdevelopmentProjects" name="codingdevelopmentProjects" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="codingdevelopmentProjects">Responsive Design</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="remoteWork" name="remoteWork" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="remoteWork">Remote Work</label>
+                                            </div><!-- end checkbox -->
+                                        </div>
+                                    </div>
+                                </div><!-- end accordion-item -->
+                                
+                                <div class="hs-accordion relative px-5 py-3 border-t border-default-200 flex flex-col" id="personaldevelopmentfilterBtn">
+                                    <button class="hs-accordion-toggle inline-flex items-center gap-2 transition-all font-medium text-sm text-default-900 w-full" type="button">
+                                        <i class="ph ph-camera text-2xl hs-accordion-active:text-primary"></i> Photography &amp; Video <i class="ph ph-caret-right text-xl ms-auto hs-accordion-active:rotate-90 hs-accordion-active:text-primary transition-all duration-300"></i>
+                                    </button>
+
+                                    <div id="personaldevelopmentfilter" class="hs-accordion-content w-full overflow-hidden transition-[height] hidden duration-300">
+                                        <div class="relative flex flex-col space-y-4 mt-6">
+                                            <p class="text-base font-medium text-default-900 mb-4">Photography Types</p>
+                                            <div class="flex items-center text-sm">
+                                                <input checked="" class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="portraitPhotography" name="portraitPhotography" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="portraitPhotography">Portrait Photography</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="landscapePhotography" name="landscapePhotography" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="landscapePhotography">Landscape Photography</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="eventPhotography" name="eventPhotography" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="eventPhotography">Event Photography</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="macroPhotography" name="macroPhotography" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="macroPhotography">Macro Photography</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="productPhotography" name="productPhotography" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="productPhotography">Product Photography</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="astrophotography" name="astrophotography" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="astrophotography">Astrophotography</label>
+                                            </div><!-- end checkbox -->
+
+                                            <p class="text-base font-medium text-default-900 my-4">Video Types</p>
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="documentaryfilms" name="documentaryfilms" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="documentaryfilms">Documentary Films</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="commercialAdvertising" name="commercialAdvertising" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="commercialAdvertising">Commercial and Advertising</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="corporateVideos" name="corporateVideos" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="corporateVideos">Corporate Videos</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="educationalVideos" name="educationalVideos" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="educationalVideos">Educational Videos</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="scienceNatureVideos" name="scienceNatureVideos" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="scienceNatureVideos">Science and Nature Videos</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="newsJournalism" name="newsJournalism" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="newsJournalism">News and Journalism</label>
+                                            </div><!-- end checkbox -->
+                                        </div>
+                                    </div>
+                                </div><!-- end accordion-item -->
+
+                                <div class="hs-accordion relative px-5 py-3 border-t border-default-200 flex flex-col" id="personaldevelopmentfilterBtn">
+                                    <button class="hs-accordion-toggle inline-flex items-center gap-2 transition-all font-medium text-sm text-default-900 w-full" type="button">
+                                        <i class="ph ph-headset text-2xl hs-accordion-active:text-primary"></i> Music <i class="ph ph-caret-right text-xl ms-auto hs-accordion-active:rotate-90 hs-accordion-active:text-primary transition-all duration-300"></i>
+                                    </button>
+
+                                    <div id="personaldevelopmentfilter" class="hs-accordion-content w-full overflow-hidden transition-[height] hidden duration-300">
+                                        <div class="relative flex flex-col space-y-4 mt-6">
+                                            <div class="flex items-center text-sm">
+                                                <input checked="" class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="classicalMusic" name="classicalMusic" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="classicalMusic">Classical Music</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="popMusic" name="popMusic" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="popMusic">Pop Music</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="rockMusic" name="rockMusic" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="rockMusic">Rock Music</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="jazzMusic" name="jazzMusic" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="jazzMusic">Jazz Music</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="bluesMusic" name="bluesMusic" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="bluesMusic">Blues Music</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="countryMusic" name="countryMusic" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="countryMusic">Country Music</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="electronicMusic" name="electronicMusic" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="electronicMusic">Electronic Music</label>
+                                            </div><!-- end checkbox -->
+                                        </div>
+                                    </div>
+                                </div><!-- end accordion-item -->
+
+                                <div class="hs-accordion relative px-5 py-3 border-t border-default-200 flex flex-col" id="personaldevelopmentfilterBtn">
+                                    <button class="hs-accordion-toggle inline-flex items-center gap-2 transition-all font-medium text-sm text-default-900 w-full" type="button">
+                                        <i class="ph ph-first-aid-kit text-2xl hs-accordion-active:text-primary"></i> Health &amp; Fitness <i class="ph ph-caret-right text-xl ms-auto hs-accordion-active:rotate-90 hs-accordion-active:text-primary transition-all duration-300"></i>
+                                    </button>
+
+                                    <div id="personaldevelopmentfilter" class="hs-accordion-content w-full overflow-hidden transition-[height] hidden duration-300">
+                                        <div class="relative flex flex-col space-y-4 mt-6">
+                                            <div class="flex items-center text-sm">
+                                                <input checked="" class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="aerobicexercise" name="aerobicexercise" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="aerobicexercise">Aerobic Exercise</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="strengthTraining" name="strengthTraining" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="strengthTraining">Strength Training</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="flexibilityStretching" name="flexibilityStretching" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="flexibilityStretching">Flexibility and Stretching</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="crossfit" name="crossfit" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="crossfit">CrossFit</label>
+                                            </div><!-- end checkbox -->
+                                            <div class="flex items-center text-sm">
+                                                <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="yoga" name="yoga" type="checkbox">
+                                                <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 text-default-600 text-sm select-none cursor-pointer" for="yoga">Yoga</label>
+                                            </div><!-- end checkbox -->
+                                        </div>
+                                    </div>
+                                </div><!-- end accordion-item -->
+                            </div><!-- end accordion -->
+                        </div><!-- end collapse -->
+
+                        <div class="border border-default-200 bg-white dark:bg-default-50 rounded">
+                            <button class="hs-collapse-toggle p-4 inline-flex justify-between items-center gap-2 transition-all uppercase font-medium text-base text-default-900 w-full open" data-hs-collapse="#allcategories" id="hs-basic-collapse" type="button">
+                                Tools
+                                <i class="ph ph-caret-down text-xl/none hs-collapse-open:rotate-180 transition-all duration-500"></i>
+                            </button>
+
+                            <div id="allcategories" class="hs-collapse w-full overflow-hidden transition-[height] duration-300 open">
+                                <div class="relative px-5 py-3 border-t border-default-200 flex flex-col gap-4">
+                                    <div class="flex items-center text-sm">
+                                        <input checked="" class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="html5" name="html5" type="checkbox">
+                                        <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 w-full text-default-600 text-sm select-none cursor-pointer" for="html5">HTML 5 <span class="ms-auto">342</span></label>
+                                    </div><!-- end checkbox -->
+                                    <div class="flex items-center text-sm">
+                                        <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="css3" name="css3" type="checkbox">
+                                        <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 w-full text-default-600 text-sm select-none cursor-pointer" for="css3">CSS 3  <span class="ms-auto">451</span></label>
+                                    </div><!-- end checkbox -->
+                                    <div class="flex items-center text-sm">
+                                        <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="react" name="react" type="checkbox">
+                                        <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 w-full text-default-600 text-sm select-none cursor-pointer" for="react">React <span class="ms-auto">231</span></label>
+                                    </div><!-- end checkbox -->
+                                    <div class="flex items-center text-sm">
+                                        <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="webflow" name="webflow" type="checkbox">
+                                        <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 w-full text-default-600 text-sm select-none cursor-pointer" for="webflow">Webflow <span class="ms-auto">4,521</span></label>
+                                    </div><!-- end checkbox -->
+                                    <div class="flex items-center text-sm">
+                                        <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="nodejs" name="nodejs" type="checkbox">
+                                        <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 w-full text-default-600 text-sm select-none cursor-pointer" for="nodejs">Node.js <span class="ms-auto">856</span></label>
+                                    </div><!-- end checkbox -->
+                                    <div class="flex items-center text-sm">
+                                        <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="laravel" name="laravel" type="checkbox">
+                                        <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 w-full text-default-600 text-sm select-none cursor-pointer" for="laravel">Laravel <span class="ms-auto">124</span></label>
+                                    </div><!-- end checkbox -->
+                                    <div class="flex items-center text-sm">
+                                        <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="saas" name="saas" type="checkbox">
+                                        <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 w-full text-default-600 text-sm select-none cursor-pointer" for="saas">Saas <span class="ms-auto">120</span></label>
+                                    </div><!-- end checkbox -->
+                                    <div class="flex items-center text-sm">
+                                        <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="wordpress" name="wordpress" type="checkbox">
+                                        <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 w-full text-default-600 text-sm select-none cursor-pointer" for="wordpress">Wordpress <span class="ms-auto">1,450</span></label>
+                                    </div><!-- end checkbox -->
+                                </div>
+                            </div>
+                        </div><!-- end collapse -->
+
+                        <div class="border border-default-200 bg-white dark:bg-default-50 rounded">
+                            <button class="hs-collapse-toggle p-4 inline-flex justify-between items-center gap-2 transition-all uppercase font-medium text-base text-default-900 w-full open" data-hs-collapse="#rating" id="hs-basic-collapse" type="button">
+                                Rating
+                                <i class="ph ph-caret-down text-xl/none hs-collapse-open:rotate-180 transition-all duration-500"></i>
+                            </button>
+
+                            <div aria-labelledby="hs-basic-collapse" class="hs-collapse w-full overflow-hidden transition-[height] duration-300 open" id="rating">
+                                <div class="relative px-5 py-3 border-t border-default-200 flex flex-col space-y-5">
+                                    <div class="flex flex-col gap-4">
+                                        <div class="flex items-center text-sm">
+                                            <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="5Star" name="5Star" type="checkbox">
+                                            <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 w-full text-default-600 text-sm select-none cursor-pointer" for="5Star">5 Star <span class="ms-auto">245</span></label>
+                                        </div><!-- end checkbox -->
+                                        <div class="flex items-center text-sm">
+                                            <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="4StarUp" name="4StarUp" type="checkbox">
+                                            <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 w-full text-default-600 text-sm select-none cursor-pointer" for="4StarUp">4 Star &amp; up<span class="ms-auto">754</span></label>
+                                        </div><!-- end checkbox -->
+                                        <div class="flex items-center text-sm">
+                                            <input checked="" class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="3StarUp" name="3StarUp" type="checkbox">
+                                            <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 w-full text-default-600 text-sm select-none cursor-pointer" for="3StarUp">3 Star &amp; up<span class="ms-auto">851</span></label>
+                                        </div><!-- end checkbox -->
+                                        <div class="flex items-center text-sm">
+                                            <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="2StarUp" name="2StarUp" type="checkbox">
+                                            <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 w-full text-default-600 text-sm select-none cursor-pointer" for="2StarUp">2 Star &amp; up<span class="ms-auto">245</span></label>
+                                        </div><!-- end checkbox -->
+                                        <div class="flex items-center text-sm">
+                                            <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="1StarUp" name="1StarUp" type="checkbox">
+                                            <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 w-full text-default-600 text-sm select-none cursor-pointer" for="1StarUp">1 Star &amp; up<span class="ms-auto">541</span></label>
+                                        </div><!-- end checkbox -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- end collapse -->
+
+                        <div class="border border-default-200 bg-white dark:bg-default-50 rounded">
+                            <button class="hs-collapse-toggle p-4 inline-flex justify-between items-center gap-2 transition-all uppercase font-medium text-base text-default-900 w-full open" data-hs-collapse="#courseLevel" id="hs-basic-collapse" type="button">
+                                Course level
+                                <i class="ph ph-caret-down text-xl/none hs-collapse-open:rotate-180 transition-all duration-500"></i>
+                            </button>
+
+                            <div aria-labelledby="hs-basic-collapse" class="hs-collapse w-full overflow-hidden transition-[height] duration-300 open" id="courseLevel">
+                                <div class="relative px-5 py-3 border-t border-default-200 flex flex-col space-y-5">
+                                    <div class="flex items-center text-sm">
+                                        <input checked="" class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="allLevel" name="allLevel" type="checkbox">
+                                        <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 w-full text-default-600 text-sm select-none cursor-pointer" for="allLevel">All Level<span class="ms-auto">123</span></label>
+                                    </div><!-- end checkbox -->
+                                    <div class="flex items-center text-sm">
+                                        <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="beginner" name="beginner" type="checkbox">
+                                        <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 w-full text-default-600 text-sm select-none cursor-pointer" for="beginner">Beginner<span class="ms-auto">653</span></label>
+                                    </div><!-- end checkbox -->
+                                    <div class="flex items-center text-sm">
+                                        <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="intermediate" name="intermediate" type="checkbox">
+                                        <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 w-full text-default-600 text-sm select-none cursor-pointer" for="intermediate">Intermediate<span class="ms-auto">784</span></label>
+                                    </div><!-- end checkbox -->
+                                    <div class="flex items-center text-sm">
+                                        <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="expert" name="expert" type="checkbox">
+                                        <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 w-full text-default-600 text-sm select-none cursor-pointer" for="expert">Expert<span class="ms-auto">123</span></label>
+                                    </div><!-- end checkbox -->
+                                </div>
+                            </div>
+                        </div><!-- end collapse -->
+
+                        <div class="border border-default-200 bg-white dark:bg-default-50 rounded">
+                            <button class="hs-collapse-toggle p-4 inline-flex justify-between items-center gap-2 transition-all uppercase font-medium text-base text-default-900 w-full open" data-hs-collapse="#price" id="hs-basic-collapse" type="button">
+                                Price
+                                <i class="ph ph-caret-down text-xl/none hs-collapse-open:rotate-180 transition-all duration-500"></i>
+                            </button>
+
+                            <div aria-labelledby="hs-basic-collapse" class="hs-collapse w-full overflow-hidden transition-[height] duration-300 open" id="price">
+                                <div class="relative px-5 py-3 border-t border-default-200 flex flex-col space-y-5">
+                                    <div class="space-y-2 py-4">
+                                        <div id="product-price-range"></div>
+                                        <!-- end product-range -->
+
+                                        <div class="flex flex-wrap xl:flex-nowrap gap-2 items-center !mt-4">
+                                            <div class="inline-flex items-center justify-center w-full xl:w-1/2 gap-1 border border-default-200 py-2 px-4 rounded-full">
+                                                Min price :
+                                                <input class="border-none p-0 w-10 bg-transparent focus:ring-0" id="minCost" type="text" value="0">
+                                            </div><!-- end min-price -->
+                                            <div class="inline-flex items-center justify-center w-full xl:w-1/2 gap-1 border border-default-200 py-2 px-4 rounded-full">
+                                                Max price :
+                                                <input class="border-none p-0 w-10 bg-transparent focus:ring-0" id="maxCost" type="text" value="1000">
+                                            </div><!-- end max-price -->
+                                        </div><!-- end flex -->
+                                    </div>
+
+                                    <div class="relative flex flex-col gap-4">
+                                        <div class="flex items-center text-sm">
+                                            <input class="form-radio text-primary border-default-200 bg-transparent rounded-full w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="paid" name="radio" type="radio">
+                                            <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 w-full text-default-600 text-sm select-none cursor-pointer" for="paid">Paid <span class="ms-auto">1,569</span></label>
+                                        </div><!-- end radio -->
+                                        <div class="flex items-center text-sm">
+                                            <input class="form-radio text-primary border-default-200 bg-transparent rounded-full w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="free" name="radio" type="radio">
+                                            <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 w-full text-default-600 text-sm select-none cursor-pointer" for="free">Free <span class="ms-auto">1,245</span></label>
+                                        </div><!-- end radio -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- end collapse -->
+
+                        <div class="border border-default-200 bg-white dark:bg-default-50 rounded">
+                            <button class="hs-collapse-toggle p-4 inline-flex justify-between items-center gap-2 transition-all uppercase font-medium text-base text-default-900 w-full open" data-hs-collapse="#popularTags" id="hs-basic-collapse" type="button">
+                                Duration
+                                <i class="ph ph-caret-down text-xl/none hs-collapse-open:rotate-180 transition-all duration-500"></i>
+                            </button>
+                            <div aria-labelledby="hs-basic-collapse" class="hs-collapse w-full overflow-hidden transition-[height] duration-300 open" id="popularTags">
+                                <div class="relative px-5 py-3 border-t border-default-200">
+                                    <div class="relative flex flex-col space-y-4 mt-2">
+                                        <div class="flex items-center text-sm">
+                                            <input checked="" class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="6To_12Months" name="6To_12Months" type="checkbox">
+                                            <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 w-full text-default-600 text-sm select-none cursor-pointer" for="6To_12Months">6-12 Months <span class="ms-auto">982</span></label>
+                                        </div><!-- end checkbox -->
+
+                                        <div class="flex items-center text-sm">
+                                            <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="3To_6Months" name="3To_6Months" type="checkbox">
+                                            <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 w-full text-default-600 text-sm select-none cursor-pointer" for="3To_6Months">3-6 Months <span class="ms-auto">256</span></label>
+                                        </div><!-- end checkbox -->
+
+                                        <div class="flex items-center text-sm">
+                                            <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="1To_3Months" name="1To_3Months" type="checkbox">
+                                            <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 w-full text-default-600 text-sm select-none cursor-pointer" for="1To_3Months">1-3 Months <span class="ms-auto">952</span></label>
+                                        </div><!-- end checkbox -->
+
+                                        <div class="flex items-center text-sm">
+                                            <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="1To_4Weeks" name="1To_4Weeks" type="checkbox">
+                                            <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 w-full text-default-600 text-sm select-none cursor-pointer" for="1To_4Weeks">1-4 Weeks <span class="ms-auto">215</span></label>
+                                        </div><!-- end checkbox -->
+
+                                        <div class="flex items-center text-sm">
+                                            <input class="form-checkbox text-primary border-default-200 bg-transparent rounded w-5 h-5 focus:ring-0 focus:ring-transparent ring-offset-0 cursor-pointer" id="1To_7days" name="1To_7days" type="checkbox">
+                                            <label class="ps-2.5 sm:ps-3.5 inline-flex items-center gap-2 w-full text-default-600 text-sm select-none cursor-pointer" for="1To_7days">1-7 Days <span class="ms-auto">950</span></label>
+                                        </div><!-- end checkbox -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- end collapse -->
+                    </div>
+
+                    <div class="block lg:hidden py-4 px-4 border-t border-default-200">
+                        <a href="#" class="w-full inline-flex items-center justify-center rounded border border-primary bg-primary px-6 py-2.5 text-center text-sm font-medium text-white shadow-sm transition-all hover:border-primary-700 hover:bg-primary focus:ring focus:ring-primary/50">Reset</a>
+                    </div><!-- end filter-sidebar-footer -->
+                </div>
+
+                <div class="lg:w-3/4">
+                    <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-6 mb-10">
+                        <div class="rounded-xl bg-white shadow-[0_4px_32px_0px_rgba(29,32,38,0.10)] p-6 border border-transparent transition-all hover:border-primary dark:bg-default-50">
+                            <div class="">
+                                <img src="assets/img-1-b0e99c48.png" class="rounded-lg mb-6 w-full h-full">
+                            </div>
+                            <h4 class="text-lg font-semibold text-default-800 mb-6 line-clamp-1">React Front to Back</h4>
+
+                            <div class="flex flex-wrap justify-between gap-y-3 mb-6">
+                                <div class="flex items-center gap-2">
+                                    <i class="ph-fill ph-student text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Student : 960</span>
+                                </div>
+
+                                <div class="flex items-center gap-2">
+                                    <i class="ph ph-book-bookmark text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Lesson : 40</span>
+                                </div>
+
+                                <div class="flex items-center gap-2">
+                                    <i class="ph ph-medal text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-between items-center">
+                                <a href="course-detail.html" class="px-4 py-2 rounded-md bg-primary text-white font-medium">
+                                    View Details
+                                </a>
+
+                                <span class="inline-flex items-center gap-2">
+                                    <span class="h-5 w-5 inline-flex items-center justify-center bg-primary rounded-full"><i class="ph-fill ph-star text-sm/none text-white fill-white"></i></span>
+                                    <span class="text-sm text-default-950 font-medi">4.2</span>
+                                </span>
+                            </div>
+                        </div><!-- end grid-col -->
+
+                        <div class="rounded-xl bg-white shadow-[0_4px_32px_0px_rgba(29,32,38,0.10)] p-6 border border-transparent transition-all hover:border-primary dark:bg-default-50">
+                            <div class="">
+                                <img src="assets/img-2-6474d54d.png" class="rounded-lg mb-6 w-full h-full">
+                            </div>
+                            <h4 class="text-lg font-semibold text-default-800 mb-6 line-clamp-1">HTML Beginner + Advanced</h4>
+
+                            <div class="flex flex-wrap justify-between gap-y-3 mb-6">
+                                <div class="flex items-center gap-2">
+                                    <i class="ph-fill ph-student text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Student : 780</span>
+                                </div>
+
+                                <div class="flex items-center gap-2">
+                                    <i class="ph ph-book-bookmark text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Lesson : 85</span>
+                                </div>
+
+                                <div class="flex items-center gap-2">
+                                    <i class="ph ph-medal text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-between items-center">
+                                <a href="course-detail.html" class="px-4 py-2 rounded-md bg-primary text-white font-medium">
+                                    View Details
+                                </a>
+
+                                <span class="inline-flex items-center gap-2">
+                                    <span class="h-5 w-5 inline-flex items-center justify-center bg-primary rounded-full"><i class="ph-fill ph-star text-sm/none text-white fill-white"></i></span>
+                                    <span class="text-sm text-default-950 font-medi">3.6</span>
+                                </span>
+                            </div>
+                        </div><!-- end grid-col -->
+
+                        <div class="rounded-xl bg-white shadow-[0_4px_32px_0px_rgba(29,32,38,0.10)] p-6 border border-transparent transition-all hover:border-primary dark:bg-default-50">
+                            <div class="">
+                                <img src="assets/img-3-32136efb.png" class="rounded-lg mb-6 w-full h-full">
+                            </div>
+                            <h4 class="text-lg font-semibold text-default-800 mb-6 line-clamp-1">Angular Zero to Mastery</h4>
+
+                            <div class="flex flex-wrap justify-between gap-y-3 mb-6">
+                                <div class="flex items-center gap-2">
+                                    <i class="ph-fill ph-student text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Student : 2.3k</span>
+                                </div>
+
+                                <div class="flex items-center gap-2">
+                                    <i class="ph ph-book-bookmark text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Lesson : 12</span>
+                                </div>
+
+                                <div class="flex items-center gap-2">
+                                    <i class="ph ph-medal text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Beginner</span>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-between items-center">
+                                <a href="course-detail.html" class="px-4 py-2 rounded-md bg-primary text-white font-medium">
+                                    View Details
+                                </a>
+
+                                <span class="inline-flex items-center gap-2">
+                                    <span class="h-5 w-5 inline-flex items-center justify-center bg-primary rounded-full"><i class="ph-fill ph-star text-sm/none text-white fill-white"></i></span>
+                                    <span class="text-sm text-default-950 font-medi">3.5</span>
+                                </span>
+                            </div>
+                        </div><!-- end grid-col -->
+
+                        <div class="rounded-xl bg-white shadow-[0_4px_32px_0px_rgba(29,32,38,0.10)] p-6 border border-transparent transition-all hover:border-primary dark:bg-default-50">
+                            <div class="">
+                                <img src="assets/img-4-e7aaa772.png" class="rounded-lg mb-6 w-full h-full">
+                            </div>
+                            <h4 class="text-lg font-semibold text-default-800 mb-6 line-clamp-1">UI/UX Design Essential Training</h4>
+
+                            <div class="flex flex-wrap justify-between gap-y-3 mb-6">
+                                <div class="flex items-center gap-2">
+                                    <i class="ph-fill ph-student text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Student : 2.3k</span>
+                                </div>
+
+                                <div class="flex items-center gap-2">
+                                    <i class="ph ph-book-bookmark text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Lesson : 12</span>
+                                </div>
+
+                                <div class="flex items-center gap-2">
+                                    <i class="ph ph-medal text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Beginner</span>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-between items-center">
+                                <a href="course-detail.html" class="px-4 py-2 rounded-md bg-primary text-white font-medium">
+                                    View Details
+                                </a>
+
+                                <span class="inline-flex items-center gap-2">
+                                    <span class="h-5 w-5 inline-flex items-center justify-center bg-primary rounded-full"><i class="ph-fill ph-star text-sm/none text-white fill-white"></i></span>
+                                    <span class="text-sm text-default-950 font-medi">4.8</span>
+                                </span>
+                            </div>
+                        </div><!-- end grid-col -->
+
+                        <div class="rounded-xl bg-white shadow-[0_4px_32px_0px_rgba(29,32,38,0.10)] p-6 border border-transparent transition-all hover:border-primary dark:bg-default-50">
+                            <div class="">
+                                <img src="assets/img-5-76543dc2.png" class="rounded-lg mb-6 w-full h-full">
+                            </div>
+                            <h4 class="text-lg font-semibold text-default-800 mb-6 line-clamp-1">The complete Graphic Design th..</h4>
+
+                            <div class="flex flex-wrap justify-between gap-y-3 mb-6">
+                                <div class="flex items-center gap-2">
+                                    <i class="ph-fill ph-student text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Student : 780</span>
+                                </div>
+
+                                <div class="flex items-center gap-2">
+                                    <i class="ph ph-book-bookmark text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Lesson : 85</span>
+                                </div>
+
+                                <div class="flex items-center gap-2">
+                                    <i class="ph ph-medal text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Beginner</span>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-between items-center">
+                                <a href="course-detail.html" class="px-4 py-2 rounded-md bg-primary text-white font-medium">
+                                    View Details
+                                </a>
+
+                                <span class="inline-flex items-center gap-2">
+                                    <span class="h-5 w-5 inline-flex items-center justify-center bg-primary rounded-full"><i class="ph-fill ph-star text-sm/none text-white fill-white"></i></span>
+                                    <span class="text-sm text-default-950 font-medi">4.6</span>
+                                </span>
+                            </div>
+                        </div><!-- end grid-col -->
+
+                        <div class="rounded-xl bg-white shadow-[0_4px_32px_0px_rgba(29,32,38,0.10)] p-6 border border-transparent transition-all hover:border-primary dark:bg-default-50">
+                            <div class="">
+                                <img src="assets/img-6-0a1491d8.png" class="rounded-lg mb-6 w-full h-full">
+                            </div>
+                            <h4 class="text-lg font-semibold text-default-800 mb-6 line-clamp-1">AWS Certified Solutions Architect</h4>
+
+                            <div class="flex flex-wrap justify-between gap-y-3 mb-6">
+                                <div class="flex items-center gap-2">
+                                    <i class="ph-fill ph-student text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Student : 2.3k</span>
+                                </div>
+
+                                <div class="flex items-center gap-2">
+                                    <i class="ph ph-book-bookmark text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Lesson : 12</span>
+                                </div>
+
+                                <div class="flex items-center gap-2">
+                                    <i class="ph ph-medal text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Beginner</span>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-between items-center">
+                                <a href="course-detail.html" class="px-4 py-2 rounded-md bg-primary text-white font-medium">
+                                    View Details
+                                </a>
+
+                                <span class="inline-flex items-center gap-2">
+                                    <span class="h-5 w-5 inline-flex items-center justify-center bg-primary rounded-full"><i class="ph-fill ph-star text-sm/none text-white fill-white"></i></span>
+                                    <span class="text-sm text-default-950 font-medi">4.9</span>
+                                </span>
+                            </div>
+                        </div><!-- end grid-col -->
+
+                        <div class="rounded-xl bg-white shadow-[0_4px_32px_0px_rgba(29,32,38,0.10)] p-6 border border-transparent transition-all hover:border-primary dark:bg-default-50">
+                            <div class="">
+                                <img src="assets/img-7-17f39c88.png" class="rounded-lg mb-6 w-full h-full">
+                            </div>
+                            <h4 class="text-lg font-semibold text-default-800 mb-6 line-clamp-1">Learn Ethical Hacking from Scra...</h4>
+
+                            <div class="flex flex-wrap justify-between gap-y-3 mb-6">
+                                <div class="flex items-center gap-2">
+                                    <i class="ph-fill ph-student text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Student : 960</span>
+                                </div>
+
+                                <div class="flex items-center gap-2">
+                                    <i class="ph ph-book-bookmark text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Lesson : 40</span>
+                                </div>
+
+                                <div class="flex items-center gap-2">
+                                    <i class="ph ph-medal text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-between items-center">
+                                <a href="course-detail.html" class="px-4 py-2 rounded-md bg-primary text-white font-medium">
+                                    View Details
+                                </a>
+
+                                <span class="inline-flex items-center gap-2">
+                                    <span class="h-5 w-5 inline-flex items-center justify-center bg-primary rounded-full"><i class="ph-fill ph-star text-sm/none text-white fill-white"></i></span>
+                                    <span class="text-sm text-default-950 font-medi">4.8</span>
+                                </span>
+                            </div>
+                        </div><!-- end grid-col -->
+
+                        <div class="rounded-xl bg-white shadow-[0_4px_32px_0px_rgba(29,32,38,0.10)] p-6 border border-transparent transition-all hover:border-primary dark:bg-default-50">
+                            <div class="">
+                                <img src="assets/img-8-ec9ce8f9.png" class="rounded-lg mb-6 w-full h-full">
+                            </div>
+                            <h4 class="text-lg font-semibold text-default-800 mb-6 line-clamp-1">SQL: Weekend Crash Course</h4>
+
+                            <div class="flex flex-wrap justify-between gap-y-3 mb-6">
+                                <div class="flex items-center gap-2">
+                                    <i class="ph-fill ph-student text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Student : 780</span>
+                                </div>
+
+                                <div class="flex items-center gap-2">
+                                    <i class="ph ph-book-bookmark text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Lesson : 85</span>
+                                </div>
+
+                                <div class="flex items-center gap-2">
+                                    <i class="ph ph-medal text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Beginner</span>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-between items-center">
+                                <a href="course-detail.html" class="px-4 py-2 rounded-md bg-primary text-white font-medium">
+                                    View Details
+                                </a>
+
+                                <span class="inline-flex items-center gap-2">
+                                    <span class="h-5 w-5 inline-flex items-center justify-center bg-primary rounded-full"><i class="ph-fill ph-star text-sm/none text-white fill-white"></i></span>
+                                    <span class="text-sm text-default-950 font-medi">3.8</span>
+                                </span>
+                            </div>
+                        </div><!-- end grid-col -->
+
+                        <div class="rounded-xl bg-white shadow-[0_4px_32px_0px_rgba(29,32,38,0.10)] p-6 border border-transparent transition-all hover:border-primary dark:bg-default-50">
+                            <div class="">
+                                <img src="assets/img-9-deaf17b9.png" class="rounded-lg mb-6 w-full h-full">
+                            </div>
+                            <h4 class="text-lg font-semibold text-default-800 mb-6 line-clamp-1">DS &amp; Algorithms Essentials</h4>
+
+                            <div class="flex flex-wrap justify-between gap-y-3 mb-6">
+                                <div class="flex items-center gap-2">
+                                    <i class="ph-fill ph-student text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Student : 2.3k</span>
+                                </div>
+
+                                <div class="flex items-center gap-2">
+                                    <i class="ph ph-book-bookmark text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Lesson : 12</span>
+                                </div>
+
+                                <div class="flex items-center gap-2">
+                                    <i class="ph ph-medal text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Beginner</span>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-between items-center">
+                                <a href="course-detail.html" class="px-4 py-2 rounded-md bg-primary text-white font-medium">
+                                    View Details
+                                </a>
+
+                                <span class="inline-flex items-center gap-2">
+                                    <span class="h-5 w-5 inline-flex items-center justify-center bg-primary rounded-full"><i class="ph-fill ph-star text-sm/none text-white fill-white"></i></span>
+                                    <span class="text-sm text-default-950 font-medi">3.9</span>
+                                </span>
+                            </div>
+                        </div><!-- end grid-col -->
+
+                        <div class="rounded-xl bg-white shadow-[0_4px_32px_0px_rgba(29,32,38,0.10)] p-6 border border-transparent transition-all hover:border-primary dark:bg-default-50">
+                            <div class="">
+                                <img src="assets/img-10-2d78d80d.png" class="rounded-lg mb-6 w-full h-full">
+                            </div>
+                            <h4 class="text-lg font-semibold text-default-800 mb-6 line-clamp-1">Digital Marketing Master Class-1</h4>
+
+                            <div class="flex flex-wrap justify-between gap-y-3 mb-6">
+                                <div class="flex items-center gap-2">
+                                    <i class="ph-fill ph-student text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Student : 960</span>
+                                </div>
+
+                                <div class="flex items-center gap-2">
+                                    <i class="ph ph-book-bookmark text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Lesson : 40</span>
+                                </div>
+
+                                <div class="flex items-center gap-2">
+                                    <i class="ph ph-medal text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-between items-center">
+                                <a href="course-detail.html" class="px-4 py-2 rounded-md bg-primary text-white font-medium">
+                                    View Details
+                                </a>
+
+                                <span class="inline-flex items-center gap-2">
+                                    <span class="h-5 w-5 inline-flex items-center justify-center bg-primary rounded-full"><i class="ph-fill ph-star text-sm/none text-white fill-white"></i></span>
+                                    <span class="text-sm text-default-950 font-medi">4.4</span>
+                                </span>
+                            </div>
+                        </div><!-- end grid-col -->
+
+                        <div class="rounded-xl bg-white shadow-[0_4px_32px_0px_rgba(29,32,38,0.10)] p-6 border border-transparent transition-all hover:border-primary dark:bg-default-50">
+                            <div class="">
+                                <img src="assets/img-11-7270e7b7.png" class="rounded-lg mb-6 w-full h-full">
+                            </div>
+                            <h4 class="text-lg font-semibold text-default-800 mb-6 line-clamp-1">Video Editing n Premiere</h4>
+
+                            <div class="flex flex-wrap justify-between gap-y-3 mb-6">
+                                <div class="flex items-center gap-2">
+                                    <i class="ph-fill ph-student text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Student : 780</span>
+                                </div>
+
+                                <div class="flex items-center gap-2">
+                                    <i class="ph ph-book-bookmark text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Lesson : 85</span>
+                                </div>
+
+                                <div class="flex items-center gap-2">
+                                    <i class="ph ph-medal text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Beginner</span>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-between items-center">
+                                <a href="course-detail.html" class="px-4 py-2 rounded-md bg-primary text-white font-medium">
+                                    View Details
+                                </a>
+
+                                <span class="inline-flex items-center gap-2">
+                                    <span class="h-5 w-5 inline-flex items-center justify-center bg-primary rounded-full"><i class="ph-fill ph-star text-sm/none text-white fill-white"></i></span>
+                                    <span class="text-sm text-default-950 font-medi">4.2</span>
+                                </span>
+                            </div>
+                        </div><!-- end grid-col -->
+
+                        <div class="rounded-xl bg-white shadow-[0_4px_32px_0px_rgba(29,32,38,0.10)] p-6 border border-transparent transition-all hover:border-primary dark:bg-default-50">
+                            <div class="">
+                                <img src="assets/img-12-432373d0.png" class="rounded-lg mb-6 w-full h-full">
+                            </div>
+                            <h4 class="text-lg font-semibold text-default-800 mb-6 line-clamp-1">Digital Marketing Master Class-2</h4>
+
+                            <div class="flex flex-wrap justify-between gap-y-3 mb-6">
+                                <div class="flex items-center gap-2">
+                                    <i class="ph-fill ph-student text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Student : 2.3k</span>
+                                </div>
+
+                                <div class="flex items-center gap-2">
+                                    <i class="ph ph-book-bookmark text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Lesson : 12</span>
+                                </div>
+
+                                <div class="flex items-center gap-2">
+                                    <i class="ph ph-medal text-lg text-default-800"></i>
+                                    <span class="text-xs text-default-800">Beginner</span>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-between items-center">
+                                <a href="course-detail.html" class="px-4 py-2 rounded-md bg-primary text-white font-medium">
+                                    View Details
+                                </a>
+
+                                <span class="inline-flex items-center gap-2">
+                                    <span class="h-5 w-5 inline-flex items-center justify-center bg-primary rounded-full"><i class="ph-fill ph-star text-sm/none text-white fill-white"></i></span>
+                                    <span class="text-sm text-default-950 font-medi">4.9</span>
+                                </span>
+                            </div>
+                        </div><!-- end grid-col -->
+                    </div>
+
+                    <div class="flex gap-x-4 justify-end items-center">
+                        <a href="#" class="w-10 h-10 flex justify-center items-center bg-primary/20 text-primary text-base font-semibold rounded hover:bg-primary hover:text-white">
+                            <i class="ph ph-caret-left"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex justify-center items-center bg-primary text-white text-base font-semibold rounded">1</a>
+
+                        <h4 class="text-lg font-semibold text-default-600">of</h4>
+
+                        <a href="#" class="w-10 h-10 flex justify-center items-center bg-primary/20 text-primary text-base font-semibold rounded hover:bg-primary hover:text-white">16</a>
+
+                        <a href="#" class="w-10 h-10 flex justify-center items-center bg-primary/20 text-primary text-base font-semibold rounded hover:bg-primary hover:text-white">
+                            <i class="ph ph-caret-right"></i>
+                        </a>
+                    </div><!-- end flex -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lg:py-16 py-6">
+        <div class="container">
+            <div class="backdrop-blur-2xl text-center rounded-xl overflow-hidden p-16 bg-primary/20 bg-no-repeat bg-cover w-full bg-[url(../images/home/bg.png)]">
+                <h5 class="text-3xl font-semibold text-default-900 mb-8">Online coaching lessons for remote learning.</h5>
+
+                <p class="text-xl max-w-4xl mx-auto text-default-600 mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+
+                <button type="button" class="inline-flex px-8 py-2 rounded-md bg-primary text-white font-medium text-base">
+                    Learn More
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <div class="dark">
+        <footer class="bg-default-50">
+            <div class="container">
+                <div class="lg:py-10 py-6">
+                    <div class="grid lg:grid-cols-2 items-center gap-6">
+                        <div class="">
+                            <div class="grid md:grid-cols-3 items-center gap-6">
+                                <div class="">
+                                    <h2 class="text-3xl text-default-900 font-medium mb-2">2.3k</h2>
+                                    <p class="text-sm text-default-600">Online courses</p>
+                                </div><!-- end grid-col -->
+                                <div class="">
+                                    <h2 class="text-3xl text-default-900 font-medium mb-2">500+</h2>
+                                    <p class="text-sm text-default-600">Certified Instructor</p>
+                                </div><!-- end grid-col -->
+                                <div class="">
+                                    <h2 class="text-3xl text-default-900 font-medium mb-2">99.9%</h2>
+                                    <p class="text-sm text-default-600">Success Rate</p>
+                                </div><!-- end grid-col -->
+                            </div><!-- end grid -->
+                        </div><!-- end grid-col -->
+        
+                        <div class="">
+                            <h1 class="text-3xl font-medium lg:text-end text-default-950 mb-6">Start learning with 23.4k students <br class="hidden xl:block"> around the world.</h1>
+                            <div class="flex items-center lg:justify-end gap-4">
+                                <a href="#" class="inline-flex items-center gap-6 text-sm py-2.5 px-4 xl:px-5 rounded text-white bg-primary hover:bg-primary-500 transition-all">Join the Family</a>
+                                <a href="#" class="inline-flex items-center gap-6 text-sm py-2.5 px-4 xl:px-5 rounded text-primary bg-primary/20 hover:bg-primary hover:text-white transition-all duration-500">Browse all courses</a>
+                            </div>
+                        </div><!-- end grid-col -->
+                    </div><!-- end grid -->
+                </div>
+            </div><!-- end contaner -->
+        
+            <div class="lg:py-10 py-6 border-t border-default-200">
+                <div class="container">
+                    <div class="grid lg:grid-cols-12 gap-6">
+                        <div class="lg:col-span-3">
+                            <div class="">
+                                <img src="assets/logo-dark-befc834f.png" alt="logo" class="block dark:hidden h-10">
+                                <img src="assets/logo-light-43c180d2.png" alt="logo" class="hidden dark:block h-10">
+                                <p class="my-4">Aliquam rhoncus ligula est, non pulvinar elit convallis nec. Donec mattis odio at.</p>
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <a href="javascript:void(0);" class="h-10 w-10 inline-flex items-center justify-center backdrop-blur-2xl bg-default-200 rounded transition-all duration-500 text-default-700 hover:bg-primary hover:text-white"><i class="ph-fill ph-facebook-logo text-2xl"></i></a>
+                                    <a href="javascript:void(0);" class="h-10 w-10 inline-flex items-center justify-center backdrop-blur-2xl bg-default-200 rounded transition-all duration-500 text-default-700 hover:bg-primary hover:text-white"><i class="ph-fill ph-instagram-logo text-2xl"></i></a>
+                                    <a href="javascript:void(0);" class="h-10 w-10 inline-flex items-center justify-center backdrop-blur-2xl bg-default-200 rounded transition-all duration-500 text-default-700 hover:bg-primary hover:text-white"><i class="ph-fill ph-linkedin-logo text-2xl"></i></a>
+                                    <a href="javascript:void(0);" class="h-10 w-10 inline-flex items-center justify-center backdrop-blur-2xl bg-default-200 rounded transition-all duration-500 text-default-700 hover:bg-primary hover:text-white"><i class="ph-fill ph-twitter-logo text-2xl"></i></a>
+                                    <a href="javascript:void(0);" class="h-10 w-10 inline-flex items-center justify-center backdrop-blur-2xl bg-default-200 rounded transition-all duration-500 text-default-700 hover:bg-primary hover:text-white"><i class="ph-fill ph-youtube-logo text-2xl"></i></a>
+                                </div>
+                            </div>
+                        </div><!-- end grid-col -->
+                        
+                        <div class="lg:col-span-6">
+                            <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-6 mb-6">
+                                <div class="flex flex-col gap-3">
+                                    <h5 class="mb-3 font-semibold text-default-900 uppercase">Top 4 Category</h5>
+                                    <div class="text-default-800"><a href="javascript:void(0);">Development</a></div>
+                                    <div class="text-default-800"><a href="javascript:void(0);">Finance & Accounting</a></div>
+                                    <div class="text-default-800"><a href="javascript:void(0);">Design</a></div>
+                                    <div class="text-default-800"><a href="javascript:void(0);">Business</a></div>
+                                </div><!-- end grid-col -->
+        
+                                <div class="flex flex-col gap-3">
+                                    <h5 class="mb-3 font-semibold text-default-900 uppercase">Quick Links</h5>
+                                    <div class="text-default-800"><a href="javascript:void(0);">About</a></div>
+                                    <div class="text-default-800"><a href="javascript:void(0);">Become Instructor</a></div>
+                                    <div class="text-default-800"><a href="javascript:void(0);">Contact</a></div>
+                                    <div class="text-default-800"><a href="javascript:void(0);">Career</a></div>
+                                </div><!-- end grid-col -->
+        
+                                <div class="flex flex-col gap-3">
+                                    <h5 class="mb-3 font-semibold text-default-900 uppercase">Support</h5>
+                                    <div class="text-default-800"><a href="javascript:void(0);">Help Center</a></div>
+                                    <div class="text-default-800"><a href="javascript:void(0);">FAQs</a></div>
+                                    <div class="text-default-800"><a href="javascript:void(0);">Terms & Condition</a></div>
+                                    <div class="text-default-800"><a href="javascript:void(0);">Privacy Policy</a></div>
+                                </div><!-- end grid-col -->
+                            </div><!-- end grid -->
+                        </div><!-- end grid-col -->
+        
+                        <div class="lg:col-span-3">
+                            <div class="flex flex-col gap-3">
+                                <h5 class="mb-3 font-semibold text-default-900 uppercase">Downlaod our app</h5>
+                                <div class="flex flex-col items-start gap-2">
+                                    <a href="#" class="w-3/4 inline-flex items-center justify-center gap-3 px-8 py-3 bg-default-950/5 rounded transition-all duration-200 hover:bg-primary">
+                                        <img src="assets/apple-c219ac8e.svg" alt="" class="h-10 w-10">
+                                        <span>
+                                            <span class="block text-xs text-default-800">Download now</span>
+                                            <span class="block font-semibold text-default-900">App Store</span>
+                                        </span>
+                                    </a>
+                                    <a href="#" class="w-3/4 inline-flex items-center justify-center gap-3 px-8 py-3 bg-default-950/5 rounded transition-all duration-200 hover:bg-primary">
+                                        <img src="assets/play-store-1311317c.svg" alt="" class="h-10 w-10">
+                                        <span>
+                                            <span class="block text-xs text-default-800">Download now</span>
+                                            <span class="block font-semibold text-default-900">App Store</span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div><!-- end flex -->
+                        </div><!-- end grid-col -->
+                    </div><!-- end grid -->
+                </div><!-- end conteiner -->
+            </div>
+        
+            <div class="py-6 border-t border-default-200">
+                <div class="container">
+                    <div class="grid lg:grid-cols-2 items-center justify-center lg:justify-between gap-6">
+                        <div>
+                            <p class="text-default-800">
+                                <script>document.write(new Date().getFullYear())</script> Design crafted <i data-lucide="heart" class="inline h-4 w-4 text-red-500 fill-red-500"></i> by Coderthemes.com
+                            </p>
+                        </div><!-- end grid-col -->
+        
+                        <div class="hs-dropdown relative flex justify-center lg:justify-end [--placement:bottom-right]">
+                            <button id="hs-dropdown-slideup-animation2" type="button" class="hs-dropdown-toggle inline-flex items-center justify-end gap-6 text-sm py-2.5 px-4 xl:px-5 rounded border border-default-950/10 text-default-900 transition-all">
+                                English
+                                <i class="ph ph-caret-down"></i>
+                            </button><!-- end dropdown button -->
+        
+                            <div class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-[200px] transition-[opacity,margin] opacity-0 z-20 duration-300 bg-white shadow-lg rounded-lg border border-default-100 dark:bg-default-50 py-2 hidden" aria-labelledby="hs-dropdown-slideup-animation2">
+                                <ul class="flex flex-col">
+                                    <li><a class="flex items-center font-normal py-2 px-2 text-default-950 bg-default-100" href="#">German</a></li>
+                                    <li><a class="flex items-center font-normal text-default-800 py-2 px-2 hover:text-default-950 hover:bg-default-100" href="#">Italian</a></li>
+                                    <li><a class="flex items-center font-normal text-default-800 py-2 px-2 hover:text-default-950 hover:bg-default-100" href="#">Spanish</a></li>
+                                    <li><a class="flex items-center font-normal text-default-800 py-2 px-2 hover:text-default-950 hover:bg-default-100" href="#">Russian</a></li>
+                                </ul><!-- end dropdown items -->
+                            </div><!-- end dropdown menu -->
+                        </div><!-- end grid-col -->
+                    </div><!-- end grid -->
+                </div><!-- end flex -->
+            </div><!-- end flex -->
+        </footer><!-- end footer -->
+    </div>
+    
+    <!-- signUp Modal -->
+    <div id="signUp" class="hs-overlay fixed top-0 left-0 z-[60] transition-all duration-500 w-full h-full min-h-full items-center hidden hs-overlay-open:flex" aria-overlay="true" tabindex="-1">
+        <div class="hs-overlay-open:opacity-100 duration-500 opacity-0 ease-out transition-[opacity] relative max-w-full md:max-w-4xl sm:w-full sm:mx-auto shadow-sm rounded-3xl group bg-[url(../images/other/modal-bg.png)]">
+            <div class="p-10">
+                <div class="grid lg:grid-cols-2">
+                    <div class="">
+                        <div class="bg-white p-6 w-auto rounded-2xl lg:-mb-20 dark:bg-default-50">
+                            <img src="assets/auth-img-e6524fe7.png" alt="" class="lg:-mt-28">
+    
+                            <h3 class="text-2xl font-medium text-default-900 my-8">Sign Up Now for your 15% OFF</h3>
+                            <p class="text-sm text-primary mb-8">Subscribe Now & Received a Discount on Your First Order</p>
+    
+                            <form action="#" class="mb-10">
+                                <div class="relative z-0 mb-8 w-full group">
+                                    <input type="text" name="name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 dark:text-white dark:border-gray-600 dark:focus:border-primary focus:outline-none focus:ring-0 focus:border-primary peer" placeholder=" " required />
+                                    <label for="name" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-focus:dark:text-primary placeholder:text-sm peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-100 peer-focus:-translate-y-6">Name</label>
+                                </div>
+                                <div class="relative z-0 mb-8 w-full group">
+                                    <input type="email" name="email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 dark:text-white dark:border-gray-600 dark:focus:border-primary focus:outline-none focus:ring-0 focus:border-primary peer" placeholder=" " required />
+                                    <label for="email" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-focus:dark:text-primary placeholder:text-sm peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-100 peer-focus:-translate-y-6">Email address</label>
+                                </div>
+    
+                                <button type="submit" class="px-6 py-3.5 text-base rounded bg-primary text-white">
+                                    Subscribe Now
+                                </button>
+                            </form>
+    
+                            <div class="flex items-center justify-between gap-4 mb-12">
+                                <a href="#" class="inline-flex items-center gap-2 text-default-800"><i class="ph-fill ph-facebook-logo text-lg text-primary"></i>Facebook</a>
+                                <a href="#" class="inline-flex items-center gap-2 text-default-800"><i class="ph-fill ph-twitter-logo text-lg text-primary"></i>Twitter</a>
+                                <a href="#" class="inline-flex items-center gap-2 text-default-800"><i class="ph-fill ph-instagram-logo text-lg text-primary"></i>Instagram</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <div class="fixed bottom-5 end-5 flex flex-col items-center bg-primary/25 rounded-full z-10 print:hidden">
+        <button class="h-0 w-8 opacity-0 flex justify-center items-center transition-all duration-500 translate-y-5 z-10" data-toggle="back-to-top">
+            <i class="h-5 w-5 text-primary-500 mt-1" data-lucide="chevron-up"></i>
+        </button>
+        <button class="rounded-full h-10 w-10 bg-primary text-white flex justify-center items-center z-20">
+            <i class="h-5 w-5" data-lucide="sun" id="light-theme"></i>
+            <i class="h-5 w-5" data-lucide="moon" id="dark-theme"></i>
+        </button>
+    </div>
+    <!-- Theme Js -->
+    
+    <!-- noUiSlider js -->
+    
+
+    
+
+</body>
+
+
+<!-- Mirrored from coderthemes.com/studyzen/course.html by HTTrack Website Copier/3.x [XR&CO'2017], Tue, 09 Jan 2024 16:00:28 GMT -->
+</html>
+
+
+

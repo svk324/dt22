@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from coderthemes.com/studyzen/course-detail.html by HTTrack Website Copier/3.x [XR&CO'2017], Tue, 09 Jan 2024 16:00:28 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <title>StudyZen - Tailwind Study Client & Admin Manage HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="description" />
+    <meta content="coderthemes" name="author" />
+    
+    <!-- Theme favicon -->
+    <link rel="shortcut icon" href="assets/favicon-8fd74f43.ico">
+    
+    <!--&lt;!&ndash; Head js &ndash;&gt;-->
+    
+  <script type="module" crossorigin src="assets/theme-e4584917.js"></script>
+  <link rel="stylesheet" href="assets/theme-d32f8eb8.css">
+</head>
+
+<body>
+    <!-- Offer/Help Menu -->
+    <div class="h-10 hidden lg:flex items-center bg-primary-950 text-white z-20">
+        <div class="container">
+            <nav class="flex items-center justify-between gap-4">
+                <!-- Language Dropdown -->
+                <div class="flex relative">
+                    <div class="hs-dropdown relative inline-flex [--trigger:hover] [--placement:bottom]">
+                        <a class="hs-dropdown-toggle after:absolute hover:after:-bottom-10 after:inset-0 relative flex items-center text-base" href="#">
+                            <img alt="Image" class="h-3.5 me-3" src="data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAA8AAD/4QMpaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjAtYzA2MCA2MS4xMzQ3NzcsIDIwMTAvMDIvMTItMTc6MzI6MDAgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo5NTM4RDUxQjYxM0IxMUU3ODM5NTg5Qjc3NkUwNEZFMSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo5NTM4RDUxQzYxM0IxMUU3ODM5NTg5Qjc3NkUwNEZFMSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjk1MzhENTE5NjEzQjExRTc4Mzk1ODlCNzc2RTA0RkUxIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjk1MzhENTFBNjEzQjExRTc4Mzk1ODlCNzc2RTA0RkUxIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/+4ADkFkb2JlAGTAAAAAAf/bAIQABgQEBAUEBgUFBgkGBQYJCwgGBggLDAoKCwoKDBAMDAwMDAwQDA4PEA8ODBMTFBQTExwbGxscHx8fHx8fHx8fHwEHBwcNDA0YEBAYGhURFRofHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f/8AAEQgAKgBAAwERAAIRAQMRAf/EAJkAAQABBQEAAAAAAAAAAAAAAAAHAgMEBQYBAQEAAgMBAQAAAAAAAAAAAAAAAgYBBAUDBxAAAAQBBwkHBAMBAAAAAAAAAQIDBAAREhMFBhYHMaHRkpPTFVVWIUGRIjIzFFFhQtKCIyVFEQAAAgMQAgIBBQAAAAAAAAAAAfACAxEhMVGBoRJSghNTBBRUBRVBcZHRMmHhIkJD/9oADAMBAAIRAxEAPwDlhqtFarm7o4qNFlE3Cx3LoRonRkzgAJthKQRE/b2zhyxa6ThuQwQePY1hmjZ9nxYyXx3cwFDJ8G/6QACFJSiFHMmTs0RvDo+PfiEHBjN6jaGamEywqz/iDxFKcLVr8gRA5HUpJwGCT8YkbQ3fl7yfoBubIVNU94KpSrBVdk0cJuqesREKBaiE4EM3ESAM3ygAy98c7lHFmC1I3nvZDp8O2as8wqbJWku+9G8JNuvhv1Ep4l/SKpdMqwufZcjgFP8AYXXw36iU8S/pC6ZVg7LkcAp/sLr4b9RKeJf0hdMqwdlyOAU/2PS2Zw5KYDFtGoBgGUBASgICH8IXTKsMHyPIn/gSSiHmhQQqZFU4fFBw1dkKu7AF0nAgoUJjYkwaFQMk+XL3hF6WfWjfKDx7jHzobIW3+gNX/GXpQcnPwmcXiRQ+JLSfMo5BT75mbvjzdedd8Q/1hiAWG5iHTSdgoRQjYtXFO/RSAjVsM4fK8b0f95gk9XfJ3xI4o6T3k/R+AGdZo9UNLRVO8rZis4q5Ur0xjJmCgX8yhSnbJf1URSmylljR5JZUmC1J8v4vefEI6fDs2y+YVJidFd9w5PRiR7w4V8iceAb6KreMaqfIueg5TGVSyF4cK+ROPAN9C8Y1U+Q0HKYyqWQvDhXyJx4BvoXjGqnyGg5TGVSyF4cK+ROPAN9C8Y1U+Q0HKYyqWRGhLF2+aNSt2lnHiLgyazd8vNFUqyahgEAKUQEpJACScUe2LrqGRm6axfoPndAxfGylsxcCldR7walFctXeeeCgpUc75E2ky+aTJEb9m5+ZUo/2CgcQoTsviKBSrK2eeKVi2BuWr3YJzQRK2ERApkwLMVl7O02eMm3Y1icfdlCgsNvZCobb1XaJhWwWXcA6blcC7UVA1GsdedIYCSABJANJIWNPkMwrcmSp0jecIb3HZdRdsRNFqCj7piSr0W96YLqH0xXL1pVFk63I7icgvRb3pguofTC9aVQ63I7icgvRb3pguofTC9aVQ63I7icgvRb3pguofTC9aVQ63I7ichXwTFnnTXNuIUG0ZJII6zisJdLYcExZ501zbiFBtGSSBrOKwl0thwTFnnTXNuIUG0ZJIGs4rCXS2HBMWedNc24hQbRkkgazisJdLYcExZ501zbiFBtGSSBrOKwl0thwTFnnTXNuIUG0ZJIGs4rCXS2HBMWedNc24hQbRkkgazisJdLYcExZ501zbiFBtGSSBrOKwl0tjT3Xsd1aO0JpjzulKw6HZZzbTGF17HdWjtCaYXSlYOyzm2mMLr2O6tHaE0wulKwdlnNtMYXXsd1aO0JphdKVg7LObaYwuvY7q0doTTC6UrB2Wc20xhdex3Vo7QmmF0pWDss5tpjC69jurR2hNMLpSsHZZzbTGF17HdWjtCaYXSlYOyzm2mMcE499T2/Ub2/Rl/H7fSNMxaVPxKGWEW9WMCQasADVgAasADVgAasAFxv76ft+ovuejL+X2+sZIRX/ABOGSEf/2Q==">
+                            <span class="font-medium text-primary text-xs">English (USA)</span>
+                        </a>
+    
+                        <div class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-[140px] transition-[opacity,margin] mt-4 opacity-0 hidden z-50 bg-white shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-lg border border-default-100 p-1.5 dark:bg-default-50">
+                            <ul class="flex flex-col gap-1">
+                                <li>
+                                    <a class="flex items-center gap-2 font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="#"><img alt="flag" class="h-4" src="data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAA8AAD/4QMpaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjAtYzA2MCA2MS4xMzQ3NzcsIDIwMTAvMDIvMTItMTc6MzI6MDAgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo5NTM4RDUxQjYxM0IxMUU3ODM5NTg5Qjc3NkUwNEZFMSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo5NTM4RDUxQzYxM0IxMUU3ODM5NTg5Qjc3NkUwNEZFMSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjk1MzhENTE5NjEzQjExRTc4Mzk1ODlCNzc2RTA0RkUxIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjk1MzhENTFBNjEzQjExRTc4Mzk1ODlCNzc2RTA0RkUxIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/+4ADkFkb2JlAGTAAAAAAf/bAIQABgQEBAUEBgUFBgkGBQYJCwgGBggLDAoKCwoKDBAMDAwMDAwQDA4PEA8ODBMTFBQTExwbGxscHx8fHx8fHx8fHwEHBwcNDA0YEBAYGhURFRofHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f/8AAEQgAKgBAAwERAAIRAQMRAf/EAJkAAQABBQEAAAAAAAAAAAAAAAAHAgMEBQYBAQEAAgMBAQAAAAAAAAAAAAAAAgYBBAUDBxAAAAQBBwkHBAMBAAAAAAAAAQIDBAAREhMFBhYHMaHRkpPTFVVWIUGRIjIzFFFhQtKCIyVFEQAAAgMQAgIBBQAAAAAAAAAAAfACAxEhMVGBoRJSghNTBBRUBRVBcZHRMmHhIkJD/9oADAMBAAIRAxEAPwDlhqtFarm7o4qNFlE3Cx3LoRonRkzgAJthKQRE/b2zhyxa6ThuQwQePY1hmjZ9nxYyXx3cwFDJ8G/6QACFJSiFHMmTs0RvDo+PfiEHBjN6jaGamEywqz/iDxFKcLVr8gRA5HUpJwGCT8YkbQ3fl7yfoBubIVNU94KpSrBVdk0cJuqesREKBaiE4EM3ESAM3ygAy98c7lHFmC1I3nvZDp8O2as8wqbJWku+9G8JNuvhv1Ep4l/SKpdMqwufZcjgFP8AYXXw36iU8S/pC6ZVg7LkcAp/sLr4b9RKeJf0hdMqwdlyOAU/2PS2Zw5KYDFtGoBgGUBASgICH8IXTKsMHyPIn/gSSiHmhQQqZFU4fFBw1dkKu7AF0nAgoUJjYkwaFQMk+XL3hF6WfWjfKDx7jHzobIW3+gNX/GXpQcnPwmcXiRQ+JLSfMo5BT75mbvjzdedd8Q/1hiAWG5iHTSdgoRQjYtXFO/RSAjVsM4fK8b0f95gk9XfJ3xI4o6T3k/R+AGdZo9UNLRVO8rZis4q5Ur0xjJmCgX8yhSnbJf1URSmylljR5JZUmC1J8v4vefEI6fDs2y+YVJidFd9w5PRiR7w4V8iceAb6KreMaqfIueg5TGVSyF4cK+ROPAN9C8Y1U+Q0HKYyqWQvDhXyJx4BvoXjGqnyGg5TGVSyF4cK+ROPAN9C8Y1U+Q0HKYyqWRGhLF2+aNSt2lnHiLgyazd8vNFUqyahgEAKUQEpJACScUe2LrqGRm6axfoPndAxfGylsxcCldR7walFctXeeeCgpUc75E2ky+aTJEb9m5+ZUo/2CgcQoTsviKBSrK2eeKVi2BuWr3YJzQRK2ERApkwLMVl7O02eMm3Y1icfdlCgsNvZCobb1XaJhWwWXcA6blcC7UVA1GsdedIYCSABJANJIWNPkMwrcmSp0jecIb3HZdRdsRNFqCj7piSr0W96YLqH0xXL1pVFk63I7icgvRb3pguofTC9aVQ63I7icgvRb3pguofTC9aVQ63I7icgvRb3pguofTC9aVQ63I7ichXwTFnnTXNuIUG0ZJII6zisJdLYcExZ501zbiFBtGSSBrOKwl0thwTFnnTXNuIUG0ZJIGs4rCXS2HBMWedNc24hQbRkkgazisJdLYcExZ501zbiFBtGSSBrOKwl0thwTFnnTXNuIUG0ZJIGs4rCXS2HBMWedNc24hQbRkkgazisJdLYcExZ501zbiFBtGSSBrOKwl0tjT3Xsd1aO0JpjzulKw6HZZzbTGF17HdWjtCaYXSlYOyzm2mMLr2O6tHaE0wulKwdlnNtMYXXsd1aO0JphdKVg7LObaYwuvY7q0doTTC6UrB2Wc20xhdex3Vo7QmmF0pWDss5tpjC69jurR2hNMLpSsHZZzbTGF17HdWjtCaYXSlYOyzm2mMcE499T2/Ub2/Rl/H7fSNMxaVPxKGWEW9WMCQasADVgAasADVgAasAFxv76ft+ovuejL+X2+sZIRX/ABOGSEf/2Q=="> English</a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-2 font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="#"><img alt="flag" class="h-4" src="data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAA8AAD/4QMpaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjAtYzA2MCA2MS4xMzQ3NzcsIDIwMTAvMDIvMTItMTc6MzI6MDAgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoxMEY3OTk0MDYxM0MxMUU3ODQ3Rjk5RTY5NjQzOEY2MyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoxMEY3OTk0MTYxM0MxMUU3ODQ3Rjk5RTY5NjQzOEY2MyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjEwRjc5OTNFNjEzQzExRTc4NDdGOTlFNjk2NDM4RjYzIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjEwRjc5OTNGNjEzQzExRTc4NDdGOTlFNjk2NDM4RjYzIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/+4ADkFkb2JlAGTAAAAAAf/bAIQABgQEBAUEBgUFBgkGBQYJCwgGBggLDAoKCwoKDBAMDAwMDAwQDA4PEA8ODBMTFBQTExwbGxscHx8fHx8fHx8fHwEHBwcNDA0YEBAYGhURFRofHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f/8AAEQgAKgBAAwERAAIRAQMRAf/EAIAAAAMBAAMAAAAAAAAAAAAAAAAGBwgBAgMBAAIDAQEBAAAAAAAAAAAAAAAHAwUGBAECEAABAwAIBAMJAAAAAAAAAAAAAQIDMbEyM3Q2BwgRUbM0kgREIWFxEkJicwYWEQEAAAMJAQEAAAAAAAAAAAAAATGBwTKCAzMENAUGEQL/2gAMAwEAAhEDEQA/AEB8sj3ue96ue5VVzlVVVVWlVU2PxyOvzO5qAU3b2qr+9zcV9BN1Iyu7PSqky5tIGfTgAjWrKr/VJ7fTR1uKzd3zE8xxcUbCXxXmcrRfHLXva5HNcrXNXiiovBUVAeRhCKcjOI8AFO2957mwE3UjK7tNKqTLm0gZ9OACM6s5rTDR1uKzd3zE8xxcUbCYcrRAAnQziOABTtvee5sBN1Iyu7TSqky5tIGfTgAjOrOa0w0dbis3d8xPMcXFGwmHK0QAJ0M4jgAU7b3nubATdSMru00qpMubSBn04AIzqzmtMNHW4rN3fMTzHFxRsJhytEACdDOI4AFO2957mwE3UjK7tNKqTLm0gZ9OACM6s5rTDR1uKzd3zE8xxcUbCYcrRAAQ/N91Nc23XV3Stj7eQzISI55eA9Cmbfc9S2exmo/JGV3Z6VUmXNo8oE4AI1qxmpKO2jp+Lis3d8w/McXFGwmeE5Whenl7+O7tNvLFP1e7mewfP7uxnSb/2Q=="> French</a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-2 font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="#"><img alt="flag" class="h-4" src="data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAA8AAD/4QMpaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjAtYzA2MCA2MS4xMzQ3NzcsIDIwMTAvMDIvMTItMTc6MzI6MDAgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpENEQyQjUxRTYxM0IxMUU3QThGRDlFNzgyMDM4RjBCQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpENEQyQjUxRjYxM0IxMUU3QThGRDlFNzgyMDM4RjBCQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkQ0RDJCNTFDNjEzQjExRTdBOEZEOUU3ODIwMzhGMEJDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkQ0RDJCNTFENjEzQjExRTdBOEZEOUU3ODIwMzhGMEJDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/+4ADkFkb2JlAGTAAAAAAf/bAIQABgQEBAUEBgUFBgkGBQYJCwgGBggLDAoKCwoKDBAMDAwMDAwQDA4PEA8ODBMTFBQTExwbGxscHx8fHx8fHx8fHwEHBwcNDA0YEBAYGhURFRofHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f/8AAEQgAKgBAAwERAAIRAQMRAf/EAHkAAQEBAAMAAAAAAAAAAAAAAAABBgIFBwEBAAIDAQAAAAAAAAAAAAAAAAEFAgQGBxAAAQIBDQADAQAAAAAAAAAAAAECAzFRkRKi0qPjVAVVFhchQYEyEQEAAAMHBQEAAAAAAAAAAAAA4WKiUaGx0QJSFgEDBBQVMf/aAAwDAQACEQMRAD8A82fFive573uc9yqrnKqqqqvyqqqmwhKzp1JCs6dQFZ06gKzp1AVnTqArOnUCsixWPa9j3Ne1UVrkVUVFT5RUVCB2XWd701uHeNb3O1biuePebsq05nWd701uHeHudq3E495uyrTmdZ3vTW4d4e52rcTj3m7KtOZ1ne9Nbh3h7natxOPebsq05nWd701uHeHudq3E495uyrTmdZ3vTW4d4e52rcTj3m7KtOZ1ne9Nbh3h7natxOPebsq05nWd701uHeHudq3E495uyrTm3RRvTgAAAAAAADd+XpyeBmFJ9iS+Dm+QyVQPL05PAzB9iS+ByGSqB5enJ4GYPsSXwOQyVQPL05PAzB9iS+ByGSqB5enJ4GYPsSXwOQyVQPL05PAzB9iS+ByGSqB5enJ4GYPsSXwOQyVQPL05PAzB9iS+ByGSqDdlI5sAAAAAAAA5O/pZJfqT8M9f71/EdEoMQoAUAKAFACgCt/pJJfuT9MtH70/Dq//Z"> German</a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-2 font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="#"><img alt="flag" class="h-4" src="data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAA8AAD/4QMpaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjAtYzA2MCA2MS4xMzQ3NzcsIDIwMTAvMDIvMTItMTc6MzI6MDAgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyODQ3Mjc2MTYxM0MxMUU3ODJENDgwMDE3MDIxNjRGOCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoyODQ3Mjc2MjYxM0MxMUU3ODJENDgwMDE3MDIxNjRGOCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjI4NDcyNzVGNjEzQzExRTc4MkQ0ODAwMTcwMjE2NEY4IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjI4NDcyNzYwNjEzQzExRTc4MkQ0ODAwMTcwMjE2NEY4Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/+4ADkFkb2JlAGTAAAAAAf/bAIQABgQEBAUEBgUFBgkGBQYJCwgGBggLDAoKCwoKDBAMDAwMDAwQDA4PEA8ODBMTFBQTExwbGxscHx8fHx8fHx8fHwEHBwcNDA0YEBAYGhURFRofHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f/8AAEQgAKgBAAwERAAIRAQMRAf/EAI4AAQACAgMAAAAAAAAAAAAAAAAEBQEDAgYHAQEAAgMBAQAAAAAAAAAAAAAAAgYDBAUBBxAAAQMBBgMFCAMAAAAAAAAAAQIDBAAREpMFVQZR0RYyktIzFTFBIkJiExQ0YXGREQACAQEGBQMDBQAAAAAAAAAAAQIDETGRUhMUIUFREgRxoSJhgTLwscHRBf/aAAwDAQACEQMRAD8ApFOOLUVKUVKUbVKJJJJ95rln0xIxeVxNALyuJoBeVxNALyuJoBeVxNALyuJoDKXHEKCkqKVJNqVAkEEe8UDR7x6BkWnRcFvw1R9zVzSxZXdafV4nFeS7babW7Ihw2GGkqW46tlsJSlItJPw1m8edarNRU2rfqzx1qnJybKyBL2JNnrhNxGmXb9xhciGGkOKtu3bxT8JvggBVnD2105+FUsfbVeN/D1/SJz14xUndzslbYWvoGRadFwW/DXG3NXNLFkdafV4j0DItOi4LfhpuauaWLGtPq8R6BkWnRcFvw03NXNLFjWn1eI9AyLTouC34abmrmlixrT6vEegZFp0XBb8NNzVzSxY1p9XiT6wGM6vuF8QkFMWJLiflvoVmMlX47iS2oFF5KG1POAKCRZeb/wAqwLxYqEJW2vstSfX6Xe7Njxvm+Li+26/+bFgzOxsz2q4p9qQuL+XFlqBelXY6xHKQEFJIZBVeCrRZaKsFD/LhoRlWj+azP+zR8rynOpKFNy+KuSt+XuXMERVyHpbUKQw7IN2Q+6uOptZaN1ASGnHFAhJ+YCqr53jqnRptO3jL0v5cLfW37Gbul+LaaXrbx9V+xOrkgUAoBQCgKSREczGG9CGVpyq8QtUkfaV91YcCiVhtRUSeJrt1/JppU7JqXarOCljxSRHx6s1NuSl92vYhP7FQiOlMaW0VvtluaS0oG0qcsWiwi8brtnxe8A/xWat51Hsj8pSceXLl1uuNil5Vkm3CzD3LmKsmXc9ITF+2lSDmFrRW6kKF0KuEr/q2tTy6sJUIRU4uUeSUrePHmrOF15pwlPudttnqrPtx5k+uSZhQCgFAeFdUbj1OVjL51dtnRyRwLDoU8qHVG49TlYy+dNnRyRwGhTyodUbj1OVjL502dHJHAaFPKh1RuPU5WMvnTZ0ckcBoU8qHVG49TlYy+dNnRyRwGhTyodUbj1OVjL502dHJHAaFPKh1RuPU5WMvnTZ0ckcBoU8qHVG49TlYy+dNnRyRwGhTyohyf2XfK7avK7Ht+T6eFbTJRuV5r7teEh3aAd2gHdoB3aAd2gNkb9lryu2nzex7fn+njXqIyud5/9k="> Spanish</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                <h5 class="text-xs text-primary-50 font-medium tracking-widest text-center"><span class="text-base">👋</span> Big Sale Alert! Get 95% off! Limited time only.</h5>
+    
+                <ul class="flex items-center justify-end gap-4">
+                    <li class="flex menu-item">
+                        <a class="text-xs text-primary-50 font-medium transition-all hover:text-primary" href="faqs.html">Help</a>
+                    </li>
+    
+                    <li class="flex menu-item">
+                        <a class="text-xs text-primary-50 font-medium transition-all hover:text-primary" href="contact-us.html">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <!-- Main Navigation Menu -->
+    <header id="navbar" class="fixed lg:top-10 top-0 inset-x-0 z-20 transition-all [&.nav-sticky]:top-0 [&.nav-sticky]:bg-white dark:[&.nav-sticky]:bg-default-50">
+        <div class="h-20 flex items-center">
+            <div class="container">
+                <div class="grid lg:grid-cols-4 grid-cols-2 items-center gap-4">
+                    <div class="flex">
+                        <!-- Mobile Menu Toggle Button -->
+                        <button class="lg:hidden block " data-hs-overlay="#mobile-menu">
+                            <i data-lucide="menu" class="w-7 h-7 text-default-600 me-4 hover:text-primary"></i>
+                        </button>
+    
+                        <!-- Navbar Brand Logo -->
+                        <a href="home.html">
+                            <img src="assets/logo-dark-befc834f.png" alt="logo" class="h-12 flex dark:hidden">
+                            <img src="assets/logo-light-43c180d2.png" alt="logo" class="h-12 hidden dark:flex">
+                        </a>
+                    </div>
+    
+                    <!-- Nevigation Menu -->
+                    <ul class="menu hidden lg:flex items-center justify-center relative col-span-2">
+                        <!-- Home Menu -->
+                        <li class="menu-item">
+                            <div class="hs-dropdown relative inline-flex [--trigger:hover] [--placement:bottom]">
+                                <a class="hs-dropdown-toggle after:absolute hover:after:-bottom-10 after:inset-0 inline-flex items-center text-sm lg:text-base font-medium text-default-700 py-2 px-4 rounded-full hover:text-primary" href="#">
+                                    Home <i class="w-4 h-4 ms-2" data-lucide="chevron-down"></i>
+                                </a>
+    
+                                <div class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-48 transition-[opacity,margin] mt-4 opacity-0 hidden z-10 bg-white shadow-lg rounded-lg border border-default-100 p-1.5 dark:bg-default-50">
+                                    <ul class="flex flex-col gap-1">
+                                        <li>
+                                            <a class="flex items-center text-sm font-medium text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="home.html">Home One</a>
+                                        </li>
+                                        <li>
+                                            <a class="flex items-center text-sm font-medium text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="home-2.html">Home Two</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+    
+                        <!-- Course Menu -->
+                        <li class="menu-item">
+                            <div class="hs-dropdown relative inline-flex [--trigger:hover] [--placement:bottom]">
+                                <a class="hs-dropdown-toggle after:absolute hover:after:-bottom-10 after:inset-0 inline-flex items-center text-sm lg:text-base font-medium text-default-700 py-2 px-4 rounded-full hover:text-primary" href="#">
+                                    Course <i class="w-4 h-4 ms-2" data-lucide="chevron-down"></i>
+                                </a>
+    
+                                <div class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-48 transition-[opacity,margin] mt-4 opacity-0 hidden z-10 bg-white shadow-lg rounded-lg border border-default-100 p-1.5 dark:bg-default-50">
+                                    <ul class="flex flex-col gap-1">
+                                        <li>
+                                            <a class="flex items-center text-sm font-medium text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="course.html">Course Grid</a>
+                                        </li>
+                                        <li>
+                                            <a class="flex items-center text-sm font-medium text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="course-detail.html">Course Detail</a>
+                                        </li>
+                                        <li>
+                                            <a class="flex items-center text-sm font-medium text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="course-create.html">Course Create</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+    
+                        <!-- Pages Menu -->
+                        <li class="menu-item">
+                            <div class="hs-dropdown relative inline-flex [--trigger:hover] [--placement:bottom]">
+                                <a class="hs-dropdown-toggle after:absolute hover:after:-bottom-10 after:inset-0 inline-flex items-center text-sm lg:text-base font-medium text-default-700 py-2 px-4 rounded-full hover:text-primary" href="#">
+                                    Pages <i class="w-4 h-4 ms-2" data-lucide="chevron-down"></i>
+                                </a>
+    
+                                <div class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-48 transition-[opacity,margin] mt-4 opacity-0 hidden z-10 bg-white shadow-md rounded-lg border border-default-100 p-1.5 dark:bg-default-50">
+                                    <ul class="flex flex-col gap-1">
+                                        <li>
+                                            <a class="flex items-center text-sm font-medium text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="instructor.html">Instructor</a>
+                                        </li>
+                                        <li>
+                                            <a class="flex items-center text-sm font-medium text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="error-404.html">Error 404</a>
+                                        </li>
+                                        <li>
+                                            <a class="flex items-center text-sm font-medium text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="faq.html">FAQs</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+    
+                        <!-- Contact Us Link -->
+                        <li class="menu-item">
+                            <a href="contact-us.html" class="inline-flex items-center text-sm lg:text-base font-medium text-default-700 py-2 px-4 rounded-full hover:text-primary">Contact Us</a>
+                        </li>
+                    </ul>
+    
+                    <ul class="flex items-center justify-end gap-x-6">
+                        <!-- Search Modal Button -->
+                        <li class="flex menu-item">
+                            <button class="relative flex text-base transition-all text-default-600 hover:text-primary" data-hs-overlay="#search-sidebar">
+                                <i class="w-5 h-5" data-lucide="search"></i>
+                            </button>
+                        </li>
+    
+                        <!-- Admin Link -->
+                        <li class="hs-tooltip flex menu-item [--trigger:hover] [--placement:left]">
+                            <a href="admin-dashboard.html" target="_blank" class="hs-tooltip-toggle inline-flex items-center text-sm lg:text-base font-medium text-default-700 py-2 px-4 rounded-full hover:text-primary">
+                                <i class="w-5 h-5" data-lucide="user"></i>
+                            </a>
+                            <div class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible transition-opacity opacity-0 relative px-3 py-1 rounded bg-default-950 text-default-200 font-semibold z-50 duration-500 hidden" role="tooltip" data-popper-placement="top">
+                                Admin
+                                <div class="bg-default-950 w-2.5 h-2.5 rotate-45 absolute top-1/2 -end-1 -translate-y-1/2 -z-10 rounded-[1px]"></div>
+                            </div>
+                        </li>
+    
+                        <span class="w-px h-6 bg-default-300 lg:flex hidden"></span>
+    
+                        <div class="lg:flex hidden">
+                            <button class="inline-flex items-center gap-2 text-sm font-medium py-2.5 px-4 lg:px-6 rounded-full text-white bg-primary-500 hover:bg-primary-600 transition-all duration-200">Enroll Now <i class="ph ph-arrow-arc-right"></i></button>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu (Sidebar Menu) -->
+    <div id="mobile-menu" class="hs-overlay hs-overlay-open:translate-x-0 hidden -translate-x-full fixed top-0 left-0 transition-all transform h-full max-w-[270px] w-full z-[60] bg-white border-r border-default-200 dark:bg-default-50" tabindex="-1">
+        <div class="flex justify-center items-center border-b border-dashed border-default-300 h-16 transition-all duration-300">
+            <a href="home.html">
+                <img src="assets/logo-dark-befc834f.png" alt="logo" class="h-10 flex dark:hidden">
+                <img src="assets/logo-light-43c180d2.png" alt="logo" class="h-10 hidden dark:flex">
+            </a>
+        </div>
+    
+        <div class="custom-scroll h-[calc(100%-4rem)]">
+            <nav class="hs-accordion-group p-4 w-full flex flex-col flex-wrap">
+                <ul class="space-y-2.5">
+                    <li>
+                        <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm font-medium text-default-700 rounded-md hover:bg-default-400/10" href="home.html">
+                            Home
+                        </a>
+                    </li>
+    
+                    <li class="hs-accordion" id="product-categories-accordion">
+                        <a class="hs-accordion-toggle flex items-center gap-x-3.5 py-2 px-2.5 hs-accordion-active:text-primary hs-accordion-active:bg-default-400/10 text-sm font-medium text-default-700 rounded-md hover:bg-default-400/10" href="javascript:;">
+                            Product <i data-lucide="chevron-down" class="w-5 h-5 ms-auto hs-accordion-active:rotate-180 transition-all"></i>
+                        </a>
+    
+                        <div id="product-categories-accordion" class="hs-accordion-content w-full overflow-hidden transition-[height] hidden">
+                            <ul class="pt-2 ps-2">
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm font-medium text-default-700 rounded-md hover:bg-default-400/10" href="course.html">
+                                        Courses
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm font-medium text-default-700 rounded-md hover:bg-default-400/10" href="course-detail.html">
+                                        Course Detail
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm font-medium text-default-700 rounded-md hover:bg-default-400/10" href="course-create.html">
+                                        Course Create
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+    
+                    <li>
+                        <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm font-medium text-default-700 rounded-md hover:bg-default-400/10" href="contact-us.html">
+                            Contact Us
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm font-medium text-default-700 rounded-md hover:bg-default-400/10" href="instructor.html">
+                            Instructor
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm font-medium text-default-700 rounded-md hover:bg-default-400/10" href="faqs.html">
+                            FAQs
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm font-medium text-default-700 rounded-md hover:bg-default-400/10" href="error-404.html">
+                            Error Page
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <!-- Search Modal -->
+    <div id="search-sidebar" class="hs-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto">
+        <div class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto">
+            <div class="flex flex-col bg-white shadow-sm rounded-xl overflow-hidden dark:bg-default-50">
+                <div class="px-4 py-3 border-b border-dashed border-default-200">
+                    <div class="relative flex items-center gap-1 w-full">
+                        <span class="absolute start-4 top-1/2 -translate-y-1/2">
+                            <i class="ph ph-magnifying-glass text-lg text-primary-500 align-middle"></i>
+                        </span>
+                        <input class="shrink ps-10 pe-2.5 py-2.5 block w-full border-default-200 placeholder-default-600 rounded-md text-sm bg-default-100 text-default-900" placeholder="Search for items..." type="search">
+                        <button class="grow h-10 w-10 inline-flex items-center justify-center rounded-md hover:bg-primary-500/20" data-hs-overlay="#search-sidebar">
+                            <i class="w-6 h-6 text-primary-500" data-lucide="x"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h4 class="text-base font-medium text-default-900">Recent</h4>
+                </div>
+    
+                <div class="pb-4 px-4 mb-4 max-h-[260px] overflow-y-auto
+                    [&::-webkit-scrollbar]:w-1
+                    [&::-webkit-scrollbar-track]:rounded-full
+                    [&::-webkit-scrollbar-track]:bg-transparent
+                    [&::-webkit-scrollbar-thumb]:rounded-full
+                    [&::-webkit-scrollbar-thumb]:bg-default-300">
+                    <div class="flex flex-col gap-2">
+                        <div id="close" class="flex items-center gap-2 bg-default-100 rounded-md px-4 py-3">
+                            <i class="ph ph-clock-counter-clockwise shrink text-lg text-default-700"></i>
+                            <span class="grow inline-block text-base font-medium text-default-700 transition-all hover:text-default-900">Courses</span>
+                            <div class="flex items-center gap-2">
+                                <a href="#">
+                                    <i class="ph ph-arrow-up-right text-lg align-middle text-default-700 transition-all hover:text-default-950"></i>
+                                </a>
+                                <span class="shrink" data-hs-remove-element="#close">
+                                    <i class="ph-bold ph-x text-lg align-middle text-default-700 hover:text-red-500"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div id="close-two" class="flex items-center gap-2 bg-default-100 rounded-md px-4 py-3">
+                            <i class="ph ph-clock-counter-clockwise shrink text-lg text-default-700"></i>
+                            <span class="grow inline-block text-base font-medium text-default-700 transition-all hover:text-default-900">Course Detail</span>
+                            <div class="flex items-center gap-2">
+                                <a href="#">
+                                    <i class="ph ph-arrow-up-right text-lg align-middle text-default-700 transition-all hover:text-default-950"></i>
+                                </a>
+                                <span class="shrink" data-hs-remove-element="#close-two">
+                                    <i class="ph-bold ph-x text-lg align-middle text-default-700 hover:text-red-500"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div id="close-three" class="flex items-center gap-2 bg-default-100 rounded-md px-4 py-3">
+                            <i class="ph ph-clock-counter-clockwise shrink text-lg text-default-700"></i>
+                            <span class="grow inline-block text-base font-medium text-default-700 transition-all hover:text-default-900">Top Categorys</span>
+                            <div class="flex items-center gap-2">
+                                <a href="#">
+                                    <i class="ph ph-arrow-up-right text-lg align-middle text-default-700 transition-all hover:text-default-950"></i>
+                                </a>
+                                <span class="shrink" data-hs-remove-element="#close-three">
+                                    <i class="ph-bold ph-x text-lg align-middle text-default-700 hover:text-red-500"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div id="close-four" class="flex items-center gap-2 bg-default-100 rounded-md px-4 py-3">
+                            <i class="ph ph-clock-counter-clockwise shrink text-lg text-default-700"></i>
+                            <span class="grow inline-block text-base font-medium text-default-700 transition-all hover:text-default-900">Best Instructors</span>
+                            <div class="flex items-center gap-2">
+                                <a href="#">
+                                    <i class="ph ph-arrow-up-right text-lg align-middle text-default-700 transition-all hover:text-default-950"></i>
+                                </a>
+                                <span class="shrink" data-hs-remove-element="#close-four">
+                                    <i class="ph-bold ph-x text-lg align-middle text-default-700 hover:text-red-500"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div id="close-five" class="flex items-center gap-2 bg-default-100 rounded-md px-4 py-3">
+                            <i class="ph ph-clock-counter-clockwise shrink text-lg text-default-700"></i>
+                            <span class="grow inline-block text-base font-medium text-default-700 transition-all hover:text-default-900">Contact</span>
+                            <div class="flex items-center gap-2">
+                                <a href="#">
+                                    <i class="ph ph-arrow-up-right text-lg align-middle text-default-700 transition-all hover:text-default-950"></i>
+                                </a>
+                                <span class="shrink" data-hs-remove-element="#close-five">
+                                    <i class="ph-bold ph-x text-lg align-middle text-default-700 hover:text-red-500"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="flex items-center bg-default-400/10 h-14 mt-20">
+        <div class="container">
+            <div class="flex items-center">
+                <ol aria-label="Breadcrumb" class="flex items-center whitespace-nowrap min-w-0 gap-2">
+                    <li class="text-sm">
+                        <a class="flex items-center gap-2 align-middle text-default-800 transition-all leading-none hover:text-primary-500" href="#">
+                            <i class="ph-duotone ph-house text-lg"></i>
+                            Home
+                            <i class="ph-bold ph-caret-right text-base"></i>
+                        </a>
+                    </li>
+                    <li class="text-sm">
+    
+                        <a class="flex items-center gap-2 align-middle text-default-800 transition-all leading-none hover:text-primary-500" href="#">
+                            Course
+                            <i class="ph-bold ph-caret-right text-base"></i>
+                        </a>
+                    </li>
+    
+                    <li aria-current="page" class="text-sm font-medium text-primary truncate leading-none hover:text-primary-500">
+                        Course Details
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <section class="lg:py-16 py-6 relative">
+        <div class="container">
+            <div class="grid lg:grid-cols-10 gap-6">
+                <div class="lg:col-span-6">
+                    <span
+                        class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-primary/20 text-primary uppercase mb-4">Development</span>
+                    <h1 class="text-4xl/snug text-default-900 font-bold max-w-xl mb-4">Complete Website Responsive
+                        Design: from Figma to Webflow to Website Design</h1>
+                    <p class="text-lg text-default-600 max-w-3xl mb-6">5 in 1 Course: Learn to design websites with
+                        Figma, build with Webflow, and make a living freelancing.</p>
+
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="inline-flex gap-1">
+                            <i class="ph-fill ph-star text-xl text-yellow-500"></i>
+                            <i class="ph-fill ph-star text-xl text-yellow-500"></i>
+                            <i class="ph-fill ph-star text-xl text-yellow-500"></i>
+                            <i class="ph-fill ph-star text-xl text-yellow-500"></i>
+                            <i class="ph-fill ph-star text-xl text-yellow-500"></i>
+                        </div>
+                        <p class="text-base text-default-900">4.8 <small class="text-default-500">(451,444
+                                Rating)</small></p>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <div class="flex -space-x-2">
+                            <img class="inline-block h-10 w-10 rounded-full ring-2 ring-default-50"
+                                src="assets/avatar-2-cb0540ba.png" alt="Image Description">
+                            <img class="inline-block h-10 w-10 rounded-full ring-2 ring-default-50"
+                                src="assets/avatar-3-7b02f585.png" alt="Image Description">
+                        </div>
+                        <div class="">
+                            <span><small>Created by:</small></span>
+                            <span class="flex items-center gap-2 text-sm text-default-900">
+                                <span>Alfredo Dias</span>
+                                <span class="h-1 w-1 rounded-full bg-default-900"></span>
+                                <span>Zaire Westervelt</span>
+                            </span>
+                        </div>
+                    </div>
+                </div><!-- end grid-cols -->
+                <div class="lg:col-span-4">
+                    <img src="assets/course-details-9a4e71b1.png" alt="" class="w-full h-full rounded-lg">
+                </div><!-- end grid-cols -->
+            </div><!-- end grid -->
+        </div><!-- end container -->
+    </section>
+
+    <section class="lg:py-16 py-6 relative">
+        <div class="container">
+            <div class="grid lg:grid-cols-12 gap-6">
+                <div class="lg:col-span-8">
+                    <nav class="flex flex-wrap gap-y-1" aria-label="Tabs" role="tablist">
+                        <button type="button" class="hs-tab-active:font-semibold hs-tab-active:border-primary hs-tab-active:text-primary-500 py-3 px-6 w-auto md:w-1/2 lg:w-1/4 flex items-center justify-center gap-3 border-b-2 border-transparent text-sm whitespace-nowrap text-default-500 hover:text-primary" id="overview" data-hs-tab="#overview-item" aria-controls="overview-item" role="tab"> Overview</button>
+                        <button type="button" class="hs-tab-active:font-semibold hs-tab-active:border-primary hs-tab-active:text-primary-500 py-3 px-6 w-auto md:w-1/2 lg:w-1/4 flex items-center justify-center gap-3 border-b-2 border-transparent text-sm whitespace-nowrap text-default-500 hover:text-primary active" id="curriculum" data-hs-tab="#curriculum-item" aria-controls="curriculum-item" role="tab"> Curriculum</button>
+                        <button type="button" class="hs-tab-active:font-semibold hs-tab-active:border-primary hs-tab-active:text-primary-500 py-3 px-6 w-auto md:w-1/2 lg:w-1/4 flex items-center justify-center gap-3 border-b-2 border-transparent text-sm whitespace-nowrap text-default-500 hover:text-primary" id="instructor" data-hs-tab="#instructor-item" aria-controls="instructor-item" role="tab"> Instructor</button>
+                        <button type="button" class="hs-tab-active:font-semibold hs-tab-active:border-primary hs-tab-active:text-primary-500 py-3 px-6 w-auto md:w-1/2 lg:w-1/4 flex items-center justify-center gap-3 border-b-2 border-transparent text-sm whitespace-nowrap text-default-500 hover:text-primary" id="review" data-hs-tab="#review-item" aria-controls="review-item" role="tab"> Review</button>
+                    </nav><!-- end nav-tabs -->
+
+                    <div class="mt-6">
+                        <div id="overview-item" role="tabpanel" class="hidden" aria-labelledby="overview">
+                            <div class="">
+                                <h3 class="text-2xl font-semibold text-default-900 mb-4">Description</h3>
+
+                                <p class="text-base text-default-600 mb-6">It gives you a huge self-satisfaction when you look at your work and say, "I made this!". I love that feeling after I'm done working on something. When I lean back in my chair, look at the final result with a smile, and have this little "spark joy" moment. It's especially satisfying when I know I just made $5,000.</p>
+                                <p class="text-base text-default-600 mb-6">That's why I got into this field. Not for the love of Web Design, which I do now. But for the LIFESTYLE! There are many ways one can achieve this lifestyle. This is my way. This is how I achieved a lifestyle I've been fantasizing about for five years. And I'm going to teach you the same. Often people think Web Design is complicated. That it needs some creative talent or knack for computers. Sure, a lot of people make it very complicated. People make the simplest things complicated. Like most subjects taught in the universities. But I don't like complicated. I like easy. I like life hacks. I like to take the shortest and simplest route to my destination. I haven't gone to an art school or have a computer science degree. I'm an outsider to this field who hacked himself into it, somehow ending up being a sought-after professional. That's how I'm going to teach you Web Design. So you're not demotivated on your way with needless complexity. So you enjoy the process because it's simple and fun. So you can become a Freelance Web Designer in no time.</p>
+                                <p class="text-base text-default-600 mb-6">For example, this is a Design course but I don't teach you Photoshop. Because Photoshop is needlessly complicated for Web Design. But people still teach it to web designers. I don't. I teach Figma – a simple tool that is taking over the design world. You will be designing a complete website within a week while others are still learning how to create basic layouts in Photoshop.</p>
+                                <p class="text-base text-default-600 mb-6">Second, this is a Development course. But I don't teach you how to code. Because for Web Design coding is needlessly complicated and takes too long to learn. Instead, I teach Webflow – a tool that is taking over the web design world. You will be building complex websites within two weeks while others are still learning the basics of HTML & CSS. Third, this is a Freelancing course. But I don't just teach you how to write great proposals. I give you a winning proposal template. When you're done with the course, you will have a stunning portfolio website with portfolio pieces already in it. Buy this course now and take it whenever the time is right for you.</p>
+
+                                <div class="bg-primary/10 p-6 rounded-lg mb-6">
+                                    <h2 class="text-xl font-medium text-default-900 mb-6">What you will learn in this course</h2>
+
+                                    <div class="grid lg:grid-cols-2 gap-6">
+                                        <div class="space-y-2">
+                                            <div class="flex gap-4">
+                                                <div class="">
+                                                    <span class="flex items-center justify-center w-5 h-5 bg-primary text-white rounded-full"><i class="ph-bold ph-check text-sm"></i></span>
+                                                </div>
+                                                <p class="text-default-800 mb-4">You will learn how to design beautiful websites using Figma, an interface design tool used by designers at Uber, Airbnb and Microsoft.</p>
+                                            </div>
+
+                                            <div class="flex gap-4">
+                                                <div class="">
+                                                    <span class="flex items-center justify-center w-5 h-5 bg-primary text-white rounded-full"><i class="ph-bold ph-check text-sm"></i></span>
+                                                </div>
+                                                <p class="text-default-800 mb-4">You will learn secret tips of Freelance Web Designers and how they make great money freelancing online.</p>
+                                            </div>
+
+                                            <div class="flex gap-4">
+                                                <div class="">
+                                                    <span class="flex items-center justify-center w-5 h-5 bg-primary text-white rounded-full"><i class="ph-bold ph-check text-sm"></i></span>
+                                                </div>
+                                                <p class="text-default-800 mb-4">Understand how to use both the Jupiter Notebook and create .py files</p>
+                                            </div>
+                                        </div><!-- space-y-2 End -->
+
+                                        <div class="space-y-2">
+                                            <div class="flex gap-4">
+                                                <div class="">
+                                                    <span class="flex items-center justify-center w-5 h-5 bg-primary text-white rounded-full"><i class="ph-bold ph-check text-sm"></i></span>
+                                                </div>
+                                                <p class="text-default-800 mb-4">You will learn how to take your designs and build them into powerful websites using Webflow, a state of the art site builder used by teams at Dell, NASA and more.</p>
+                                            </div>
+
+                                            <div class="flex gap-4">
+                                                <div class="">
+                                                    <span class="flex items-center justify-center w-5 h-5 bg-primary text-white rounded-full"><i class="ph-bold ph-check text-sm"></i></span>
+                                                </div>
+                                                <p class="text-default-800 mb-4">Learn to use Python professionally, learning both Python 2 and Python 3!</p>
+                                            </div>
+
+                                            <div class="flex gap-4">
+                                                <div class="">
+                                                    <span class="flex items-center justify-center w-5 h-5 bg-primary text-white rounded-full"><i class="ph-bold ph-check text-sm"></i></span>
+                                                </div>
+                                                <p class="text-default-800 mb-4">Get an understanding of how to create GUIs in the Jupyter Notebook system!</p>
+                                            </div>
+                                        </div><!-- space-y-2 End -->
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h2 class="text-2xl font-semibold text-default-900 mb-6">Course requirements</h2>
+
+                                    <ul class="list-disc ps-6 space-y-2">
+                                        <li class="text-base text-default-600">Nunc auctor consequat lorem, in posuere enim hendrerit sed.</li>
+                                        <li class="text-base text-default-600">Sed sagittis suscipit condimentum pellentesque vulputate feugiat libero nec accumsan.</li>
+                                        <li class="text-base text-default-600">Duis ornare enim ullamcorper congue consectetur suspendisse interdum tristique est sed molestie.</li>
+                                        <li class="text-base text-default-600">Those who are looking to reboot their work life and try a new profession that is fun, rewarding and highly in-demand.</li>
+                                        <li class="text-base text-default-600">Praesent eget consequat elit. Duis a pretium purus.</li>
+                                        <li class="text-base text-default-600">Sed nec dapibus orci integer nisl turpis, eleifend sit amet aliquam vel, lacinia quis ex.</li>
+                                        <li class="text-base text-default-600">This course is for those who want to launch a Freelance Web Design career.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div><!-- end overview (tab-item) -->
+
+                        <div id="curriculum-item" role="tabpanel" aria-labelledby="curriculum">
+                            <div class="">
+                                <div class="flex flex-wrap items-center gap-6 justify-between mb-4">
+                                    <h3 class="text-2xl font-semibold text-default-900">Curriculum</h3>
+
+                                    <div class="flex items-center flex-wrap gap-4">
+                                        <span class="inline-flex items-center gap-2">
+                                            <i class="ph ph-play-circle text-xl text-yellow-500"></i>
+                                            <span class="text-sm text-default-600">24 lectures</span>
+                                        </span>
+                                        <span class="inline-flex items-center gap-2">
+                                            <i class="ph ph-clock text-xl text-primary"></i>
+                                            <span class="text-sm text-default-600">5h 49m</span>
+                                        </span>
+                                        <span class="inline-flex items-center gap-2">
+                                            <i class="ph ph-folder text-xl text-primary"></i>
+                                            <span class="text-sm text-default-600">4 Sections</span>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="hs-accordion-group divide-y divide-default-200">
+                                    <div class="hs-accordion active" id="getting-started">
+                                        <button class="hs-accordion-toggle hs-accordion-active:text-primary flex items-center flex-wrap gap-x-3 w-full text-default-800 transition py-4 hover:text-primary" aria-controls="getting-started">
+                                            <i class="ph-bold ph-caret-down hs-accordion-active:rotate-180 transition-all duration-500 me-2"></i>
+                                            <span class="font-semibold">Getting Started</span>
+                                            <div class="hidden md:inline-flex items-center gap-4 sm:ms-auto">
+                                                <span class="inline-flex items-center gap-2">
+                                                    <i class="ph ph-play-circle text-xl text-yellow-500"></i>
+                                                    <span class="text-sm text-default-600">24 lectures</span>
+                                                </span>
+                                                <span class="inline-flex items-center gap-2">
+                                                    <i class="ph ph-clock text-xl text-primary"></i>
+                                                    <span class="text-sm text-default-600">5h 49m</span>
+                                                </span>
+                                            </div>
+                                        </button>
+                                        <div id="getting-started" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300" aria-labelledby="getting-started">
+                                            <div class="flex flex-col gap-4 pb-4">
+                                                <div class="flex items-center w-full gap-4">
+                                                    <i class="ph-fill ph-play text-default-800"></i>
+                                                    <p class="text-default-800">What’s is Webflow?</p>
+                                                    <p class="text-default-600 ms-auto">04:31</p>
+                                                </div>
+                                                <div class="flex items-center w-full gap-4">
+                                                    <i class="ph-fill ph-play text-default-800"></i>
+                                                    <p class="text-default-800">Sign up in Webflow</p>
+                                                    <p class="text-default-600 ms-auto">012:31</p>
+                                                </div>
+                                                <div class="flex items-center w-full gap-4">
+                                                    <i class="ph ph-file text-default-800"></i>
+                                                    <p class="text-default-800">Webflow Terms & Conditions</p>
+                                                    <p class="text-default-600 ms-auto">6.7 MB</p>
+                                                </div>
+                                                <div class="flex items-center w-full gap-4">
+                                                    <i class="ph-fill ph-play text-default-800"></i>
+                                                    <p class="text-default-800">Teaser of Webflow</p>
+                                                    <p class="text-default-600 ms-auto">04:56</p>
+                                                </div>
+                                                <div class="flex items-center w-full gap-4">
+                                                    <i class="ph ph-file text-default-800"></i>
+                                                    <p class="text-default-800">Practice Project</p>
+                                                    <p class="text-default-600 ms-auto">7.4 MB</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end accordion item -->
+
+                                    <div class="hs-accordion" id="hs-bordered-heading-two">
+                                        <button class="hs-accordion-toggle hs-accordion-active:text-primary flex items-center flex-wrap gap-y-3 w-full text-default-800 transition py-4 hover:text-primary" aria-controls="hs-basic-bordered-collapse-two">
+                                            <i class="ph-bold ph-caret-down hs-accordion-active:rotate-180 transition-all duration-500 me-2"></i>
+                                            <span class="font-semibold">Secret of Good Design</span>
+                                            <div class="hidden md:inline-flex items-center gap-4 ms-auto">
+                                                <span class="inline-flex items-center gap-2">
+                                                    <i class="ph ph-play-circle text-xl text-yellow-500"></i>
+                                                    <span class="text-sm text-default-600">42 lectures</span>
+                                                </span>
+                                                <span class="inline-flex items-center gap-2">
+                                                    <i class="ph ph-clock text-xl text-primary"></i>
+                                                    <span class="text-sm text-default-600">4h 52m</span>
+                                                </span>
+                                            </div>
+                                        </button>
+                                        <div id="hs-basic-bordered-collapse-two" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-bordered-heading-two">
+                                            <div class="flex flex-col gap-4 pb-4">
+                                                <div class="flex items-center w-full gap-4">
+                                                    <i class="ph-fill ph-play text-default-800"></i>
+                                                    <p class="text-default-800">Dribble</p>
+                                                    <p class="text-default-600 ms-auto">4:00:52</p>
+                                                </div>
+                                                <div class="flex items-center w-full gap-4">
+                                                    <i class="ph ph-file text-default-800"></i>
+                                                    <p class="text-default-800">Dribble Terms & Conditions</p>
+                                                    <p class="text-default-600 ms-auto">6.7 MB</p>
+                                                </div>
+                                                <div class="flex items-center w-full gap-4">
+                                                    <i class="ph ph-file text-default-800"></i>
+                                                    <p class="text-default-800">Practice Project</p>
+                                                    <p class="text-default-600 ms-auto">7.4 MB</p>
+                                                </div>
+                                                <div class="flex items-center w-full gap-4">
+                                                    <i class="ph-fill ph-play text-default-800"></i>
+                                                    <p class="text-default-800">What’s is Dribble?</p>
+                                                    <p class="text-default-600 ms-auto">04:31</p>
+                                                </div>
+                                                <div class="flex items-center w-full gap-4">
+                                                    <i class="ph-fill ph-play text-default-800"></i>
+                                                    <p class="text-default-800">Teaser of Dribble</p>
+                                                    <p class="text-default-600 ms-auto">04:56</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end accordion item -->
+
+                                    <div class="hs-accordion" id="practice-design-artist">
+                                        <button class="hs-accordion-toggle hs-accordion-active:text-primary flex items-center flex-wrap gap-y-3 w-full text-default-800 transition py-4 hover:text-primary" aria-controls="practice-design-artist-item">
+                                            <i class="ph-bold ph-caret-down hs-accordion-active:rotate-180 transition-all duration-500 me-2"></i>
+                                            <span class="font-semibold">Practice Design Like an Artist</span>
+                                            <div class="hidden md:inline-flex items-center gap-4 ms-auto">
+                                                <span class="inline-flex items-center gap-2">
+                                                    <i class="ph ph-play-circle text-xl text-yellow-500"></i>
+                                                    <span class="text-sm text-default-600">53 lectures</span>
+                                                </span>
+                                                <span class="inline-flex items-center gap-2">
+                                                    <i class="ph ph-clock text-xl text-primary"></i>
+                                                    <span class="text-sm text-default-600">53m</span>
+                                                </span>
+                                            </div>
+                                        </button>
+                                        <div id="practice-design-artist-item" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="practice-design-artist">
+                                            <div class="flex flex-col gap-4 pb-4">
+                                                <div class="flex items-center w-full gap-4">
+                                                    <i class="ph-fill ph-play text-default-800"></i>
+                                                    <p class="text-default-800">Behance</p>
+                                                    <p class="text-default-600 ms-auto">40:52</p>
+                                                </div>
+                                                <div class="flex items-center w-full gap-4">
+                                                    <i class="ph-fill ph-play text-default-800"></i>
+                                                    <p class="text-default-800">What’s is Behance?</p>
+                                                    <p class="text-default-600 ms-auto">8:08</p>
+                                                </div>
+                                                <div class="flex items-center w-full gap-4">
+                                                    <i class="ph-fill ph-play text-default-800"></i>
+                                                    <p class="text-default-800">Teaser of Behance</p>
+                                                    <p class="text-default-600 ms-auto">02:00</p>
+                                                </div>
+                                                <div class="flex items-center w-full gap-4">
+                                                    <i class="ph ph-file text-default-800"></i>
+                                                    <p class="text-default-800">Practice Project</p>
+                                                    <p class="text-default-600 ms-auto">8.9 MB</p>
+                                                </div>
+                                                <div class="flex items-center w-full gap-4">
+                                                    <i class="ph ph-file text-default-800"></i>
+                                                    <p class="text-default-800">Behance Terms & Conditions</p>
+                                                    <p class="text-default-600 ms-auto">2.7 MB</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end accordion item -->
+
+                                    <div class="hs-accordion" id="web-development">
+                                        <button class="hs-accordion-toggle hs-accordion-active:text-primary flex items-center flex-wrap gap-y-3 w-full text-default-800 transition py-4 hover:text-primary" aria-controls="web-development-item">
+                                            <i class="ph-bold ph-caret-down hs-accordion-active:rotate-180 transition-all duration-500 me-2"></i>
+                                            <span class="font-semibold">Web Development (webflow)</span>
+                                            <div class="hidden md:inline-flex items-center gap-4 ms-auto">
+                                                <span class="inline-flex items-center gap-2">
+                                                    <i class="ph ph-play-circle text-xl text-yellow-500"></i>
+                                                    <span class="text-sm text-default-600">24 lectures</span>
+                                                </span>
+                                                <span class="inline-flex items-center gap-2">
+                                                    <i class="ph ph-clock text-xl text-primary"></i>
+                                                    <span class="text-sm text-default-600">5h 5m</span>
+                                                </span>
+                                            </div>
+                                        </button>
+                                        <div id="web-development-item" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="web-development">
+                                            <div class="flex flex-col gap-4 pb-4">
+                                                <div class="flex items-center w-full gap-4">
+                                                    <i class="ph-fill ph-play text-default-800"></i>
+                                                    <p class="text-default-800">Java Script</p>
+                                                    <p class="text-default-600 ms-auto">50:00</p>
+                                                </div>
+                                                <div class="flex items-center w-full gap-4">
+                                                    <i class="ph-fill ph-play text-default-800"></i>
+                                                    <p class="text-default-800">Type Script</p>
+                                                    <p class="text-default-600 ms-auto">4:00:00</p>
+                                                </div>
+                                                <div class="flex items-center w-full gap-4">
+                                                    <i class="ph ph-file text-default-800"></i>
+                                                    <p class="text-default-800">Practice Project</p>
+                                                    <p class="text-default-600 ms-auto">8.9 MB</p>
+                                                </div>
+                                                <div class="flex items-center w-full gap-4">
+                                                    <i class="ph ph-file text-default-800"></i>
+                                                    <p class="text-default-800">Practice Project Zip</p>
+                                                    <p class="text-default-600 ms-auto">6.9 MB</p>
+                                                </div>
+                                                <div class="flex items-center w-full gap-4">
+                                                    <i class="ph ph-file text-default-800"></i>
+                                                    <p class="text-default-800">package</p>
+                                                    <p class="text-default-600 ms-auto">2.7 MB</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end accordion item -->
+
+                                    <div class="hs-accordion" id="money-freelancing">
+                                        <button class="hs-accordion-toggle hs-accordion-active:text-primary flex items-center flex-wrap gap-y-3 w-full text-default-800 transition py-4 hover:text-primary" aria-controls="money-freelancing-item">
+                                            <i class="ph-bold ph-caret-down hs-accordion-active:rotate-180 transition-all duration-500 me-2"></i>
+                                            <span class="font-semibold">Secrets of Making Money Freelancing</span>
+                                            <div class="hidden md:inline-flex items-center gap-4 ms-auto">
+                                                <span class="inline-flex items-center gap-2">
+                                                    <i class="ph ph-play-circle text-xl text-yellow-500"></i>
+                                                    <span class="text-sm text-default-600">15 lectures</span>
+                                                </span>
+                                                <span class="inline-flex items-center gap-2">
+                                                    <i class="ph ph-clock text-xl text-primary"></i>
+                                                    <span class="text-sm text-default-600">2h</span>
+                                                </span>
+                                            </div>
+                                        </button>
+                                        <div id="money-freelancing-item" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="money-freelancing">
+                                            <div class="flex flex-col gap-4 pb-4">
+                                                <div class="flex items-center w-full gap-4">
+                                                    <i class="ph-fill ph-play text-default-800"></i>
+                                                    <p class="text-default-800">Upwork</p>
+                                                    <p class="text-default-600 ms-auto">1:30:00</p>
+                                                </div>
+                                                <div class="flex items-center w-full gap-4">
+                                                    <i class="ph-fill ph-play text-default-800"></i>
+                                                    <p class="text-default-800">Fiver</p>
+                                                    <p class="text-default-600 ms-auto">30:00</p>
+                                                </div>
+                                                <div class="flex items-center w-full gap-4">
+                                                    <i class="ph ph-file text-default-800"></i>
+                                                    <p class="text-default-800">Practice Project</p>
+                                                    <p class="text-default-600 ms-auto">6.9 MB</p>
+                                                </div>
+                                                <div class="flex items-center w-full gap-4">
+                                                    <i class="ph ph-file text-default-800"></i>
+                                                    <p class="text-default-800">Practice Project Zip</p>
+                                                    <p class="text-default-600 ms-auto">10.9 MB</p>
+                                                </div>
+                                                <div class="flex items-center w-full gap-4">
+                                                    <i class="ph ph-file text-default-800"></i>
+                                                    <p class="text-default-800">package</p>
+                                                    <p class="text-default-600 ms-auto">2.7 MB</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end accordion item -->
+
+                                    <div class="hs-accordion" id="advanced">
+                                        <button class="hs-accordion-toggle hs-accordion-active:text-primary flex items-center flex-wrap gap-y-3 w-full text-default-800 transition py-4 hover:text-primary" aria-controls="advanced-item">
+                                            <i class="ph-bold ph-caret-down hs-accordion-active:rotate-180 transition-all duration-500 me-2"></i>
+                                            <span class="font-semibold">Advanced</span>
+                                            <div class="hidden md:inline-flex items-center gap-4 ms-auto">
+                                                <span class="inline-flex items-center gap-2">
+                                                    <i class="ph ph-play-circle text-xl text-yellow-500"></i>
+                                                    <span class="text-sm text-default-600">12 lectures</span>
+                                                </span>
+                                                <span class="inline-flex items-center gap-2">
+                                                    <i class="ph ph-clock text-xl text-primary"></i>
+                                                    <span class="text-sm text-default-600">1h 30m</span>
+                                                </span>
+                                            </div>
+                                        </button>
+                                        <div id="advanced-item" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="advanced">
+                                            <div class="flex flex-col gap-4 pb-4">
+                                                <div class="flex items-center w-full gap-4">
+                                                    <i class="ph-fill ph-play text-default-800"></i>
+                                                    <p class="text-default-800">Database</p>
+                                                    <p class="text-default-600 ms-auto">20:00</p>
+                                                </div>
+                                                <div class="flex items-center w-full gap-4">
+                                                    <i class="ph-fill ph-play text-default-800"></i>
+                                                    <p class="text-default-800">Firebase</p>
+                                                    <p class="text-default-600 ms-auto">40:00</p>
+                                                </div>
+                                                <div class="flex items-center w-full gap-4">
+                                                    <i class="ph ph-file text-default-800"></i>
+                                                    <p class="text-default-800">My Sql</p>
+                                                    <p class="text-default-600 ms-auto">1.2 KB</p>
+                                                </div>
+                                                <div class="flex items-center w-full gap-4">
+                                                    <i class="ph ph-file text-default-800"></i>
+                                                    <p class="text-default-800">.env</p>
+                                                    <p class="text-default-600 ms-auto">2 KB</p>
+                                                </div>
+                                                <div class="flex items-center w-full gap-4">
+                                                    <i class="ph ph-file text-default-800"></i>
+                                                    <p class="text-default-800">package</p>
+                                                    <p class="text-default-600 ms-auto">100 Kb</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end accordion item -->
+                                </div><!-- end accordion-group -->
+                            </div><!-- end curriculum (tab-item) -->
+                        </div><!-- end overview (tab-item) -->
+
+                        <div id="instructor-item" role="tabpanel" class="hidden" aria-labelledby="instructor">
+                            <div class="">
+                                <h3 class="text-2xl font-semibold text-default-900 mb-6">Course instructor</h3>
+                                
+                                <div class="mb-10">
+                                    <div class="flex gap-6 flex-wrap mb-4">
+                                        <img src="assets/avatar-5-0368e7b5.png" class="rounded-full h-16 w-16" alt="">
+                                        <span class="block">
+                                            <a href="#" class="inline-block text-lg font-semibold text-default-900 mb-1">Ann Rhiel Madsen</a>
+                                            <span class="flex items-center gap-2 text-xs mb-2">
+                                                <span>UI/UX Designer</span>
+                                                <span>•</span>
+                                                <span>Founder of Affinity Infotech</span>
+                                            </span>
+                                            <div class="flex items-center flex-wrap gap-4">
+                                                <span class="inline-flex items-center gap-2">
+                                                    <i class="ph ph-users text-xl text-primary"></i>
+                                                    <span class="text-sm text-default-900">6,456 <span class="text-default-500">Students</span></span>
+                                                </span>
+                                                <span class="inline-flex items-center gap-2">
+                                                    <i class="ph-fill ph-star text-xl text-yellow-500"></i>
+                                                    <span class="text-sm text-default-900">5.0 <span class="text-default-500">Course rating</span></span>
+                                                </span>
+                                                <span class="inline-flex items-center gap-2">
+                                                    <i class="ph-fill ph-play-circle text-xl text-primary"></i>
+                                                    <span class="text-sm text-default-900">02 <span class="text-default-500">Courses</span></span>
+                                                </span>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <p class="text-sm text-default-600">I'm an entrepreneur & designer with a high passion for building products of all sorts and seeing ideas come to life. As a serial entrepreneur, I've designed and built projects in fields ranging from fashion to technology. I have over 10 years of exp... <a href="#" class="relative group text-primary"><span class="absolute h-px w-7/12 group-hover:w-full transition-all duration-500 rounded bg-primary/80 -bottom-0"></span>Read More</a></p>
+                                </div>
+
+                                <div class="">
+                                    <div class="flex gap-6 flex-wrap mb-4">
+                                        <img src="assets/avatar-5-0368e7b5.png" class="rounded-full h-16 w-16" alt="">
+                                        <span class="block">
+                                            <a href="#" class="inline-block text-lg font-semibold text-default-900 mb-1">Ann Rhiel Madsen</a>
+                                            <span class="flex items-center gap-2 text-xs mb-2">
+                                                <span>UI/UX Designer</span>
+                                                <span>•</span>
+                                                <span>Founder of Affinity Infotech</span>
+                                            </span>
+                                            <div class="flex items-center flex-wrap gap-4">
+                                                <span class="inline-flex items-center gap-2">
+                                                    <i class="ph ph-users text-xl text-primary"></i>
+                                                    <span class="text-sm text-default-900">6,456 <span class="text-default-500">Students</span></span>
+                                                </span>
+                                                <span class="inline-flex items-center gap-2">
+                                                    <i class="ph-fill ph-star text-xl text-yellow-500"></i>
+                                                    <span class="text-sm text-default-900">5.0 <span class="text-default-500">Course rating</span></span>
+                                                </span>
+                                                <span class="inline-flex items-center gap-2">
+                                                    <i class="ph-fill ph-play-circle text-xl text-primary"></i>
+                                                    <span class="text-sm text-default-900">02 <span class="text-default-500">Courses</span></span>
+                                                </span>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <p class="text-sm text-default-600">I'm an entrepreneur & designer with a high passion for building products of all sorts and seeing ideas come to life. As a serial entrepreneur, I've designed and built projects in fields ranging from fashion to technology. I have over 10 years of exp... <a href="#" class="relative group text-primary"><span class="absolute h-px w-7/12 group-hover:w-full transition-all duration-500 rounded bg-primary/80 -bottom-0"></span>Read More</a></p>
+                                </div>
+                            </div>
+                        </div><!-- end curriculum (tab-item) -->
+
+                        <div id="review-item" role="tabpanel" class="hidden" aria-labelledby="review">
+                            <div class="">
+                                <h3 class="text-2xl font-semibold text-default-900 mb-6">Course Rating</h3>
+
+                                <div class="grid lg:grid-cols-4 items-center gap-5 mb-6 border-b border-default-200">
+                                    <div class="py-8 flex flex-col items-center justify-center">
+                                        <h1 class="text-6xl font-semibold text-default-800 mb-4">4.7</h1>
+                    
+                                        <div class="flex gap-1.5 mb-2">
+                                            <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                            <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                            <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                            <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                            <span><i class="ph-fill ph-star text-lg text-default-200"></i></span>
+                                        </div><!-- end flex -->
+                    
+                                        <h4 class="text-base font-medium text-default-700">Customer Rating <span class="font-normal text-default-500">(23,476)</span></h4>
+                                    </div><!-- end card -->
+                    
+                                    <div class="lg:col-span-3">
+                                        <div class="grid md:grid-cols-12 items-center gap-2 mb-3">
+                                            <div class="md:col-span-3 flex gap-1.5">
+                                                <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                            </div><!-- end grid-cols -->
+                                            <div class="md:col-span-7">
+                                                <div class="flex w-full h-2 bg-default-200 overflow-hidden">
+                                                    <div class="flex flex-col justify-center overflow-hidden bg-yellow-500 w-4/6" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div><!-- end grid-cols -->
+                                            <div class="md:col-span-2">
+                                                <h4 class="inline-block text-sm font-medium text-default-700">66%</h4>
+                                                <span class="font-normal text-default-500">(94,532)</span>
+                                            </div><!-- end grid-cols -->
+                                        </div><!-- end grid -->
+                    
+                                        <div class="grid md:grid-cols-12 items-center gap-2 mb-3">
+                                            <div class="md:col-span-3 flex gap-1.5">
+                                                <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-default-200"></i></span>
+                                            </div><!-- end grid-cols -->
+                                            <div class="md:col-span-7">
+                                                <div class="flex w-full h-2 bg-default-200 overflow-hidden">
+                                                    <div class="flex flex-col justify-center overflow-hidden bg-yellow-500 w-1/4" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div><!-- end grid-cols -->
+                                            <div class="md:col-span-2">
+                                                <h4 class="inline-block text-sm font-medium text-default-700">25%</h4>
+                                                <span class="font-normal text-default-500">(6,717)</span>
+                                            </div><!-- end grid-cols -->
+                                        </div><!-- end grid -->
+                    
+                                        <div class="grid md:grid-cols-12 items-center gap-2 mb-3">
+                                            <div class="md:col-span-3 flex gap-1.5">
+                                                <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-default-200"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-default-200"></i></span>
+                                            </div><!-- end grid-cols -->
+                                            <div class="md:col-span-7">
+                                                <div class="flex w-full h-2 bg-default-200 overflow-hidden">
+                                                    <div class="flex flex-col justify-center overflow-hidden bg-yellow-500 w-2/12" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div><!-- end grid-cols -->
+                                            <div class="md:col-span-2">
+                                                <h4 class="inline-block text-sm font-medium text-default-700">16%</h4>
+                                                <span class="font-normal text-default-500">(714)</span>
+                                            </div><!-- end grid-cols -->
+                                        </div><!-- end grid -->
+                    
+                                        <div class="grid md:grid-cols-12 items-center gap-2 mb-3">
+                                            <div class="md:col-span-3 flex gap-1.5">
+                                                <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-default-200"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-default-200"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-default-200"></i></span>
+                                            </div><!-- end grid-cols -->
+                                            <div class="md:col-span-7">
+                                                <div class="flex w-full h-2 bg-default-200 overflow-hidden">
+                                                    <div class="flex flex-col justify-center overflow-hidden bg-yellow-500 w-1/12" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div><!-- end grid-cols -->
+                                            <div class="md:col-span-2">
+                                                <h4 class="inline-block text-sm font-medium text-default-700">8%</h4>
+                                                <span class="font-normal text-default-500">(643)</span>
+                                            </div><!-- end grid-cols -->
+                                        </div><!-- end grid -->
+                    
+                                        <div class="grid md:grid-cols-12 items-center gap-2 mb-3">
+                                            <div class="md:col-span-3 flex gap-1.5">
+                                                <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-default-200"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-default-200"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-default-200"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-default-200"></i></span>
+                                            </div><!-- end grid-cols -->
+                                            <div class="md:col-span-7">
+                                                <div class="flex w-full h-2 bg-default-200 overflow-hidden">
+                                                    <div class="flex flex-col justify-center overflow-hidden bg-yellow-500 w-[4%]" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div><!-- end grid-cols -->
+                                            <div class="md:col-span-2">
+                                                <h4 class="inline-block text-sm font-medium text-default-700">4%</h4>
+                                                <span class="font-normal text-default-500">(152)</span>
+                                            </div><!-- end grid-cols -->
+                                        </div><!-- end grid -->
+                                    </div><!-- end grid-cols -->
+                                </div><!-- end grid -->
+
+                                <div class="flex flex-col divide-y divide-default-200">
+                                    <div class="">
+                                        <div class="flex justify-between items-center flex-wrap w-full">
+                                            <div class="inline-flex items-center gap-4 mb-4">
+                                                <img src="assets/avatar-1-f1564e7c.png" alt="" class="h-10 w-10 rounded-full">
+                                                <div class="">
+                                                    <h6 class="text-base font-medium text-default-700 mb-0.5">Cooper Franci</h6>
+                                                    <div class="flex gap-1">
+                                                        <i class="ph-fill ph-star text-yellow-500"></i>
+                                                        <i class="ph-fill ph-star text-yellow-500"></i>
+                                                        <i class="ph-fill ph-star text-yellow-500"></i>
+                                                        <i class="ph-fill ph-star text-yellow-500"></i>
+                                                        <i class="ph-fill ph-star text-default-200"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="text-base mt-0.5 text-primary"><i class="ph ph-clock"></i> 1 hour ago</p>
+                                        </div>
+                                        <p class="text-base text-default-600 mb-6">People says about, vulputate at sapien sit amet, auctor iaculis lorem. In vel hend rerit nisi. Vestibulum eget risus velit.</p>
+                                    </div><!-- end card -->
+                                    <div class="pt-6">
+                                        <div class="flex justify-between items-center flex-wrap w-full">
+                                            <div class="inline-flex items-center gap-4 mb-4">
+                                                <img src="assets/avatar-2-cb0540ba.png" alt="" class="h-10 w-10 rounded-full">
+                                                <div class="">
+                                                    <h6 class="text-base font-medium text-default-700 mb-0.5">Ash Botosh</h6>
+                                                    <div class="flex gap-1">
+                                                        <i class="ph-fill ph-star text-yellow-500"></i>
+                                                        <i class="ph-fill ph-star text-yellow-500"></i>
+                                                        <i class="ph-fill ph-star text-yellow-500"></i>
+                                                        <i class="ph-fill ph-star text-yellow-500"></i>
+                                                        <i class="ph-fill ph-star text-yellow-500"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="text-base mt-0.5 text-primary"><i class="ph ph-clock"></i> 5 hour ago</p>
+                                        </div>
+                                        <p class="text-base text-default-600 mb-6">Like this histudy, vulputate at sapien sit amet, auctor iaculis lorem. In vel hend rerit nisi. Vestibulum eget risus velit.</p>
+                                    </div><!-- end card -->
+                                    <div class="pt-6">
+                                        <div class="flex justify-between items-center flex-wrap w-full">
+                                            <div class="inline-flex items-center gap-4 mb-4">
+                                                <img src="assets/avatar-3-7b02f585.png" alt="" class="h-10 w-10 rounded-full">
+                                                <div class="">
+                                                    <h6 class="text-base font-medium text-default-700 mb-0.5">Omar Herwitz</h6>
+                                                    <div class="flex gap-1">
+                                                        <i class="ph-fill ph-star text-yellow-500"></i>
+                                                        <i class="ph-fill ph-star text-yellow-500"></i>
+                                                        <i class="ph-fill ph-star text-yellow-500"></i>
+                                                        <i class="ph-fill ph-star text-yellow-500"></i>
+                                                        <i class="ph-fill ph-star text-yellow-500"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="text-base mt-0.5 text-primary"><i class="ph ph-clock"></i> 1 week ago</p>
+                                        </div>
+                                        <p class="text-base text-default-600 mb-6">Our educational, vulputate at sapien sit amet, auctor iaculis lorem. In vel hend rerit nisi. Vestibulum eget risus velit.</p>
+                                    </div><!-- end card -->
+                                </div><!-- end flex -->
+                            </div>
+                        </div><!-- end review (tab-item) -->
+                    </div>
+                </div><!-- end grid-col -->
+
+                <div class="lg:col-span-4">
+                    <div class="border border-default-200 rounded-md p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <h1 class="text-2xl text-default-900 font-medium">$23.00 <small class="text-default-400 line-through">$35.00</small></h1>
+                            <span class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-semibold bg-primary/20 text-primary uppercase">56% off</span>
+                        </div>
+                        <p class="inline-flex items-center text-red-500 text-base"><i class="ph ph-alarm text-lg me-2"></i>2 days left at this price!</p>
+
+                        <hr class="my-6 border-default-200">
+                        
+                        <div class="space-y-4">
+                            <div class="flex justify-between">
+                                <span class="inline-flex items-center gap-2">
+                                    <i class="ph ph-clock text-xl"></i>
+                                    <span>Course Duration</span>
+                                </span>
+                                <span>12 Months</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="inline-flex items-center gap-2">
+                                    <i class="ph ph-chart-bar text-xl"></i>
+                                    <span>Course Level</span>
+                                </span>
+                                <span>Expert</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="inline-flex items-center gap-2">
+                                    <i class="ph ph-users text-xl"></i>
+                                    <span>Students Enrolled</span>
+                                </span>
+                                <span>12,254</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="inline-flex items-center gap-2">
+                                    <i class="ph ph-notebook text-xl"></i>
+                                    <span>Language</span>
+                                </span>
+                                <span>English</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="inline-flex items-center gap-2">
+                                    <i class="ph ph-notepad text-xl"></i>
+                                    <span>Subtittle Language</span>
+                                </span>
+                                <span>English</span>
+                            </div>
+                        </div>
+
+                        <hr class="my-6 border-default-200">
+                        
+                        <div class="space-y-2 mb-4">
+                            <button class="inline-flex w-full justify-center px-6 py-2 text-base font-semibold rounded bg-primary text-white transition-all duration-500 hover:bg-primary-500">
+                                Add to Cart
+                            </button>
+                            <button class="inline-flex w-full justify-center px-6 py-2 text-base font-semibold rounded bg-primary/20 text-primary transition-all duration-500 hover:bg-primary hover:text-white">
+                                Buy now
+                            </button>
+                        </div>
+
+                        <div class="flex items-center gap-2 mb-4">
+                            <a href="#" class="w-1/2 inline-flex items-center justify-center px-6 py-1.5 border border-default-200 rounded text-default-800 transition-all duration-500 hover:bg-primary hover:text-white">Add to Wishlist</a>
+                            <a href="#" class="w-1/2 inline-flex items-center justify-center px-6 py-1.5 border border-default-200 rounded text-default-800 transition-all duration-500 hover:bg-primary hover:text-white">Gift Course</a>
+                        </div>
+
+                        <p class="text-sm text-default-600"><b class="text-default-900">Note: </b>all course have 30-days money-back guarantee</p>
+
+                        <hr class="my-6 border-default-200">
+
+                        <h3 class="text-base font-medium text-default-900 mb-4">This course includes:</h3>
+
+                        <div class="space-y-4">
+                            <div class="inline-flex items-center gap-2 w-full">
+                                <i class="ph ph-clock text-xl text-primary"></i>
+                                <span>Lifetime access</span>
+                            </div>
+                            <div class="inline-flex items-center gap-2 w-full">
+                                <i class="ph ph-currency-dollar text-xl text-primary"></i>
+                                <span>30-days money-back guarantee</span>
+                            </div>
+                            <div class="inline-flex items-center gap-2 w-full">
+                                <i class="ph ph-notebook text-xl text-primary"></i>
+                                <span>Free exercises file & downloadable resources</span>
+                            </div>
+                            <div class="inline-flex items-center gap-2 w-full">
+                                <i class="ph ph-trophy text-xl text-primary"></i>
+                                <span>Shareable certificate of completion</span>
+                            </div>
+                            <div class="inline-flex items-center gap-2 w-full">
+                                <i class="ph ph-monitor text-xl text-primary"></i>
+                                <span>Access on mobile , tablet and TV</span>
+                            </div>
+                            <div class="inline-flex items-center gap-2 w-full">
+                                <i class="ph ph-notepad text-xl text-primary"></i>
+                                <span>English subtitles</span>
+                            </div>
+                            <div class="inline-flex items-center gap-2 w-full">
+                                <i class="ph ph-stack text-xl text-primary"></i>
+                                <span>100% online course</span>
+                            </div>
+                        </div>
+                        
+                        <hr class="my-6 border-default-200">
+
+                        <h3 class="text-base font-medium text-default-900 mb-4">Share this course:</h3>
+
+                        <div class="flex items-center flex-wrap gap-2">
+                            <a href="#" class="inline-flex items-center justify-center gap-2 bg-default-200 py-2 px-6 h-10 rounded text-default-800 transition-all duration-500 hover:bg-primary hover:text-white"><i class="ph ph-copy text-xl/none"></i> Copy link</a>
+                            <a href="#" class="inline-flex items-center justify-center gap-2 bg-default-200 w-10 h-10 rounded text-default-800 transition-all duration-500 hover:bg-primary hover:text-white"><i class="ph ph-facebook-logo text-xl/none"></i></a>
+                            <a href="#" class="inline-flex items-center justify-center gap-2 bg-default-200 w-10 h-10 rounded text-default-800 transition-all duration-500 hover:bg-primary hover:text-white"><i class="ph ph-twitter-logo text-xl/none"></i></a>
+                            <a href="#" class="inline-flex items-center justify-center gap-2 bg-default-200 w-10 h-10 rounded text-default-800 transition-all duration-500 hover:bg-primary hover:text-white"><i class="ph ph-envelope text-xl/none"></i></a>
+                            <a href="#" class="inline-flex items-center justify-center gap-2 bg-default-200 w-10 h-10 rounded text-default-800 transition-all duration-500 hover:bg-primary hover:text-white"><i class="ph ph-whatsapp-logo text-xl/none"></i></a>
+                        </div>
+                    </div>
+                </div><!-- end grid-col -->
+            </div><!-- end grid -->
+        </div>
+    </section>
+
+    
+    <div class="dark">
+        <footer class="bg-default-50">
+            <div class="container">
+                <div class="lg:py-10 py-6">
+                    <div class="grid lg:grid-cols-2 items-center gap-6">
+                        <div class="">
+                            <div class="grid md:grid-cols-3 items-center gap-6">
+                                <div class="">
+                                    <h2 class="text-3xl text-default-900 font-medium mb-2">2.3k</h2>
+                                    <p class="text-sm text-default-600">Online courses</p>
+                                </div><!-- end grid-col -->
+                                <div class="">
+                                    <h2 class="text-3xl text-default-900 font-medium mb-2">500+</h2>
+                                    <p class="text-sm text-default-600">Certified Instructor</p>
+                                </div><!-- end grid-col -->
+                                <div class="">
+                                    <h2 class="text-3xl text-default-900 font-medium mb-2">99.9%</h2>
+                                    <p class="text-sm text-default-600">Success Rate</p>
+                                </div><!-- end grid-col -->
+                            </div><!-- end grid -->
+                        </div><!-- end grid-col -->
+        
+                        <div class="">
+                            <h1 class="text-3xl font-medium lg:text-end text-default-950 mb-6">Start learning with 23.4k students <br class="hidden xl:block"> around the world.</h1>
+                            <div class="flex items-center lg:justify-end gap-4">
+                                <a href="#" class="inline-flex items-center gap-6 text-sm py-2.5 px-4 xl:px-5 rounded text-white bg-primary hover:bg-primary-500 transition-all">Join the Family</a>
+                                <a href="#" class="inline-flex items-center gap-6 text-sm py-2.5 px-4 xl:px-5 rounded text-primary bg-primary/20 hover:bg-primary hover:text-white transition-all duration-500">Browse all courses</a>
+                            </div>
+                        </div><!-- end grid-col -->
+                    </div><!-- end grid -->
+                </div>
+            </div><!-- end contaner -->
+        
+            <div class="lg:py-10 py-6 border-t border-default-200">
+                <div class="container">
+                    <div class="grid lg:grid-cols-12 gap-6">
+                        <div class="lg:col-span-3">
+                            <div class="">
+                                <img src="assets/logo-dark-befc834f.png" alt="logo" class="block dark:hidden h-10">
+                                <img src="assets/logo-light-43c180d2.png" alt="logo" class="hidden dark:block h-10">
+                                <p class="my-4">Aliquam rhoncus ligula est, non pulvinar elit convallis nec. Donec mattis odio at.</p>
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <a href="javascript:void(0);" class="h-10 w-10 inline-flex items-center justify-center backdrop-blur-2xl bg-default-200 rounded transition-all duration-500 text-default-700 hover:bg-primary hover:text-white"><i class="ph-fill ph-facebook-logo text-2xl"></i></a>
+                                    <a href="javascript:void(0);" class="h-10 w-10 inline-flex items-center justify-center backdrop-blur-2xl bg-default-200 rounded transition-all duration-500 text-default-700 hover:bg-primary hover:text-white"><i class="ph-fill ph-instagram-logo text-2xl"></i></a>
+                                    <a href="javascript:void(0);" class="h-10 w-10 inline-flex items-center justify-center backdrop-blur-2xl bg-default-200 rounded transition-all duration-500 text-default-700 hover:bg-primary hover:text-white"><i class="ph-fill ph-linkedin-logo text-2xl"></i></a>
+                                    <a href="javascript:void(0);" class="h-10 w-10 inline-flex items-center justify-center backdrop-blur-2xl bg-default-200 rounded transition-all duration-500 text-default-700 hover:bg-primary hover:text-white"><i class="ph-fill ph-twitter-logo text-2xl"></i></a>
+                                    <a href="javascript:void(0);" class="h-10 w-10 inline-flex items-center justify-center backdrop-blur-2xl bg-default-200 rounded transition-all duration-500 text-default-700 hover:bg-primary hover:text-white"><i class="ph-fill ph-youtube-logo text-2xl"></i></a>
+                                </div>
+                            </div>
+                        </div><!-- end grid-col -->
+                        
+                        <div class="lg:col-span-6">
+                            <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-6 mb-6">
+                                <div class="flex flex-col gap-3">
+                                    <h5 class="mb-3 font-semibold text-default-900 uppercase">Top 4 Category</h5>
+                                    <div class="text-default-800"><a href="javascript:void(0);">Development</a></div>
+                                    <div class="text-default-800"><a href="javascript:void(0);">Finance & Accounting</a></div>
+                                    <div class="text-default-800"><a href="javascript:void(0);">Design</a></div>
+                                    <div class="text-default-800"><a href="javascript:void(0);">Business</a></div>
+                                </div><!-- end grid-col -->
+        
+                                <div class="flex flex-col gap-3">
+                                    <h5 class="mb-3 font-semibold text-default-900 uppercase">Quick Links</h5>
+                                    <div class="text-default-800"><a href="javascript:void(0);">About</a></div>
+                                    <div class="text-default-800"><a href="javascript:void(0);">Become Instructor</a></div>
+                                    <div class="text-default-800"><a href="javascript:void(0);">Contact</a></div>
+                                    <div class="text-default-800"><a href="javascript:void(0);">Career</a></div>
+                                </div><!-- end grid-col -->
+        
+                                <div class="flex flex-col gap-3">
+                                    <h5 class="mb-3 font-semibold text-default-900 uppercase">Support</h5>
+                                    <div class="text-default-800"><a href="javascript:void(0);">Help Center</a></div>
+                                    <div class="text-default-800"><a href="javascript:void(0);">FAQs</a></div>
+                                    <div class="text-default-800"><a href="javascript:void(0);">Terms & Condition</a></div>
+                                    <div class="text-default-800"><a href="javascript:void(0);">Privacy Policy</a></div>
+                                </div><!-- end grid-col -->
+                            </div><!-- end grid -->
+                        </div><!-- end grid-col -->
+        
+                        <div class="lg:col-span-3">
+                            <div class="flex flex-col gap-3">
+                                <h5 class="mb-3 font-semibold text-default-900 uppercase">Downlaod our app</h5>
+                                <div class="flex flex-col items-start gap-2">
+                                    <a href="#" class="w-3/4 inline-flex items-center justify-center gap-3 px-8 py-3 bg-default-950/5 rounded transition-all duration-200 hover:bg-primary">
+                                        <img src="assets/apple-c219ac8e.svg" alt="" class="h-10 w-10">
+                                        <span>
+                                            <span class="block text-xs text-default-800">Download now</span>
+                                            <span class="block font-semibold text-default-900">App Store</span>
+                                        </span>
+                                    </a>
+                                    <a href="#" class="w-3/4 inline-flex items-center justify-center gap-3 px-8 py-3 bg-default-950/5 rounded transition-all duration-200 hover:bg-primary">
+                                        <img src="assets/play-store-1311317c.svg" alt="" class="h-10 w-10">
+                                        <span>
+                                            <span class="block text-xs text-default-800">Download now</span>
+                                            <span class="block font-semibold text-default-900">App Store</span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div><!-- end flex -->
+                        </div><!-- end grid-col -->
+                    </div><!-- end grid -->
+                </div><!-- end conteiner -->
+            </div>
+        
+            <div class="py-6 border-t border-default-200">
+                <div class="container">
+                    <div class="grid lg:grid-cols-2 items-center justify-center lg:justify-between gap-6">
+                        <div>
+                            <p class="text-default-800">
+                                <script>document.write(new Date().getFullYear())</script> Design crafted <i data-lucide="heart" class="inline h-4 w-4 text-red-500 fill-red-500"></i> by Coderthemes.com
+                            </p>
+                        </div><!-- end grid-col -->
+        
+                        <div class="hs-dropdown relative flex justify-center lg:justify-end [--placement:bottom-right]">
+                            <button id="hs-dropdown-slideup-animation2" type="button" class="hs-dropdown-toggle inline-flex items-center justify-end gap-6 text-sm py-2.5 px-4 xl:px-5 rounded border border-default-950/10 text-default-900 transition-all">
+                                English
+                                <i class="ph ph-caret-down"></i>
+                            </button><!-- end dropdown button -->
+        
+                            <div class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-[200px] transition-[opacity,margin] opacity-0 z-20 duration-300 bg-white shadow-lg rounded-lg border border-default-100 dark:bg-default-50 py-2 hidden" aria-labelledby="hs-dropdown-slideup-animation2">
+                                <ul class="flex flex-col">
+                                    <li><a class="flex items-center font-normal py-2 px-2 text-default-950 bg-default-100" href="#">German</a></li>
+                                    <li><a class="flex items-center font-normal text-default-800 py-2 px-2 hover:text-default-950 hover:bg-default-100" href="#">Italian</a></li>
+                                    <li><a class="flex items-center font-normal text-default-800 py-2 px-2 hover:text-default-950 hover:bg-default-100" href="#">Spanish</a></li>
+                                    <li><a class="flex items-center font-normal text-default-800 py-2 px-2 hover:text-default-950 hover:bg-default-100" href="#">Russian</a></li>
+                                </ul><!-- end dropdown items -->
+                            </div><!-- end dropdown menu -->
+                        </div><!-- end grid-col -->
+                    </div><!-- end grid -->
+                </div><!-- end flex -->
+            </div><!-- end flex -->
+        </footer><!-- end footer -->
+    </div>
+    
+    <!-- signUp Modal -->
+    <div id="signUp" class="hs-overlay fixed top-0 left-0 z-[60] transition-all duration-500 w-full h-full min-h-full items-center hidden hs-overlay-open:flex" aria-overlay="true" tabindex="-1">
+        <div class="hs-overlay-open:opacity-100 duration-500 opacity-0 ease-out transition-[opacity] relative max-w-full md:max-w-4xl sm:w-full sm:mx-auto shadow-sm rounded-3xl group bg-[url(../images/other/modal-bg.png)]">
+            <div class="p-10">
+                <div class="grid lg:grid-cols-2">
+                    <div class="">
+                        <div class="bg-white p-6 w-auto rounded-2xl lg:-mb-20 dark:bg-default-50">
+                            <img src="assets/auth-img-e6524fe7.png" alt="" class="lg:-mt-28">
+    
+                            <h3 class="text-2xl font-medium text-default-900 my-8">Sign Up Now for your 15% OFF</h3>
+                            <p class="text-sm text-primary mb-8">Subscribe Now & Received a Discount on Your First Order</p>
+    
+                            <form action="#" class="mb-10">
+                                <div class="relative z-0 mb-8 w-full group">
+                                    <input type="text" name="name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 dark:text-white dark:border-gray-600 dark:focus:border-primary focus:outline-none focus:ring-0 focus:border-primary peer" placeholder=" " required />
+                                    <label for="name" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-focus:dark:text-primary placeholder:text-sm peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-100 peer-focus:-translate-y-6">Name</label>
+                                </div>
+                                <div class="relative z-0 mb-8 w-full group">
+                                    <input type="email" name="email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 dark:text-white dark:border-gray-600 dark:focus:border-primary focus:outline-none focus:ring-0 focus:border-primary peer" placeholder=" " required />
+                                    <label for="email" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-focus:dark:text-primary placeholder:text-sm peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-100 peer-focus:-translate-y-6">Email address</label>
+                                </div>
+    
+                                <button type="submit" class="px-6 py-3.5 text-base rounded bg-primary text-white">
+                                    Subscribe Now
+                                </button>
+                            </form>
+    
+                            <div class="flex items-center justify-between gap-4 mb-12">
+                                <a href="#" class="inline-flex items-center gap-2 text-default-800"><i class="ph-fill ph-facebook-logo text-lg text-primary"></i>Facebook</a>
+                                <a href="#" class="inline-flex items-center gap-2 text-default-800"><i class="ph-fill ph-twitter-logo text-lg text-primary"></i>Twitter</a>
+                                <a href="#" class="inline-flex items-center gap-2 text-default-800"><i class="ph-fill ph-instagram-logo text-lg text-primary"></i>Instagram</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <div class="fixed bottom-5 end-5 flex flex-col items-center bg-primary/25 rounded-full z-10 print:hidden">
+        <button class="h-0 w-8 opacity-0 flex justify-center items-center transition-all duration-500 translate-y-5 z-10" data-toggle="back-to-top">
+            <i class="h-5 w-5 text-primary-500 mt-1" data-lucide="chevron-up"></i>
+        </button>
+        <button class="rounded-full h-10 w-10 bg-primary text-white flex justify-center items-center z-20">
+            <i class="h-5 w-5" data-lucide="sun" id="light-theme"></i>
+            <i class="h-5 w-5" data-lucide="moon" id="dark-theme"></i>
+        </button>
+    </div>
+    <!-- Theme Js -->
+    
+</body>
+
+
+<!-- Mirrored from coderthemes.com/studyzen/course-detail.html by HTTrack Website Copier/3.x [XR&CO'2017], Tue, 09 Jan 2024 16:00:29 GMT -->
+</html>

@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from coderthemes.com/studyzen/home-2.html by HTTrack Website Copier/3.x [XR&CO'2017], Tue, 09 Jan 2024 16:00:03 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <title>StudyZen - Tailwind Study Client & Admin Manage HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="description" />
+    <meta content="coderthemes" name="author" />
+    
+    <!-- Theme favicon -->
+    <link rel="shortcut icon" href="assets/favicon-8fd74f43.ico">
+    
+    <!--&lt;!&ndash; Head js &ndash;&gt;-->
+    
+  <script type="module" crossorigin src="assets/theme-e4584917.js"></script>
+  <script type="module" crossorigin src="assets/effect-creative-416a4808.js"></script>
+  <script type="module" crossorigin src="assets/home-a752a631.js"></script>
+  <link rel="stylesheet" href="assets/theme-d32f8eb8.css">
+</head>
+
+<body>
+    <!-- Offer/Help Menu -->
+    <div class="h-10 hidden lg:flex items-center bg-primary-950 text-white z-20">
+        <div class="container">
+            <nav class="flex items-center justify-between gap-4">
+                <!-- Language Dropdown -->
+                <div class="flex relative">
+                    <div class="hs-dropdown relative inline-flex [--trigger:hover] [--placement:bottom]">
+                        <a class="hs-dropdown-toggle after:absolute hover:after:-bottom-10 after:inset-0 relative flex items-center text-base" href="#">
+                            <img alt="Image" class="h-3.5 me-3" src="data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAA8AAD/4QMpaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjAtYzA2MCA2MS4xMzQ3NzcsIDIwMTAvMDIvMTItMTc6MzI6MDAgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo5NTM4RDUxQjYxM0IxMUU3ODM5NTg5Qjc3NkUwNEZFMSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo5NTM4RDUxQzYxM0IxMUU3ODM5NTg5Qjc3NkUwNEZFMSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjk1MzhENTE5NjEzQjExRTc4Mzk1ODlCNzc2RTA0RkUxIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjk1MzhENTFBNjEzQjExRTc4Mzk1ODlCNzc2RTA0RkUxIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/+4ADkFkb2JlAGTAAAAAAf/bAIQABgQEBAUEBgUFBgkGBQYJCwgGBggLDAoKCwoKDBAMDAwMDAwQDA4PEA8ODBMTFBQTExwbGxscHx8fHx8fHx8fHwEHBwcNDA0YEBAYGhURFRofHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f/8AAEQgAKgBAAwERAAIRAQMRAf/EAJkAAQABBQEAAAAAAAAAAAAAAAAHAgMEBQYBAQEAAgMBAQAAAAAAAAAAAAAAAgYBBAUDBxAAAAQBBwkHBAMBAAAAAAAAAQIDBAAREhMFBhYHMaHRkpPTFVVWIUGRIjIzFFFhQtKCIyVFEQAAAgMQAgIBBQAAAAAAAAAAAfACAxEhMVGBoRJSghNTBBRUBRVBcZHRMmHhIkJD/9oADAMBAAIRAxEAPwDlhqtFarm7o4qNFlE3Cx3LoRonRkzgAJthKQRE/b2zhyxa6ThuQwQePY1hmjZ9nxYyXx3cwFDJ8G/6QACFJSiFHMmTs0RvDo+PfiEHBjN6jaGamEywqz/iDxFKcLVr8gRA5HUpJwGCT8YkbQ3fl7yfoBubIVNU94KpSrBVdk0cJuqesREKBaiE4EM3ESAM3ygAy98c7lHFmC1I3nvZDp8O2as8wqbJWku+9G8JNuvhv1Ep4l/SKpdMqwufZcjgFP8AYXXw36iU8S/pC6ZVg7LkcAp/sLr4b9RKeJf0hdMqwdlyOAU/2PS2Zw5KYDFtGoBgGUBASgICH8IXTKsMHyPIn/gSSiHmhQQqZFU4fFBw1dkKu7AF0nAgoUJjYkwaFQMk+XL3hF6WfWjfKDx7jHzobIW3+gNX/GXpQcnPwmcXiRQ+JLSfMo5BT75mbvjzdedd8Q/1hiAWG5iHTSdgoRQjYtXFO/RSAjVsM4fK8b0f95gk9XfJ3xI4o6T3k/R+AGdZo9UNLRVO8rZis4q5Ur0xjJmCgX8yhSnbJf1URSmylljR5JZUmC1J8v4vefEI6fDs2y+YVJidFd9w5PRiR7w4V8iceAb6KreMaqfIueg5TGVSyF4cK+ROPAN9C8Y1U+Q0HKYyqWQvDhXyJx4BvoXjGqnyGg5TGVSyF4cK+ROPAN9C8Y1U+Q0HKYyqWRGhLF2+aNSt2lnHiLgyazd8vNFUqyahgEAKUQEpJACScUe2LrqGRm6axfoPndAxfGylsxcCldR7walFctXeeeCgpUc75E2ky+aTJEb9m5+ZUo/2CgcQoTsviKBSrK2eeKVi2BuWr3YJzQRK2ERApkwLMVl7O02eMm3Y1icfdlCgsNvZCobb1XaJhWwWXcA6blcC7UVA1GsdedIYCSABJANJIWNPkMwrcmSp0jecIb3HZdRdsRNFqCj7piSr0W96YLqH0xXL1pVFk63I7icgvRb3pguofTC9aVQ63I7icgvRb3pguofTC9aVQ63I7icgvRb3pguofTC9aVQ63I7ichXwTFnnTXNuIUG0ZJII6zisJdLYcExZ501zbiFBtGSSBrOKwl0thwTFnnTXNuIUG0ZJIGs4rCXS2HBMWedNc24hQbRkkgazisJdLYcExZ501zbiFBtGSSBrOKwl0thwTFnnTXNuIUG0ZJIGs4rCXS2HBMWedNc24hQbRkkgazisJdLYcExZ501zbiFBtGSSBrOKwl0tjT3Xsd1aO0JpjzulKw6HZZzbTGF17HdWjtCaYXSlYOyzm2mMLr2O6tHaE0wulKwdlnNtMYXXsd1aO0JphdKVg7LObaYwuvY7q0doTTC6UrB2Wc20xhdex3Vo7QmmF0pWDss5tpjC69jurR2hNMLpSsHZZzbTGF17HdWjtCaYXSlYOyzm2mMcE499T2/Ub2/Rl/H7fSNMxaVPxKGWEW9WMCQasADVgAasADVgAasAFxv76ft+ovuejL+X2+sZIRX/ABOGSEf/2Q==">
+                            <span class="font-medium text-primary text-xs">English (USA)</span>
+                        </a>
+    
+                        <div class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-[140px] transition-[opacity,margin] mt-4 opacity-0 hidden z-50 bg-white shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-lg border border-default-100 p-1.5 dark:bg-default-50">
+                            <ul class="flex flex-col gap-1">
+                                <li>
+                                    <a class="flex items-center gap-2 font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="#"><img alt="flag" class="h-4" src="data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAA8AAD/4QMpaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjAtYzA2MCA2MS4xMzQ3NzcsIDIwMTAvMDIvMTItMTc6MzI6MDAgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo5NTM4RDUxQjYxM0IxMUU3ODM5NTg5Qjc3NkUwNEZFMSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo5NTM4RDUxQzYxM0IxMUU3ODM5NTg5Qjc3NkUwNEZFMSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjk1MzhENTE5NjEzQjExRTc4Mzk1ODlCNzc2RTA0RkUxIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjk1MzhENTFBNjEzQjExRTc4Mzk1ODlCNzc2RTA0RkUxIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/+4ADkFkb2JlAGTAAAAAAf/bAIQABgQEBAUEBgUFBgkGBQYJCwgGBggLDAoKCwoKDBAMDAwMDAwQDA4PEA8ODBMTFBQTExwbGxscHx8fHx8fHx8fHwEHBwcNDA0YEBAYGhURFRofHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f/8AAEQgAKgBAAwERAAIRAQMRAf/EAJkAAQABBQEAAAAAAAAAAAAAAAAHAgMEBQYBAQEAAgMBAQAAAAAAAAAAAAAAAgYBBAUDBxAAAAQBBwkHBAMBAAAAAAAAAQIDBAAREhMFBhYHMaHRkpPTFVVWIUGRIjIzFFFhQtKCIyVFEQAAAgMQAgIBBQAAAAAAAAAAAfACAxEhMVGBoRJSghNTBBRUBRVBcZHRMmHhIkJD/9oADAMBAAIRAxEAPwDlhqtFarm7o4qNFlE3Cx3LoRonRkzgAJthKQRE/b2zhyxa6ThuQwQePY1hmjZ9nxYyXx3cwFDJ8G/6QACFJSiFHMmTs0RvDo+PfiEHBjN6jaGamEywqz/iDxFKcLVr8gRA5HUpJwGCT8YkbQ3fl7yfoBubIVNU94KpSrBVdk0cJuqesREKBaiE4EM3ESAM3ygAy98c7lHFmC1I3nvZDp8O2as8wqbJWku+9G8JNuvhv1Ep4l/SKpdMqwufZcjgFP8AYXXw36iU8S/pC6ZVg7LkcAp/sLr4b9RKeJf0hdMqwdlyOAU/2PS2Zw5KYDFtGoBgGUBASgICH8IXTKsMHyPIn/gSSiHmhQQqZFU4fFBw1dkKu7AF0nAgoUJjYkwaFQMk+XL3hF6WfWjfKDx7jHzobIW3+gNX/GXpQcnPwmcXiRQ+JLSfMo5BT75mbvjzdedd8Q/1hiAWG5iHTSdgoRQjYtXFO/RSAjVsM4fK8b0f95gk9XfJ3xI4o6T3k/R+AGdZo9UNLRVO8rZis4q5Ur0xjJmCgX8yhSnbJf1URSmylljR5JZUmC1J8v4vefEI6fDs2y+YVJidFd9w5PRiR7w4V8iceAb6KreMaqfIueg5TGVSyF4cK+ROPAN9C8Y1U+Q0HKYyqWQvDhXyJx4BvoXjGqnyGg5TGVSyF4cK+ROPAN9C8Y1U+Q0HKYyqWRGhLF2+aNSt2lnHiLgyazd8vNFUqyahgEAKUQEpJACScUe2LrqGRm6axfoPndAxfGylsxcCldR7walFctXeeeCgpUc75E2ky+aTJEb9m5+ZUo/2CgcQoTsviKBSrK2eeKVi2BuWr3YJzQRK2ERApkwLMVl7O02eMm3Y1icfdlCgsNvZCobb1XaJhWwWXcA6blcC7UVA1GsdedIYCSABJANJIWNPkMwrcmSp0jecIb3HZdRdsRNFqCj7piSr0W96YLqH0xXL1pVFk63I7icgvRb3pguofTC9aVQ63I7icgvRb3pguofTC9aVQ63I7icgvRb3pguofTC9aVQ63I7ichXwTFnnTXNuIUG0ZJII6zisJdLYcExZ501zbiFBtGSSBrOKwl0thwTFnnTXNuIUG0ZJIGs4rCXS2HBMWedNc24hQbRkkgazisJdLYcExZ501zbiFBtGSSBrOKwl0thwTFnnTXNuIUG0ZJIGs4rCXS2HBMWedNc24hQbRkkgazisJdLYcExZ501zbiFBtGSSBrOKwl0tjT3Xsd1aO0JpjzulKw6HZZzbTGF17HdWjtCaYXSlYOyzm2mMLr2O6tHaE0wulKwdlnNtMYXXsd1aO0JphdKVg7LObaYwuvY7q0doTTC6UrB2Wc20xhdex3Vo7QmmF0pWDss5tpjC69jurR2hNMLpSsHZZzbTGF17HdWjtCaYXSlYOyzm2mMcE499T2/Ub2/Rl/H7fSNMxaVPxKGWEW9WMCQasADVgAasADVgAasAFxv76ft+ovuejL+X2+sZIRX/ABOGSEf/2Q=="> English</a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-2 font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="#"><img alt="flag" class="h-4" src="data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAA8AAD/4QMpaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjAtYzA2MCA2MS4xMzQ3NzcsIDIwMTAvMDIvMTItMTc6MzI6MDAgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoxMEY3OTk0MDYxM0MxMUU3ODQ3Rjk5RTY5NjQzOEY2MyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoxMEY3OTk0MTYxM0MxMUU3ODQ3Rjk5RTY5NjQzOEY2MyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjEwRjc5OTNFNjEzQzExRTc4NDdGOTlFNjk2NDM4RjYzIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjEwRjc5OTNGNjEzQzExRTc4NDdGOTlFNjk2NDM4RjYzIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/+4ADkFkb2JlAGTAAAAAAf/bAIQABgQEBAUEBgUFBgkGBQYJCwgGBggLDAoKCwoKDBAMDAwMDAwQDA4PEA8ODBMTFBQTExwbGxscHx8fHx8fHx8fHwEHBwcNDA0YEBAYGhURFRofHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f/8AAEQgAKgBAAwERAAIRAQMRAf/EAIAAAAMBAAMAAAAAAAAAAAAAAAAGBwgBAgMBAAIDAQEBAAAAAAAAAAAAAAAHAwUGBAECEAABAwAIBAMJAAAAAAAAAAAAAQIDMbEyM3Q2BwgRUbM0kgREIWFxEkJicwYWEQEAAAMJAQEAAAAAAAAAAAAAATGBwTKCAzMENAUGEQL/2gAMAwEAAhEDEQA/AEB8sj3ue96ue5VVzlVVVVWlVU2PxyOvzO5qAU3b2qr+9zcV9BN1Iyu7PSqky5tIGfTgAjWrKr/VJ7fTR1uKzd3zE8xxcUbCXxXmcrRfHLXva5HNcrXNXiiovBUVAeRhCKcjOI8AFO2957mwE3UjK7tNKqTLm0gZ9OACM6s5rTDR1uKzd3zE8xxcUbCYcrRAAnQziOABTtvee5sBN1Iyu7TSqky5tIGfTgAjOrOa0w0dbis3d8xPMcXFGwmHK0QAJ0M4jgAU7b3nubATdSMru00qpMubSBn04AIzqzmtMNHW4rN3fMTzHFxRsJhytEACdDOI4AFO2957mwE3UjK7tNKqTLm0gZ9OACM6s5rTDR1uKzd3zE8xxcUbCYcrRAAQ/N91Nc23XV3Stj7eQzISI55eA9Cmbfc9S2exmo/JGV3Z6VUmXNo8oE4AI1qxmpKO2jp+Lis3d8w/McXFGwmeE5Whenl7+O7tNvLFP1e7mewfP7uxnSb/2Q=="> French</a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-2 font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="#"><img alt="flag" class="h-4" src="data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAA8AAD/4QMpaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjAtYzA2MCA2MS4xMzQ3NzcsIDIwMTAvMDIvMTItMTc6MzI6MDAgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpENEQyQjUxRTYxM0IxMUU3QThGRDlFNzgyMDM4RjBCQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpENEQyQjUxRjYxM0IxMUU3QThGRDlFNzgyMDM4RjBCQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkQ0RDJCNTFDNjEzQjExRTdBOEZEOUU3ODIwMzhGMEJDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkQ0RDJCNTFENjEzQjExRTdBOEZEOUU3ODIwMzhGMEJDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/+4ADkFkb2JlAGTAAAAAAf/bAIQABgQEBAUEBgUFBgkGBQYJCwgGBggLDAoKCwoKDBAMDAwMDAwQDA4PEA8ODBMTFBQTExwbGxscHx8fHx8fHx8fHwEHBwcNDA0YEBAYGhURFRofHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f/8AAEQgAKgBAAwERAAIRAQMRAf/EAHkAAQEBAAMAAAAAAAAAAAAAAAABBgIFBwEBAAIDAQAAAAAAAAAAAAAAAAEFAgQGBxAAAQIBDQADAQAAAAAAAAAAAAECAzFRkRKi0qPjVAVVFhchQYEyEQEAAAMHBQEAAAAAAAAAAAAA4WKiUaGx0QJSFgEDBBQVMf/aAAwDAQACEQMRAD8A82fFive573uc9yqrnKqqqqvyqqqmwhKzp1JCs6dQFZ06gKzp1AVnTqArOnUCsixWPa9j3Ne1UVrkVUVFT5RUVCB2XWd701uHeNb3O1biuePebsq05nWd701uHeHudq3E495uyrTmdZ3vTW4d4e52rcTj3m7KtOZ1ne9Nbh3h7natxOPebsq05nWd701uHeHudq3E495uyrTmdZ3vTW4d4e52rcTj3m7KtOZ1ne9Nbh3h7natxOPebsq05nWd701uHeHudq3E495uyrTm3RRvTgAAAAAAADd+XpyeBmFJ9iS+Dm+QyVQPL05PAzB9iS+ByGSqB5enJ4GYPsSXwOQyVQPL05PAzB9iS+ByGSqB5enJ4GYPsSXwOQyVQPL05PAzB9iS+ByGSqB5enJ4GYPsSXwOQyVQPL05PAzB9iS+ByGSqDdlI5sAAAAAAAA5O/pZJfqT8M9f71/EdEoMQoAUAKAFACgCt/pJJfuT9MtH70/Dq//Z"> German</a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-2 font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="#"><img alt="flag" class="h-4" src="data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAA8AAD/4QMpaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjAtYzA2MCA2MS4xMzQ3NzcsIDIwMTAvMDIvMTItMTc6MzI6MDAgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyODQ3Mjc2MTYxM0MxMUU3ODJENDgwMDE3MDIxNjRGOCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoyODQ3Mjc2MjYxM0MxMUU3ODJENDgwMDE3MDIxNjRGOCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjI4NDcyNzVGNjEzQzExRTc4MkQ0ODAwMTcwMjE2NEY4IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjI4NDcyNzYwNjEzQzExRTc4MkQ0ODAwMTcwMjE2NEY4Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/+4ADkFkb2JlAGTAAAAAAf/bAIQABgQEBAUEBgUFBgkGBQYJCwgGBggLDAoKCwoKDBAMDAwMDAwQDA4PEA8ODBMTFBQTExwbGxscHx8fHx8fHx8fHwEHBwcNDA0YEBAYGhURFRofHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f/8AAEQgAKgBAAwERAAIRAQMRAf/EAI4AAQACAgMAAAAAAAAAAAAAAAAEBQEDAgYHAQEAAgMBAQAAAAAAAAAAAAAAAgYDBAUBBxAAAQMBBgMFCAMAAAAAAAAAAQIDBAAREpMFVQZR0RYyktIzFTFBIkJiExQ0YXGREQACAQEGBQMDBQAAAAAAAAAAAQIDETGRUhMUIUFREgRxoSJhgTLwscHRBf/aAAwDAQACEQMRAD8ApFOOLUVKUVKUbVKJJJJ95rln0xIxeVxNALyuJoBeVxNALyuJoBeVxNALyuJoDKXHEKCkqKVJNqVAkEEe8UDR7x6BkWnRcFvw1R9zVzSxZXdafV4nFeS7babW7Ihw2GGkqW46tlsJSlItJPw1m8edarNRU2rfqzx1qnJybKyBL2JNnrhNxGmXb9xhciGGkOKtu3bxT8JvggBVnD2105+FUsfbVeN/D1/SJz14xUndzslbYWvoGRadFwW/DXG3NXNLFkdafV4j0DItOi4LfhpuauaWLGtPq8R6BkWnRcFvw03NXNLFjWn1eI9AyLTouC34abmrmlixrT6vEegZFp0XBb8NNzVzSxY1p9XiT6wGM6vuF8QkFMWJLiflvoVmMlX47iS2oFF5KG1POAKCRZeb/wAqwLxYqEJW2vstSfX6Xe7Njxvm+Li+26/+bFgzOxsz2q4p9qQuL+XFlqBelXY6xHKQEFJIZBVeCrRZaKsFD/LhoRlWj+azP+zR8rynOpKFNy+KuSt+XuXMERVyHpbUKQw7IN2Q+6uOptZaN1ASGnHFAhJ+YCqr53jqnRptO3jL0v5cLfW37Gbul+LaaXrbx9V+xOrkgUAoBQCgKSREczGG9CGVpyq8QtUkfaV91YcCiVhtRUSeJrt1/JppU7JqXarOCljxSRHx6s1NuSl92vYhP7FQiOlMaW0VvtluaS0oG0qcsWiwi8brtnxe8A/xWat51Hsj8pSceXLl1uuNil5Vkm3CzD3LmKsmXc9ITF+2lSDmFrRW6kKF0KuEr/q2tTy6sJUIRU4uUeSUrePHmrOF15pwlPudttnqrPtx5k+uSZhQCgFAeFdUbj1OVjL51dtnRyRwLDoU8qHVG49TlYy+dNnRyRwGhTyodUbj1OVjL502dHJHAaFPKh1RuPU5WMvnTZ0ckcBoU8qHVG49TlYy+dNnRyRwGhTyodUbj1OVjL502dHJHAaFPKh1RuPU5WMvnTZ0ckcBoU8qHVG49TlYy+dNnRyRwGhTyohyf2XfK7avK7Ht+T6eFbTJRuV5r7teEh3aAd2gHdoB3aAd2gNkb9lryu2nzex7fn+njXqIyud5/9k="> Spanish</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                <h5 class="text-xs text-primary-50 font-medium tracking-widest text-center"><span class="text-base">👋</span> Big Sale Alert! Get 95% off! Limited time only.</h5>
+    
+                <ul class="flex items-center justify-end gap-4">
+                    <li class="flex menu-item">
+                        <a class="text-xs text-primary-50 font-medium transition-all hover:text-primary" href="faqs.html">Help</a>
+                    </li>
+    
+                    <li class="flex menu-item">
+                        <a class="text-xs text-primary-50 font-medium transition-all hover:text-primary" href="contact-us.html">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <!-- Main Navigation Menu -->
+    <header id="navbar" class="fixed lg:top-10 top-0 inset-x-0 z-20 transition-all [&.nav-sticky]:top-0 [&.nav-sticky]:bg-white dark:[&.nav-sticky]:bg-default-50">
+        <div class="h-20 flex items-center">
+            <div class="container">
+                <div class="grid lg:grid-cols-4 grid-cols-2 items-center gap-4">
+                    <div class="flex">
+                        <!-- Mobile Menu Toggle Button -->
+                        <button class="lg:hidden block " data-hs-overlay="#mobile-menu">
+                            <i data-lucide="menu" class="w-7 h-7 text-default-600 me-4 hover:text-primary"></i>
+                        </button>
+    
+                        <!-- Navbar Brand Logo -->
+                        <a href="home.html">
+                            <img src="assets/logo-dark-befc834f.png" alt="logo" class="h-12 flex dark:hidden">
+                            <img src="assets/logo-light-43c180d2.png" alt="logo" class="h-12 hidden dark:flex">
+                        </a>
+                    </div>
+    
+                    <!-- Nevigation Menu -->
+                    <ul class="menu hidden lg:flex items-center justify-center relative col-span-2">
+                        <!-- Home Menu -->
+                        <li class="menu-item">
+                            <div class="hs-dropdown relative inline-flex [--trigger:hover] [--placement:bottom]">
+                                <a class="hs-dropdown-toggle after:absolute hover:after:-bottom-10 after:inset-0 inline-flex items-center text-sm lg:text-base font-medium text-default-700 py-2 px-4 rounded-full hover:text-primary" href="#">
+                                    Home <i class="w-4 h-4 ms-2" data-lucide="chevron-down"></i>
+                                </a>
+    
+                                <div class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-48 transition-[opacity,margin] mt-4 opacity-0 hidden z-10 bg-white shadow-lg rounded-lg border border-default-100 p-1.5 dark:bg-default-50">
+                                    <ul class="flex flex-col gap-1">
+                                        <li>
+                                            <a class="flex items-center text-sm font-medium text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="home.html">Home One</a>
+                                        </li>
+                                        <li>
+                                            <a class="flex items-center text-sm font-medium text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="home-2.html">Home Two</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+    
+                        <!-- Course Menu -->
+                        <li class="menu-item">
+                            <div class="hs-dropdown relative inline-flex [--trigger:hover] [--placement:bottom]">
+                                <a class="hs-dropdown-toggle after:absolute hover:after:-bottom-10 after:inset-0 inline-flex items-center text-sm lg:text-base font-medium text-default-700 py-2 px-4 rounded-full hover:text-primary" href="#">
+                                    Course <i class="w-4 h-4 ms-2" data-lucide="chevron-down"></i>
+                                </a>
+    
+                                <div class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-48 transition-[opacity,margin] mt-4 opacity-0 hidden z-10 bg-white shadow-lg rounded-lg border border-default-100 p-1.5 dark:bg-default-50">
+                                    <ul class="flex flex-col gap-1">
+                                        <li>
+                                            <a class="flex items-center text-sm font-medium text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="course.html">Course Grid</a>
+                                        </li>
+                                        <li>
+                                            <a class="flex items-center text-sm font-medium text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="course-detail.html">Course Detail</a>
+                                        </li>
+                                        <li>
+                                            <a class="flex items-center text-sm font-medium text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="course-create.html">Course Create</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+    
+                        <!-- Pages Menu -->
+                        <li class="menu-item">
+                            <div class="hs-dropdown relative inline-flex [--trigger:hover] [--placement:bottom]">
+                                <a class="hs-dropdown-toggle after:absolute hover:after:-bottom-10 after:inset-0 inline-flex items-center text-sm lg:text-base font-medium text-default-700 py-2 px-4 rounded-full hover:text-primary" href="#">
+                                    Pages <i class="w-4 h-4 ms-2" data-lucide="chevron-down"></i>
+                                </a>
+    
+                                <div class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-48 transition-[opacity,margin] mt-4 opacity-0 hidden z-10 bg-white shadow-md rounded-lg border border-default-100 p-1.5 dark:bg-default-50">
+                                    <ul class="flex flex-col gap-1">
+                                        <li>
+                                            <a class="flex items-center text-sm font-medium text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="instructor.html">Instructor</a>
+                                        </li>
+                                        <li>
+                                            <a class="flex items-center text-sm font-medium text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="error-404.html">Error 404</a>
+                                        </li>
+                                        <li>
+                                            <a class="flex items-center text-sm font-medium text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded" href="faq.html">FAQs</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+    
+                        <!-- Contact Us Link -->
+                        <li class="menu-item">
+                            <a href="contact-us.html" class="inline-flex items-center text-sm lg:text-base font-medium text-default-700 py-2 px-4 rounded-full hover:text-primary">Contact Us</a>
+                        </li>
+                    </ul>
+    
+                    <ul class="flex items-center justify-end gap-x-6">
+                        <!-- Search Modal Button -->
+                        <li class="flex menu-item">
+                            <button class="relative flex text-base transition-all text-default-600 hover:text-primary" data-hs-overlay="#search-sidebar">
+                                <i class="w-5 h-5" data-lucide="search"></i>
+                            </button>
+                        </li>
+    
+                        <!-- Admin Link -->
+                        <li class="hs-tooltip flex menu-item [--trigger:hover] [--placement:left]">
+                            <a href="admin-dashboard.html" target="_blank" class="hs-tooltip-toggle inline-flex items-center text-sm lg:text-base font-medium text-default-700 py-2 px-4 rounded-full hover:text-primary">
+                                <i class="w-5 h-5" data-lucide="user"></i>
+                            </a>
+                            <div class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible transition-opacity opacity-0 relative px-3 py-1 rounded bg-default-950 text-default-200 font-semibold z-50 duration-500 hidden" role="tooltip" data-popper-placement="top">
+                                Admin
+                                <div class="bg-default-950 w-2.5 h-2.5 rotate-45 absolute top-1/2 -end-1 -translate-y-1/2 -z-10 rounded-[1px]"></div>
+                            </div>
+                        </li>
+    
+                        <span class="w-px h-6 bg-default-300 lg:flex hidden"></span>
+    
+                        <div class="lg:flex hidden">
+                            <button class="inline-flex items-center gap-2 text-sm font-medium py-2.5 px-4 lg:px-6 rounded-full text-white bg-primary-500 hover:bg-primary-600 transition-all duration-200">Enroll Now <i class="ph ph-arrow-arc-right"></i></button>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu (Sidebar Menu) -->
+    <div id="mobile-menu" class="hs-overlay hs-overlay-open:translate-x-0 hidden -translate-x-full fixed top-0 left-0 transition-all transform h-full max-w-[270px] w-full z-[60] bg-white border-r border-default-200 dark:bg-default-50" tabindex="-1">
+        <div class="flex justify-center items-center border-b border-dashed border-default-300 h-16 transition-all duration-300">
+            <a href="home.html">
+                <img src="assets/logo-dark-befc834f.png" alt="logo" class="h-10 flex dark:hidden">
+                <img src="assets/logo-light-43c180d2.png" alt="logo" class="h-10 hidden dark:flex">
+            </a>
+        </div>
+    
+        <div class="custom-scroll h-[calc(100%-4rem)]">
+            <nav class="hs-accordion-group p-4 w-full flex flex-col flex-wrap">
+                <ul class="space-y-2.5">
+                    <li>
+                        <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm font-medium text-default-700 rounded-md hover:bg-default-400/10" href="home.html">
+                            Home
+                        </a>
+                    </li>
+    
+                    <li class="hs-accordion" id="product-categories-accordion">
+                        <a class="hs-accordion-toggle flex items-center gap-x-3.5 py-2 px-2.5 hs-accordion-active:text-primary hs-accordion-active:bg-default-400/10 text-sm font-medium text-default-700 rounded-md hover:bg-default-400/10" href="javascript:;">
+                            Product <i data-lucide="chevron-down" class="w-5 h-5 ms-auto hs-accordion-active:rotate-180 transition-all"></i>
+                        </a>
+    
+                        <div id="product-categories-accordion" class="hs-accordion-content w-full overflow-hidden transition-[height] hidden">
+                            <ul class="pt-2 ps-2">
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm font-medium text-default-700 rounded-md hover:bg-default-400/10" href="course.html">
+                                        Courses
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm font-medium text-default-700 rounded-md hover:bg-default-400/10" href="course-detail.html">
+                                        Course Detail
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm font-medium text-default-700 rounded-md hover:bg-default-400/10" href="course-create.html">
+                                        Course Create
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+    
+                    <li>
+                        <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm font-medium text-default-700 rounded-md hover:bg-default-400/10" href="contact-us.html">
+                            Contact Us
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm font-medium text-default-700 rounded-md hover:bg-default-400/10" href="instructor.html">
+                            Instructor
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm font-medium text-default-700 rounded-md hover:bg-default-400/10" href="faqs.html">
+                            FAQs
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm font-medium text-default-700 rounded-md hover:bg-default-400/10" href="error-404.html">
+                            Error Page
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <!-- Search Modal -->
+    <div id="search-sidebar" class="hs-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto">
+        <div class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto">
+            <div class="flex flex-col bg-white shadow-sm rounded-xl overflow-hidden dark:bg-default-50">
+                <div class="px-4 py-3 border-b border-dashed border-default-200">
+                    <div class="relative flex items-center gap-1 w-full">
+                        <span class="absolute start-4 top-1/2 -translate-y-1/2">
+                            <i class="ph ph-magnifying-glass text-lg text-primary-500 align-middle"></i>
+                        </span>
+                        <input class="shrink ps-10 pe-2.5 py-2.5 block w-full border-default-200 placeholder-default-600 rounded-md text-sm bg-default-100 text-default-900" placeholder="Search for items..." type="search">
+                        <button class="grow h-10 w-10 inline-flex items-center justify-center rounded-md hover:bg-primary-500/20" data-hs-overlay="#search-sidebar">
+                            <i class="w-6 h-6 text-primary-500" data-lucide="x"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h4 class="text-base font-medium text-default-900">Recent</h4>
+                </div>
+    
+                <div class="pb-4 px-4 mb-4 max-h-[260px] overflow-y-auto
+                    [&::-webkit-scrollbar]:w-1
+                    [&::-webkit-scrollbar-track]:rounded-full
+                    [&::-webkit-scrollbar-track]:bg-transparent
+                    [&::-webkit-scrollbar-thumb]:rounded-full
+                    [&::-webkit-scrollbar-thumb]:bg-default-300">
+                    <div class="flex flex-col gap-2">
+                        <div id="close" class="flex items-center gap-2 bg-default-100 rounded-md px-4 py-3">
+                            <i class="ph ph-clock-counter-clockwise shrink text-lg text-default-700"></i>
+                            <span class="grow inline-block text-base font-medium text-default-700 transition-all hover:text-default-900">Courses</span>
+                            <div class="flex items-center gap-2">
+                                <a href="#">
+                                    <i class="ph ph-arrow-up-right text-lg align-middle text-default-700 transition-all hover:text-default-950"></i>
+                                </a>
+                                <span class="shrink" data-hs-remove-element="#close">
+                                    <i class="ph-bold ph-x text-lg align-middle text-default-700 hover:text-red-500"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div id="close-two" class="flex items-center gap-2 bg-default-100 rounded-md px-4 py-3">
+                            <i class="ph ph-clock-counter-clockwise shrink text-lg text-default-700"></i>
+                            <span class="grow inline-block text-base font-medium text-default-700 transition-all hover:text-default-900">Course Detail</span>
+                            <div class="flex items-center gap-2">
+                                <a href="#">
+                                    <i class="ph ph-arrow-up-right text-lg align-middle text-default-700 transition-all hover:text-default-950"></i>
+                                </a>
+                                <span class="shrink" data-hs-remove-element="#close-two">
+                                    <i class="ph-bold ph-x text-lg align-middle text-default-700 hover:text-red-500"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div id="close-three" class="flex items-center gap-2 bg-default-100 rounded-md px-4 py-3">
+                            <i class="ph ph-clock-counter-clockwise shrink text-lg text-default-700"></i>
+                            <span class="grow inline-block text-base font-medium text-default-700 transition-all hover:text-default-900">Top Categorys</span>
+                            <div class="flex items-center gap-2">
+                                <a href="#">
+                                    <i class="ph ph-arrow-up-right text-lg align-middle text-default-700 transition-all hover:text-default-950"></i>
+                                </a>
+                                <span class="shrink" data-hs-remove-element="#close-three">
+                                    <i class="ph-bold ph-x text-lg align-middle text-default-700 hover:text-red-500"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div id="close-four" class="flex items-center gap-2 bg-default-100 rounded-md px-4 py-3">
+                            <i class="ph ph-clock-counter-clockwise shrink text-lg text-default-700"></i>
+                            <span class="grow inline-block text-base font-medium text-default-700 transition-all hover:text-default-900">Best Instructors</span>
+                            <div class="flex items-center gap-2">
+                                <a href="#">
+                                    <i class="ph ph-arrow-up-right text-lg align-middle text-default-700 transition-all hover:text-default-950"></i>
+                                </a>
+                                <span class="shrink" data-hs-remove-element="#close-four">
+                                    <i class="ph-bold ph-x text-lg align-middle text-default-700 hover:text-red-500"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div id="close-five" class="flex items-center gap-2 bg-default-100 rounded-md px-4 py-3">
+                            <i class="ph ph-clock-counter-clockwise shrink text-lg text-default-700"></i>
+                            <span class="grow inline-block text-base font-medium text-default-700 transition-all hover:text-default-900">Contact</span>
+                            <div class="flex items-center gap-2">
+                                <a href="#">
+                                    <i class="ph ph-arrow-up-right text-lg align-middle text-default-700 transition-all hover:text-default-950"></i>
+                                </a>
+                                <span class="shrink" data-hs-remove-element="#close-five">
+                                    <i class="ph-bold ph-x text-lg align-middle text-default-700 hover:text-red-500"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="lg:py-32 pt-20 pb-6 relative">
+        <div class="absolute inset-0 -z-10 bg-gradient-to-t to-primary-100 via via-primary-50/10 from-primary-50/5 dark:from-black dark:via-zinc-900 dark:to-black"></div>
+        <div class="container">
+            <div class="grid lg:grid-cols-2 items-center gap-10">
+                <div>
+                    <h4 class="max-w-xl text-5xl/normal font-semibold text-default-900 mb-6">Learn a New Skill Everyday,
+                        Anytime, and Anywhere. </h4>
+
+                    <p class=" max-w-lg text-xl text-default-600 mb-10">1000+ Courses covering all tech domains for you
+                        to learn and explore new oppurtunities. Learn from Industry Experts and land your Dream Job.</p>
+
+                    <div class="flex items-center flex-wrap gap-4 mb-10">
+                        <button  class="px-6 py-2.5 text-base font-medium rounded-md bg-primary text-white hover:bg-primary-500 transition-all duration-300">
+                            Start Trial
+                        </button>
+
+                        <button class="px-6 py-2.5 text-base font-medium rounded-md bg-primary/20 text-primary transition-all duration-300 hover:bg-primary hover:text-white">
+                            How it Work
+                        </button>
+                    </div>
+
+                    <div class="flex justify-between flex-wrap gap-6 max-w-lg">
+                        <div class="flex-1">
+                            <h4 class="text-4xl font-semibold text-yellow-400">1000+</h4>
+                            <h5 class="text-xl font-medium text-default-800">Courses to choose from</h5>
+                        </div>
+
+                        <div class="flex-1">
+                            <h4 class="text-4xl font-semibold text-primary">5000+</h4>
+                            <h5 class="text-xl font-medium text-default-800">Students Trained</h5>
+                        </div>
+
+                        <div class="flex-1">
+                            <h4 class="text-4xl font-semibold text-pink-400">200+</h4>
+                            <h5 class="text-xl font-medium text-default-800">Professional Trainers</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <img src="assets/hero-2-img-efc3cb82.png" alt="">
+
+                    <div class="lg:absolute -bottom-10 -end-[5%]">
+                        <div class="inline-flex bg-white/60 rounded-xl shadow-lg p-6 dark:bg-default-200/60">
+                            <div class="flex items-center gap-4">
+                                <div class="w-15 h-15 flex items-center justify-center bg-cyan-400 rounded-lg">
+                                    <i class="ph ph-calendar text-4xl text-white"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-medium text-xl text-default-700">152k</h5>
+                                    <h5 class="font-medium text-xl text-default-700">Assisted Student</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lg:py-16 py-6 relative">
+        <div class="container">
+
+            <div class="mb-10">
+                <h4 class="text-4xl font-semibold text-default-900 mb-5">Most
+                    <span class="after:absolute after:h-3 after:inset-x-0 after:-bottom-3 after:bg-[url('../images/other/line.html')] after:bg-no-repeat relative text-primary-600">Popular Categories</span>
+                </h4>
+                <p class="text-base text-default-600">Sed ut perspiciatis unde omnis iste natus error sit.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 md:grid-coils-3 lg:grid-cols-4 gap-6 mb-10">
+                <div class="bg-white rounded-lg shadow-[0px_3px_12px_0px_rgba(75,75,75,0.08)] border border-transparent px-5 py-4 hover:border-primary transition-all duration-300 group dark:bg-default-50">
+                    <div class="flex items-center gap-6">
+                        <i class="ph ph-pen-nib text-3xl"></i>
+                        <h5 class="text-lg font-medium text-default-900 line-clamp-1">Design</h5>
+
+                        <div class="ms-auto">
+                            <a href="course-detail.html" class="w-10 h-10 flex items-center justify-center bg-default-100 group-hover:bg-primary transition-all duration-300 rounded-lg cursor-pointer">
+                                <i class="ph ph-arrow-up-right text-2xl text-primary group-hover:text-white transition-all"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div><!-- end grid-cols -->
+
+                <div class="bg-white rounded-lg shadow-[0px_3px_12px_0px_rgba(75,75,75,0.08)] border border-transparent px-5 py-4 hover:border-primary transition-all duration-300 group dark:bg-default-50">
+                    <div class="flex items-center gap-6">
+                        <i class="ph ph-microphone-stage text-3xl"></i>
+                        <h5 class="text-lg font-medium text-default-900 line-clamp-1">Marketing</h5>
+
+                        <div class="ms-auto">
+                            <a href="course-detail.html" class="w-10 h-10 flex items-center justify-center bg-default-100 group-hover:bg-primary transition-all duration-300 rounded-lg cursor-pointer">
+                                <i class="ph ph-arrow-up-right text-2xl text-primary group-hover:text-white transition-all"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div><!-- end grid-cols -->
+
+                <div class="bg-white rounded-lg shadow-[0px_3px_12px_0px_rgba(75,75,75,0.08)] border border-transparent px-5 py-4 hover:border-primary transition-all duration-300 group dark:bg-default-50">
+                    <div class="flex items-center gap-6">
+                        <i class="ph ph-briefcase text-3xl"></i>
+                        <h5 class="text-lg font-medium text-default-900 line-clamp-1">Business</h5>
+
+                        <div class="ms-auto">
+                            <a href="course-detail.html" class="w-10 h-10 flex items-center justify-center bg-default-100 group-hover:bg-primary transition-all duration-300 rounded-lg cursor-pointer">
+                                <i class="ph ph-arrow-up-right text-2xl text-primary group-hover:text-white transition-all"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div><!-- end grid-cols -->
+
+                <div class="bg-white rounded-lg shadow-[0px_3px_12px_0px_rgba(75,75,75,0.08)] border border-transparent px-5 py-4 hover:border-primary transition-all duration-300 group dark:bg-default-50">
+                    <div class="flex items-center gap-6">
+                        <i class="ph ph-file-html text-3xl"></i>
+                        <h5 class="text-lg font-medium text-default-900 line-clamp-1">Development</h5>
+
+                        <div class="ms-auto">
+                            <a href="course-detail.html" class="w-10 h-10 flex items-center justify-center bg-default-100 group-hover:bg-primary transition-all duration-300 rounded-lg cursor-pointer">
+                                <i class="ph ph-arrow-up-right text-2xl text-primary group-hover:text-white transition-all"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div><!-- end grid-cols -->
+
+                <div class="bg-white rounded-lg shadow-[0px_3px_12px_0px_rgba(75,75,75,0.08)] border border-transparent px-5 py-4 hover:border-primary transition-all duration-300 group dark:bg-default-50">
+                    <div class="flex items-center gap-6">
+                        <i class="ph ph-sun-horizon text-3xl"></i>
+                        <h5 class="text-lg font-medium text-default-900 line-clamp-1">Lifestyle</h5>
+
+                        <div class="ms-auto">
+                            <a href="course-detail.html" class="w-10 h-10 flex items-center justify-center bg-default-100 group-hover:bg-primary transition-all duration-300 rounded-lg cursor-pointer">
+                                <i class="ph ph-arrow-up-right text-2xl text-primary group-hover:text-white transition-all"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div><!-- end grid-cols -->
+
+                <div class="bg-white rounded-lg shadow-[0px_3px_12px_0px_rgba(75,75,75,0.08)] border border-transparent px-5 py-4 hover:border-primary transition-all duration-300 group dark:bg-default-50">
+                    <div class="flex items-center gap-6">
+                        <i class="ph ph-database text-3xl"></i>
+                        <h5 class="text-lg font-medium text-default-900 line-clamp-1">Data Science</h5>
+
+                        <div class="ms-auto">
+                            <a href="course-detail.html" class="w-10 h-10 flex items-center justify-center bg-default-100 group-hover:bg-primary transition-all duration-300 rounded-lg cursor-pointer">
+                                <i class="ph ph-arrow-up-right text-2xl text-primary group-hover:text-white transition-all"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div><!-- end grid-cols -->
+
+                <div class="bg-white rounded-lg shadow-[0px_3px_12px_0px_rgba(75,75,75,0.08)] border border-transparent px-5 py-4 hover:border-primary transition-all duration-300 group dark:bg-default-50">
+                    <div class="flex items-center gap-6">
+                        <i class="ph ph-camera text-3xl"></i>
+                        <h5 class="text-lg font-medium text-default-900 line-clamp-1">Photography</h5>
+
+                        <div class="ms-auto">
+                            <a href="course-detail.html" class="w-10 h-10 flex items-center justify-center bg-default-100 group-hover:bg-primary transition-all duration-300 rounded-lg cursor-pointer">
+                                <i class="ph ph-arrow-up-right text-2xl text-primary group-hover:text-white transition-all"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div><!-- end grid-cols -->
+
+                <div class="bg-white rounded-lg shadow-[0px_3px_12px_0px_rgba(75,75,75,0.08)] border border-transparent px-5 py-4 hover:border-primary transition-all duration-300 group dark:bg-default-50">
+                    <div class="flex items-center gap-6">
+                        <i class="ph ph-music-note text-3xl"></i>
+                        <h5 class="text-lg font-medium text-default-900 line-clamp-1">Music</h5>
+
+                        <div class="ms-auto">
+                            <a href="course-detail.html" class="w-10 h-10 flex items-center justify-center bg-default-100 group-hover:bg-primary transition-all duration-300 rounded-lg cursor-pointer">
+                                <i class="ph ph-arrow-up-right text-2xl text-primary group-hover:text-white transition-all"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div><!-- end grid-cols -->
+
+                <div class="bg-white rounded-lg shadow-[0px_3px_12px_0px_rgba(75,75,75,0.08)] border border-transparent px-5 py-4 hover:border-primary transition-all duration-300 group dark:bg-default-50">
+                    <div class="flex items-center gap-6">
+                        <i class="ph ph-graph text-3xl"></i>
+                        <h5 class="text-lg font-medium text-default-900 line-clamp-1">Finance</h5>
+
+                        <div class="ms-auto">
+                            <a href="course-detail.html" class="w-10 h-10 flex items-center justify-center bg-default-100 group-hover:bg-primary transition-all duration-300 rounded-lg cursor-pointer">
+                                <i class="ph ph-arrow-up-right text-2xl text-primary group-hover:text-white transition-all"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div><!-- end grid-cols -->
+
+                <div class="bg-white rounded-lg shadow-[0px_3px_12px_0px_rgba(75,75,75,0.08)] border border-transparent px-5 py-4 hover:border-primary transition-all duration-300 group dark:bg-default-50">
+                    <div class="flex items-center gap-6">
+                        <i class="ph ph-detective text-3xl"></i>
+                        <h5 class="text-lg font-medium text-default-900 line-clamp-1">Teaching</h5>
+
+                        <div class="ms-auto">
+                            <a href="course-detail.html" class="w-10 h-10 flex items-center justify-center bg-default-100 group-hover:bg-primary transition-all duration-300 rounded-lg cursor-pointer">
+                                <i class="ph ph-arrow-up-right text-2xl text-primary group-hover:text-white transition-all"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div><!-- end grid-cols -->
+
+                <div class="bg-white rounded-lg shadow-[0px_3px_12px_0px_rgba(75,75,75,0.08)] border border-transparent px-5 py-4 hover:border-primary transition-all duration-300 group dark:bg-default-50">
+                    <div class="flex items-center gap-6">
+                        <i class="ph ph-heartbeat text-3xl"></i>
+                        <h5 class="text-lg font-medium text-default-900 line-clamp-1">Helth & Fitness</h5>
+
+                        <div class="ms-auto">
+                            <a href="course-detail.html" class="w-10 h-10 flex items-center justify-center bg-default-100 group-hover:bg-primary transition-all duration-300 rounded-lg cursor-pointer">
+                                <i class="ph ph-arrow-up-right text-2xl text-primary group-hover:text-white transition-all"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div><!-- end grid-cols -->
+
+                <div class="bg-white rounded-lg shadow-[0px_3px_12px_0px_rgba(75,75,75,0.08)] border border-transparent px-5 py-4 hover:border-primary transition-all duration-300 group dark:bg-default-50">
+                    <div class="flex items-center gap-6">
+                        <i class="ph ph-lightbulb text-3xl"></i>
+                        <h5 class="text-lg font-medium text-default-900 line-clamp-1">Personal Develop</h5>
+
+                        <div class="ms-auto">
+                            <a href="course-detail.html" class="w-10 h-10 flex items-center justify-center bg-default-100 group-hover:bg-primary transition-all duration-300 rounded-lg cursor-pointer">
+                                <i class="ph ph-arrow-up-right text-2xl text-primary group-hover:text-white transition-all"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div><!-- end grid-cols -->
+            </div><!-- end grid -->
+        </div><!-- end container -->
+    </section>
+
+    <section class="lg:py-16 py-6 relative bg-primary/5">
+        <div class="container">
+            <div class="grid lg:grid-cols-3 grid-cols-1 items-center gap-6">
+                <div>
+                    <h4 class="text-4xl font-semibold text-default-900 mb-6">
+                        Most
+                        <span class="after:absolute after:h-3 after:inset-x-0 after:-bottom-3 after:bg-[url('../images/other/line.html')] after:bg-no-repeat relative text-primary-600">Popular Course</span>
+                    </h4>
+                    <p class="text-lg text-default-600">Sed ut perspiciatis unde omnis iste natus error sit.</p>
+                </div><!-- end grid-col -->
+
+                <div class="lg:col-span-2">
+                    <div class="relative">
+                        <div class="swiper popular_course">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="relative border border-transparent shadow-lg bg-white rounded-lg hover:border-primary transition-all group dark:bg-default-50">
+                                        <div class="p-4">
+                                            <div class="relative">
+                                                <div class="">
+                                                    <img src="assets/img-13-0899944f.png" class="w-full h-full rounded-md mb-4">
+                                                </div>
+    
+                                                <div class="absolute top-2 start-2">
+                                                    <h4 class="inline-flex bg-white/50 text-black px-3 py-0.5 text-sm font-medium rounded-md backdrop-blur-3xl">Design</h4>
+                                                </div>
+                                            </div>
+    
+                                            <h5 class="text-lg font-medium text-default-800 line-clamp-1 mb-4">Adobe XD for UI Design</h5>
+    
+                                            <div class="flex items-center gap-2">
+                                                <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                                <h5 class="text-base text-default-600">(23)</h5>
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="p-4 border-t border-default-200">
+                                            <div class="flex items-center">
+                                                <h5 class="text-xl font-medium text-default-900">$ 500</h5>
+    
+                                                <div class="ms-auto">
+                                                    <a href="course.html" class="w-11 h-11 flex items-center justify-center group-hover:bg-primary transition-all rounded-lg cursor-pointer before:absolute before:inset-0">
+                                                        <i class="ph ph-arrow-up-right text-2xl text-primary group-hover:text-white transition-all"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- end swiper-slider -->
+                                
+                                <div class="swiper-slide">
+                                    <div class="relative border border-transparent shadow-lg bg-white rounded-lg hover:border-primary transition-all group dark:bg-default-50">
+                                        <div class="p-4">
+                                            <div class="relative">
+                                                <div class="">
+                                                    <img src="assets/img-14-966510bb.png" class="w-full h-full rounded-md mb-4">
+                                                </div>
+    
+                                                <div class="absolute top-2 start-2">
+                                                    <h4 class="inline-flex bg-white/50 text-black px-3 py-0.5 text-sm font-medium rounded-md backdrop-blur-3xl">Social Media</h4>
+                                                </div>
+                                            </div>
+    
+                                            <h5 class="text-lg font-medium text-default-800 line-clamp-1 mb-4">Facebook Ads & Facebook Marketing MASTERY 2021 Cours...</h5>
+    
+                                            <div class="flex items-center gap-2">
+                                                <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                                <h5 class="text-base text-default-600">(47)</h5>
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="p-4 border-t border-default-200">
+                                            <div class="flex items-center">
+                                                <h5 class="text-xl font-medium text-default-900">$ 500</h5>
+    
+                                                <div class="ms-auto">
+                                                    <a href="course.html" class="w-11 h-11 flex items-center justify-center group-hover:bg-primary transition-all rounded-lg cursor-pointer before:absolute before:inset-0">
+                                                        <i class="ph ph-arrow-up-right text-2xl text-primary group-hover:text-white transition-all"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- end swiper-slider -->
+                                
+                                <div class="swiper-slide">
+                                    <div class="relative border border-transparent shadow-lg bg-white rounded-lg hover:border-primary transition-all group dark:bg-default-50">
+                                        <div class="p-4">
+                                            <div class="relative">
+                                                <div class="">
+                                                    <img src="assets/img-15-56a19ee3.png" class="w-full h-full rounded-md mb-4">
+                                                </div>
+    
+                                                <div class="absolute top-2 start-2">
+                                                    <h4 class="inline-flex bg-white/50 text-black px-3 py-0.5 text-sm font-medium rounded-md backdrop-blur-3xl">Business</h4>
+                                                </div>
+                                            </div>
+    
+                                            <h5 class="text-lg font-medium text-default-800 line-clamp-1 mb-4">Investing in Stock Full Cource</h5>
+    
+                                            <div class="flex items-center gap-2">
+                                                <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-default-400"></i></span>
+                                                <h5 class="text-base text-default-600">(1.5k)</h5>
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="p-4 border-t border-default-200">
+                                            <div class="flex items-center">
+                                                <h5 class="text-xl font-medium text-default-900">$ 500</h5>
+    
+                                                <div class="ms-auto">
+                                                    <a href="course.html" class="w-11 h-11 flex items-center justify-center group-hover:bg-primary transition-all rounded-lg cursor-pointer before:absolute before:inset-0">
+                                                        <i class="ph ph-arrow-up-right text-2xl text-primary group-hover:text-white transition-all"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- end swiper-slider -->
+                                
+                                <div class="swiper-slide">
+                                    <div class="relative border border-transparent shadow-lg bg-white rounded-lg hover:border-primary transition-all group dark:bg-default-50">
+                                        <div class="p-4">
+                                            <div class="relative">
+                                                <div class="">
+                                                    <img src="assets/img-16-6a06a732.png" class="w-full h-full rounded-md mb-4">
+                                                </div>
+    
+                                                <div class="absolute top-2 start-2">
+                                                    <h4 class="inline-flex bg-white/50 text-black px-3 py-0.5 text-sm font-medium rounded-md backdrop-blur-3xl">IT & Software</h4>
+                                                </div>
+                                            </div>
+    
+                                            <h5 class="text-lg font-medium text-default-800 line-clamp-1 mb-4">Learn Python Programming Masterclass</h5>
+    
+                                            <div class="flex items-center gap-2">
+                                                <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-yellow-400"></i></span>
+                                                <span><i class="ph-fill ph-star text-lg text-default-400"></i></span>
+                                                <h5 class="text-base text-default-600">(52)</h5>
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="p-4 border-t border-default-200">
+                                            <div class="flex items-center">
+                                                <h5 class="text-xl font-medium text-default-900">$ 500</h5>
+    
+                                                <div class="ms-auto">
+                                                    <a href="course.html" class="w-11 h-11 flex items-center justify-center group-hover:bg-primary transition-all rounded-lg cursor-pointer before:absolute before:inset-0">
+                                                        <i class="ph ph-arrow-up-right text-2xl text-primary group-hover:text-white transition-all"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- end swiper-slider -->
+                            </div><!-- end swiper-wrapper -->
+                        </div><!-- end swiper -->
+    
+                        <div class="static flex justify-between items-center mt-10">
+                            <div class="popular-course-pagination static !w-auto !translate-x-0"></div>
+    
+                            <div class="static flex z-10 gap-4">
+                                <div class="swiper-button-prev static after:hidden w-11 h-11 bg-white text-default-800 shadow-lg rounded-lg flex justify-center items-center hover:bg-primary hover:text-white dark:bg-default-50 dark:hover:bg-primary dark:hover:text-white">
+                                    <i class="ph ph-caret-left text-2xl"></i>
+                                </div>
+                                <div class="swiper-button-next static after:hidden w-11 h-11 bg-white text-default-800 shadow-lg rounded-lg flex justify-center items-center hover:bg-primary hover:text-white dark:bg-default-50 dark:hover:bg-primary dark:hover:text-white">
+                                    <i class="ph ph-caret-right text-2xl"></i>
+                                </div>
+                            </div>
+                        </div><!-- end swiper-btn -->
+                    </div>
+                </div><!-- end grid-col -->
+            </div><!-- end grid -->
+        </div><!-- end container -->
+    </section>
+
+    <section class="lg:py-16 py-6 relative">
+        <div class="container">
+            <div class="grid lg:grid-cols-2 items-center gap-10">
+                <div>
+                    <img src="assets/about-us-2-61f0cec8.png" alt="">
+                </div>
+
+                <div>
+                    <h4 class="text-4xl font-semibold text-default-700 mb-6">
+                        You’re
+                        <span class="after:absolute after:h-3 after:inset-x-0 after:-bottom-3 after:bg-[url('../images/other/line.html')] after:bg-no-repeat relative text-primary-600">Dream</span>
+                        to Know more?
+                    </h4>
+
+                    <p class="text-lg text-default-600 mb-6">Aliquam gravida quam dui, venenatis suscipit erat dapibus eu. Donec non libero ultricies</p>
+
+                    <ul class="text-base text-default-600 space-y-4 mb-8">
+                        <li> <i class="ph-fill ph-check-circle text-xl text-primary align-middle me-2"></i> volutpat elementum.</li>
+                        <li> <i class="ph-fill ph-check-circle text-xl text-primary align-middle me-2"></i> Aliquam ac est at augue.</li>
+                        <li> <i class="ph-fill ph-check-circle text-xl text-primary align-middle me-2"></i> Quisque nec enim eget sapien molestie.</li>
+                    </ul>
+
+                    <button class="inline-flex px-8 py-2.5 text-sm font-semibold bg-primary text-white rounded-md hover:bg-primary-500 transition-all duration-300">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lg:py-16 py-6">
+        <div class="container">
+            <div class="mb-24">
+                <h4 class="text-4xl font-semibold text-default-700 mb-6">
+                    Latest
+                    <span class="after:absolute after:h-3 after:inset-x-0 after:-bottom-3 after:bg-[url('../images/other/line.html')] after:bg-no-repeat relative text-primary-600">Updates</span>
+                </h4>
+                <p class="text-lg text-default-700">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+            </div>
+        </div>
+
+        <div class="relative lg:before:absolute lg:before:content-[''] before:start-0 before:end-1/3 before:bottom-0 before:top-0 before:rounded-e-[50px] lg:before:border lg:before:border-s-0 before:border-primary">
+            <div class="container">
+                <div class="grid lg:grid-cols-2 items-center gap-16">
+                    <div class="space-y-16 lg:py-16">
+                        <div class="flex items-start relative gap-6">
+                            <div class="absolute start-6 top-0">
+                                <div class="w-28 h-28 rounded-xl bg-primary/5 rotate-45"></div>
+                            </div>
+                           <div class="flex-shrink">
+                                <div class="w-14 h-14 rounded-xl bg-primary/20 rotate-45"></div>
+                            </div>
+                            <div class="flex-grow -ms-10 mt-4">
+                                <h4 class="relative z-10 text-primary text-xl font-medium mb-7">IT-Software</h4>
+                                <h4 class="text-xl font-medium text-default-900">Machine Learning A-Z™: Hands-On Python & R
+                                    In Data Science</h4>
+                            </div>
+
+                            <div class="flex-shrink text-xl text-default-900 mt-4">
+                                <h4>Sep</h4>
+                                <h4 class="text-3xl my-1">23</h4>
+                                <h4>2023</h4>
+                            </div>
+                        </div>
+                        <div class="flex items-start relative gap-6">
+                            <div class="absolute start-6 top-0">
+                                <div class="w-28 h-28 rounded-xl bg-primary/5 rotate-45"></div>
+                            </div>
+                           <div class="flex-shrink">
+                                <div class="w-14 h-14 rounded-xl bg-primary/20 rotate-45"></div>
+                            </div>
+                            <div class="flex-grow -ms-10 mt-4">
+                                <h4 class="relative z-10 text-primary text-xl font-medium mb-7">Marketing</h4>
+                                <h4 class="text-xl font-medium text-default-900">New Ultimate AWS Certified Cloud Practitioner - 2021</h4>
+                            </div>
+
+                            <div class="flex-shrink text-xl text-default-900 mt-4">
+                                <h4>July</h4>
+                                <h4 class="text-3xl my-1">04</h4>
+                                <h4>2023</h4>
+                            </div>
+                        </div>
+                        <div class="flex items-start relative gap-6">
+                            <div class="absolute start-6 top-0">
+                                <div class="w-28 h-28 rounded-xl bg-primary/5 rotate-45"></div>
+                            </div>
+                            <div class="flex-shrink">
+                                <div class="w-14 h-14 rounded-xl bg-primary/20 rotate-45"></div>
+                            </div>
+                            <div class="flex-grow -ms-10 mt-4">
+                                <h4 class="relative z-10 text-primary text-xl font-medium mb-7">DEVELOPMENT</h4>
+                                <h4 class="text-xl font-medium text-default-900">New Ultimate AWS Certified Cloud Practitioner - 2021</h4>
+                            </div>
+                            
+                            <div class="flex-shrink text-xl text-default-900 mt-4">
+                                <h4>Mar</h4>
+                                <h4 class="text-3xl my-1">06</h4>
+                                <h4>2023</h4>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href="#" class="text-2xl font-semibold underline text-primary">More</a>
+                        </div>
+                    </div><!-- end grid-cols -->
+
+                    <div class="relative">
+                        <div class="inline-flex relative gap-3">
+                            <img src="assets/update-1-a7bce8f1.png" class="rounded-2xl">
+
+                            <div class="absolute top-1/2 start-1/2 -translate-x-1/2 -translate-y-1/2">
+                                <button class="w-18 h-18 bg-primary rounded-full flex items-center justify-center">
+                                    <i class="ph-fill ph-play text-2xl text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="lg:absolute bottom-0 end-0 lg:translate-y-1/3">
+                            <img src="assets/update-2-581d67cf.png" class="rounded-2xl border-2 w-full border-default-50">
+                        </div>
+                    </div><!-- end grid-cols -->
+                </div><!-- end grid -->
+            </div><!-- end container -->
+        </div>
+    </section>
+
+    <section class="lg:py-16 py-6 relative bg-primary/10">
+        <div class="container">
+            <div class="mb-10">
+                <h4 class="text-4xl font-semibold text-default-700 mb-5">
+                    Top
+                    <span class="after:absolute after:h-3 after:inset-x-0 after:-bottom-3 after:bg-[url('../images/other/line.html')] after:bg-no-repeat relative text-primary-600">Instructor</span>
+                    of the Month
+                </h4>
+
+                <p class="text-xl text-default-700">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                    accusantium.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-6">
+                <div class="group overflow-hidden">
+                    <div class="border border-default-200 shadow-lg bg-white rounded-lg overflow-hidden transition-all duration-300 group-hover:rounded-b-none group-hover:border-b-transparent dark:bg-default-50">
+                        <img src="assets/avatar-1-f1564e7c.png" class="w-full h-full">
+
+                        <div class="px-4 py-3">
+                            <div class="text-center">
+                                <h4 class="text-base font-medium text-default-700 mb-2">Chance Donin</h4>
+                                <h4 class="text-sm text-default-600">Senior Developer</h4>
+                            </div>
+
+                            <hr class="border-t border-default-200 my-3">
+
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <i class="ph-fill ph-star text-lg text-yellow-400"></i>
+                                    <h5 class="text-base text-default-600">4.6</h5>
+                                </div>
+
+                                <div>
+                                    <p class="text-sm text-default-600">
+                                        <span class="font-medium text-default-800">854</span>
+                                        students
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-4 pb-4 invisible border-t-0 border border-default-200 shadow-lg overflow-hidden bg-white rounded-b-lg transition-all duration-300 opacity-0 group-hover:opacity-100 group-hover:visible dark:bg-default-50">
+                        <button class="px-8 py-3 w-full bg-primary rounded transition-all duration-300 text-white hover:bg-primary-500">Send Message</button>
+                    </div>
+                </div><!-- end grid-col -->
+
+                <div class="group overflow-hidden">
+                    <div class="border border-default-200 shadow-lg bg-white rounded-lg overflow-hidden transition-all duration-300 group-hover:rounded-b-none group-hover:border-b-transparent dark:bg-default-50">
+                        <img src="assets/avatar-2-cb0540ba.png" class="w-full h-full">
+
+                        <div class="px-4 py-3">
+                            <div class="text-center">
+                                <h4 class="text-base font-medium text-default-700 mb-2">Cooper Gouse</h4>
+                                <h4 class="text-sm text-default-600">Lead Developer</h4>
+                            </div>
+
+                            <hr class="border-t border-default-200 my-3">
+
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <i class="ph-fill ph-star text-lg text-yellow-400"></i>
+                                    <h5 class="text-base text-default-600">4.2</h5>
+                                </div>
+
+                                <div>
+                                    <p class="text-sm text-default-600">
+                                        <span class="font-medium text-default-800">2,711</span>
+                                        students
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-4 pb-4 invisible border-t-0 border border-default-200 shadow-lg overflow-hidden bg-white rounded-b-lg transition-all duration-300 opacity-0 group-hover:opacity-100 group-hover:visible dark:bg-default-50">
+                        <button class="px-8 py-3 w-full bg-primary rounded transition-all duration-300 text-white hover:bg-primary-500">Send Message</button>
+                    </div><!-- end grid-col -->
+                </div>
+
+                <div class="group overflow-hidden">
+                    <div class="border border-default-200 shadow-lg bg-white rounded-lg overflow-hidden transition-all duration-300 group-hover:rounded-b-none group-hover:border-b-transparent dark:bg-default-50">
+                        <img src="assets/avatar-3-7b02f585.png" class="w-full h-full">
+
+                        <div class="px-4 py-3">
+                            <div class="text-center">
+                                <h4 class="text-base font-medium text-default-700 mb-2">Rayna George</h4>
+                                <h4 class="text-sm text-default-600">Adobe Instructor</h4>
+                            </div>
+
+                            <hr class="border-t border-default-200 my-3">
+
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <i class="ph-fill ph-star text-lg text-yellow-400"></i>
+                                    <h5 class="text-base text-default-600">4.7</h5>
+                                </div>
+
+                                <div>
+                                    <p class="text-sm text-default-600">
+                                        <span class="font-medium text-default-800">511,123</span>
+                                        students
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-4 pb-4 invisible border-t-0 border border-default-200 shadow-lg overflow-hidden bg-white rounded-b-lg transition-all duration-300 opacity-0 group-hover:opacity-100 group-hover:visible dark:bg-default-50">
+                        <button class="px-8 py-3 w-full bg-primary rounded transition-all duration-300 text-white hover:bg-primary-500">Send Message</button>
+                    </div>
+                </div><!-- end grid-col -->
+
+                <div class="group overflow-hidden">
+                    <div class="border border-default-200 shadow-lg bg-white rounded-lg overflow-hidden transition-all duration-300 group-hover:rounded-b-none group-hover:border-b-transparent dark:bg-default-50">
+                        <img src="assets/avatar-4-2345eb04.png" class="w-full h-full">
+
+                        <div class="px-4 py-3">
+                            <div class="text-center">
+                                <h4 class="text-base font-medium text-default-700 mb-2">Justin Herwitz</h4>
+                                <h4 class="text-sm text-default-600">UI/UX Designer</h4>
+                            </div>
+
+                            <hr class="border-t border-default-200 my-3">
+
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <i class="ph-fill ph-star text-lg text-yellow-400"></i>
+                                    <h5 class="text-base text-default-600">4.8</h5>
+                                </div>
+
+                                <div>
+                                    <p class="text-sm text-default-600">
+                                        <span class="font-medium text-default-800">435,671</span>
+                                        students
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-4 pb-4 invisible border-t-0 border border-default-200 shadow-lg overflow-hidden bg-white rounded-b-lg transition-all duration-300 opacity-0 group-hover:opacity-100 group-hover:visible dark:bg-default-50">
+                        <button class="px-8 py-3 w-full bg-primary rounded transition-all duration-300 text-white hover:bg-primary-500">Send Message</button>
+                    </div>
+                </div><!-- end grid-col -->
+
+                <div class="group overflow-hidden">
+                    <div class="border border-default-200 shadow-lg bg-white rounded-lg overflow-hidden transition-all duration-300 group-hover:rounded-b-none group-hover:border-b-transparent dark:bg-default-50">
+                        <img src="assets/avatar-5-0368e7b5.png" class="w-full h-full">
+
+                        <div class="px-4 py-3">
+                            <div class="text-center">
+                                <h4 class="text-base font-medium text-default-700 mb-2">Jaydon Bergson</h4>
+                                <h4 class="text-sm text-default-600">Digital Product Designer</h4>
+                            </div>
+
+                            <hr class="border-t border-default-200 my-3">
+
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <i class="ph-fill ph-star text-lg text-yellow-400"></i>
+                                    <h5 class="text-base text-default-600">4.9</h5>
+                                </div>
+
+                                <div>
+                                    <p class="text-sm text-default-600">
+                                        <span class="font-medium text-default-800">451,444</span>
+                                        students
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-4 pb-4 invisible border-t-0 border border-default-200 shadow-lg overflow-hidden bg-white rounded-b-lg transition-all duration-300 opacity-0 group-hover:opacity-100 group-hover:visible dark:bg-default-50">
+                        <button class="px-8 py-3 w-full bg-primary rounded transition-all duration-300 text-white hover:bg-primary-500">Send Message</button>
+                    </div>
+                </div><!-- end grid-col -->
+            </div><!-- end grid -->
+        </div><!-- end container -->
+    </section>
+
+    <section class="lg:py-16 py-6 relative">
+        <div class="container">
+            <div class="grid lg:grid-cols-2 items-center gap-6">
+                <div>
+                    <h4 class="text-4xl font-semibold text-default-700 mb-6">
+                        4.7k Trusted
+                        <span class="after:absolute after:h-3 after:inset-x-0 after:-bottom-3 after:bg-[url('../images/other/line.html')] after:bg-no-repeat relative text-primary-600">Companies</span>
+                    </h4>
+                    <p class="text-lg text-default-700">Nullam egestas tellus at enim ornare tristique. Class aptent
+                        taciti sociosqu ad litora torquent per conubia nostra.</p>
+                </div><!-- end grid-col -->
+
+                <div class="grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-6">
+                    <div class="shadow-lg rounded-lg bg-white h-24 flex items-center justify-center dark:bg-default-50">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAcCAMAAACgTerKAAAAPFBMVEUAAADXHibYHiXYHyXaICTYHybXHSXXHCTXICTPICDZHybYHiXXHybXHiPZHybYHyXaHiXaICXUHiXYHyYRgbe/AAAAE3RSTlMAgKC/H99gQEAQ75BwUK/PjzAwtYzWIwAAAaxJREFUSMe1lotuqzAMQO28yINQaP7/X69jTMyqizZN2ZEqu03skxSCACQSEJGSQDGhEgEC3nAAqNDsSqHCoJ41sEqvs3yFRqxAICWWomsKAth2YwEYOc82FAwI51eUXjldzQzw7NmSdC099MSdRWmyBKw082dsLP2UvCwTAAqFF7ck3gC30f1ZEs8l1R6CSOynxMFANu0lv48+S1KmrMAmhY15T5ZAoSwf8i+JBGdLYusWmSySPFsiN4yMSr7MlqyjsUrKV8lmiP1J4jv2WTIuPZepJCeVXNgniZY/S6C0ThhFL/ossyWRJ6VRxP0nS+RQa9GSW8vlLtkKIoYnyRqI+iTRnEgq4aMz9+5KniWoktiIuZLQmJdKIE+X+OucqARnS0ITikribIntJYUP4JCA/ypZ3ksIiPEnEm/tZnasKpEmhpdeVYI3iYLfSwZWJfK74/1YlcSZEtmIPCXTkID9ocQT30p27ipPSVQJfki8t8ZEYJIj4H+8Y4w1rIhm228Sf62q9EQk0jub3jHUwyX4He6IDuDYrG9BXyiGBCJ1ns+W+1FZq4M/5YjhH7LgT3H/RCHkAAAAAElFTkSuQmCC" alt="">
+                    </div><!-- end grid-col -->
+
+                    <div class="shadow-lg rounded-lg bg-white h-24 flex items-center justify-center dark:bg-default-50">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAYCAMAAAA73KjcAAAAaVBMVEUAAAAoKCgoKCgoKCgoKCgoKCgoKCgoKCj/AAApKSn/AAD/AAAgICApKSn/AAAnJycmJiYpKSknJycoKCj/AAD/AAAmJib/AAD/AAD/AAAoKCj/AAD/AAD/AAD/AAD/AAD/AAD/AAAoKCj3/RZbAAAAIXRSTlMAn4AfQGC/3yDv378QcO+QMK+vz8+fUBCvgH9gQHCQMFAl9s9uAAACB0lEQVRIx62Wi3KCMBBFN0+e4aUCWm3r/v9HdjcNxQYHBsczI04mN3sICVGYSWcGeDfDeTzm1T2iyovxlsJ+lNYKYr7n+gvyL07UQvCwixANRGgxARMSUcaxNL+vkHNEIDr6QsQSIgxOrEo+7qtcfysJAI1o4UXJ57rkRpESMQFwfj5LtO+FVUmxLjlx5sAPqkPUr0qO95njaSEZ/cpz/YRrqUvXSQVQGmMAemNUkFC7BG2M9hJVW+rmuPDxx3UvltugCDfrFC9MkyGRKFB+FSyiCRJqKxCckXThmCTHFK+iih/5cnuVGXY9F0yoQItoNyQoKJj5/rqlDyxuezjHEk4nNFY1PLSky9ZMfL+i5AH4EkuY9BRLHCUp2/tdnNH4dYn07Ub7OGL2VFLEEoVEDc6PShD1poRDfZDgs8dVxY/Lj0ENcp/E0Pw1deNy4f8fZUfw1Dzp/ZJAtIWvxXILh+PDviJJBPPvZcxpxdckbrcknHbj5rEyS8y0u5odu0t09dYBeX6UNFyv5PosKWeJN2vo/iQN96vQk2wf9bPEl5L1NJ1O4CxJqH3JgiSTB34Fwf7GBQzV5o/WLHHIZAqgRaKfJZLbLkgsej3ov/h1xVJ9BUkjpQFCt9bWio8zYdumlLIBJaVjv201ONmDlrI0bes4rijl45Cex+LZH4nj6TbAu0kfgLfyA5h2ke8l9oO9AAAAAElFTkSuQmCC" alt="" class="block dark:hidden">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAYCAMAAAA73KjcAAAAY1BMVEUAAAD/////////////////////////////AAD/////AAD/////AAD/////////////AAD/////////////AAD/AAD/////AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD///8Dhp8oAAAAH3RSTlMAgB9An2C/3yDv36+/EKBw75Awz8+fUBCvgENgcJAwIkA8zwAAAgVJREFUSMetlouOqjAQhmd641KQiwjoetZ5/6c8M11Y3GIgGL9ESNOf+SgtRVhIFwb4NMN17PL6EVHnxXhP4ThKawUxt6X+ivxbEo0xchka00KENjMwg0QYx9L8sUEukRNRxSciKiHC0sym5Ouxye2nkgHQRA7elPzbltw5UhIlAFUYzxodemFTUmxLLpI5y4PyRPpdSfdY6C4ryRhmXuonUkuh96gASmstQG+tmiTcLkFbq4NENY67JW5C/Hnei/UyKKabrZRMTJsRkyhQYRYckZ0k3FZwkgzyQWLIjjleRxW/8vXyKjPyvRRMuIAncjsSMhzMQn/j+Qer2x6usUTSCXKVVi4t+bA3ktCvOHkGOcQSIb3EkoqTnO3DKs74+m0JhnarQ5woeykpYokiphGXA3lmelcioX6S0KvHVcePK1xDGvCYxPL4NXfTeuL/bmUdBBoZ9HHJRLSEb8V6CQucd+9IEiP8eRlznvEtSXVY4iAw7m4ri8TOq6s9sLqMb/Y2yOuzpJV6pdQXSblIglmD/5W00q+mnmR/q18koRQ283C8oUWScBuzSZLhWV5BcD9xA0O9+9FaJBUJmQLwxPSLBKVdTRJHQQ96im9/fuvvSdIiWjlr71yjZDs7OdOWiC0oxEr8zmuosAeNWFrvK4mrk/MhDul1LF79kegu9wE+TfoEfJT/BAmKZ6jjwowAAAAASUVORK5CYII=" alt="" class="hidden dark:block">
+                    </div><!-- end grid-col -->
+                    
+                    <div class="shadow-lg rounded-lg bg-white h-24 flex items-center justify-center dark:bg-default-50">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAiCAMAAACePYwXAAAAwFBMVEUAAAA3gP82gP/6ORI3gP84rzX5OBE6tTo3gP84gP//VQ49gP82gP/4OBA2gP/6ORM1gP/3uwQ3gP/6ORM1gP/5OBP7uwT6ORL8vQX9vQY3f/82gP82gP/5OBL8vAU4rzY4gP/6ORI2gP/6ORP6ORL5OBL7OhL8vAP3NRH8vQb9vAX8vQX8vAY5f//8vgX5NxL8vgX8vQX8vQb6ORP7ORT5OBT5ORM6gP81rzVAr0D6ORL6ugU3gP/6ORP8vQY4sTddSwiqAAAAPHRSTlMAv0Dfn2BAH98gEBDvIIC/MCCQ72BgQO/v33BQz6CQgGDPr6+fgH9QMN/Pn4Bwv3BvYLCQj4BQMDAQkDAXGdoQAAAC7UlEQVRIx7WX63LaMBCFVzZVbct2jAOG2EC4pCRNQq5teoPy/m/V3ZWExAT6J/ibyYyUaHX2SLsKgEMVvSBQ0CJxHq0Z0YvhA/y8vLz8BQdRnbUjqj8g8mm73X6GQwTswjFXpxeZ6nOqm7hoStJLi5OLFHxGgZ2uUtQ4tYiKyIbyaqA4/Z3k5EOBz8lF4hRFYmhXpIcaHThOJuUN7PGnqrrgo4KgOCCS3EiZADNHkQCOkCzPN0h4lYGhOxn+Rb4+u/oXXDi9QAjhiWTfOPSMI0dYsXCEm3BjCN+AeWIJljFuyrVhhD9OpE8STB9n9OddMQtHjcnwwsGA176xBu8/NCpOg5vZF5E6NQ6VLCJ2ztcWvqeQ7Eo0NMbBeQLQpc0nuHl1gYMHc6NprkCtUl+EQ18xQuIgTCDFPA6L9HHhAphXHH4BuMOt74F5wGEFQBYKG+tE+ryeeOQRHaWy5dwxpCRyhunbCx/gGAA3vgWGTb1A4JVmx4lQaOjVDZQHqkvh73JgI4bfOMkq3PgJYGflAnI2ommcCOV0BVLX1+x7AoF3Kf6xNRkb1bB/ec1HZJjgRGdviD0Rukx0o++UiHwrzrk6LHINjL4fKL2z/uGLaAZowj30afz+ESDPZ2C4wpCky/duuKX7qb0Ee55IaEw4BBW6pzI1rxn5NS8KuZoBDLFHTG7k6o6zF3YbT2TMTcgkmX3rKfXYVhjNctANFWa8cKaD7nlnokuN0tU75+YxdyJ+6GKz1PvqhhVlnpfCdiJoK+FSyiW555K84Gerur4fUlfaf3idJmjEfscvKOJRykcKXbjsPXLj1D5dnJcxYLAds3JRTuR9KDON3Eqxq7VsTIvcY+qrTMzlNCYyLX0RSFxo4vVGKVJcOir3ylmOZ/TSe3Xy/DLENpxUYImnIyycMubqcp+7XOgpqTFFaAeVW+dzquZWmNsW4zqroRVW5iObqnUHt4PgyopM5beEmnvd1R7TyHZXq8RB7/9fnv4Bxo3H5pKvuw4AAAAASUVORK5CYII=" alt="">
+                    </div><!-- end grid-col -->
+                    
+                    <div class="shadow-lg rounded-lg bg-white h-24 flex items-center justify-center dark:bg-default-50">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAWCAMAAAAB1smsAAAASFBMVEUAAADkABLjABDmABHmABLlABLfABDmABHnABLnABHnABLlABLnABLfABDmABHnABDnABLnABHlABLkABDkABHmABDnABDmABKtZprDAAAAF3RSTlMAYEDf74AQv99wv5CfIM8gf6+fMFAfX+Meh8cAAAHhSURBVEjH7ZXRcoQgDEWFICugoKut//+nhdwodmV2+tKZPjQPK4abnBDibKeyTd0v255Nvfj+IX8OokMcBh80v2zjOLrOOp9ddUKsW4YhLhzoxmyyk8YiZ8E4IKIJSX4XexZFnxePleChFRpnREI5dCuLHhtB0m10COYWZEU8FBYQOn2GK5v3ajmJKRuIpqL+Lgh3SOISHiHgWSDgeYAewqieT0g0NxpZFQryOI67QcayywEIxYOKBzjbpdOj+AzWIrVE71NHIpCuTa8Qc75a4lBhndiVMxEuVKNSzyyJXnAQCFLx9C8QfbQ3zYYL5sxRRgq8WGZC9L6swdryySBYGFUngV4gCm3XHl19akyX7CIHfmEOJRiIPK498vHYMHoNSJwNEH3pwE8gaKRNkmu4pNRtiNgDeRoQcyl0xK5lH+4CBwq1ilu70l4P0Yag5VHkJPmeRYXLQoix9cNZKgTGlyGIWTUhej9u3i5SO3zYlpdYP9uNA81w2AcLSK3T6nIRcwuCQqhXwRwfCHzFi5HiZVBzLIsFgdU+OGk114IkuiiiPXt//cSq0XSHXClma57kSlnAwNXvJG/J1wGauhukKJ6Ebdce4WIq1hGEhfOmIPAQvPmrWrVebffWLCRvBVoEX85+SRpJDNlFAAAAAElFTkSuQmCC" alt="">
+                    </div><!-- end grid-col -->
+                    
+                    <div class="shadow-lg rounded-lg bg-white h-24 flex items-center justify-center dark:bg-default-50">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAaCAMAAAB2FAnXAAAA21BMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAut3wAAAAAAADfHVoAAAAAAADrsi01w+/rrywAAAAAAADnryw3xfEttnzfHFgrsnsutn02xfDgHlrssS3fG1bqry0AAAA0w+9hjHA1xfAttXo0xO8ss3wqtXrfIFg1xe/gHlrtsi4utn3tsi41xvAttn0utX3gHlo2x/Hqry3fHVfrry00w+/fGFjgHlsutXzgH1s2xfDgH1rhHlo3xe/fHlnrsS7tsy4AAADfHVgtsnwAAADgHlo2xfDssi4utn3mhctlAAAARHRSTlMAQN9gIL/vEICgkJ9gUM+gYECvcCCfkEAg79/XkDAwMCAQ72BQQDAgEO/v39e/t4CAd2BQUEAg78+/r6+fkJCAf29gUA2Dfy4AAAJ7SURBVEjHtZTXdqMwEEAHoUIgxgnuiXuJnV63910g/v8vWkkjJLzEyctyHyR7juBKmhnAsLnvHMnprNvtwyt4EgHIG8soVDjJ8/we+oPtdnAG+0klHiBvLPMr0Xe5ZA7draRbqySHAyU5qEuyOalXgky/dTqdmiVIbZLp9TxHOtNC0r8ZfHQ1JgLGU84CWkgwSGTMh4gx1sCyjXSEliU0YRIPPueW60JyI8fBDBBKUkPLSXyOoZCY14kkRUijJInVjwDAOVzit4qVOQc6FL6VNDDg4iIu/bWSUO9Dd6HlBG51n6DEdL4v1zFv0ohSLqzEie3rHFwYSaCmGCRL65gvYXa53V72teQWFPi4vnTqg5FIsTaD8Am+jtoAT0lxEn1cQjHzyyNkA5I/qxnAYrFYQUnCI2+nuph6JSaM2z0TTH8gzLKAOwfMer3ee4CRHCTjY6QNBs/cQeI7CXeFjIlnenSkBRPQjD5kWXYId1l2OoL21XPBTzAEqYFRI9Ej/VcyeUHCADnNlGSkxlMYPjvG9iwJN4/sPUmCiduRECxfTaZ4PNQTNEuSJ3B4LYa7dzlJyjkJXZLsrbZiPYLiUyZZG8mDc1wUWfmFU2wvysMbDKmUY3Vh4iIMkImpLkrs92H9JTt/BCOBHxfGcfVkE09aHqWe2rIwEsGxubntk6QcEFBScwoGK6kSpZbINqNf6Xji/ga241u2U8qSh2Zz2N4nIba6XMnFmPjdL5yVQKjXiF1J05aVg4axVuguIxJPRyMdAyYDWFc+U5cTUsBlGGVEEr4gaUIFQQVUqMYohdfoKcc5SoZQD9iTd3CsJG2oi/X3r7/l1B42x/Df+Quki+PEj3KgIAAAAABJRU5ErkJggg==" alt="" class="block dark:hidden">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAaCAMAAAB2FAnXAAAA4VBMVEUAAAD///////////////////////////////8ut3z////////fHVr////////rsi01w+/rryz////////nrywyurc3xfEttnzfHFgrsnvfHFgutn02xfD////fG1Y0w+81xfDgHloutn3gHlsttXo0xO8ss3wqtXrtsi7gHlk1xvAttn3ssS7rsi02xvDgHlrssi7qry3fHVc0w+/qrzDqryr////tsS7tsy42xfDgH1rhHlrfHlkutX4utXw3xu/////fHVgtsnzsry3pry3fEFD////gHlo2xfDssi4utn0XontOAAAARnRSTlMAQN9gIL/vEICgkJ9gUM+gYECvcCAQn5BAICDv3zAwIO/v2spgUEAw79+/t5CPiICAYFBAMDAf38+vr5+QgIBwb2BQUFAQhckVIwAAAntJREFUSMe1lNd2ozAQQAehQiDGCe52XGM7vW6yvRcg/v8PWkkjJLzEyctyHyR7juBKmhnA0LnuHsjppNcbwAt4EgHIK8soVDjK8/wbDEabzegEdpNKPEBeWeZXom9yyQx6G0mvVkkOe0qyV5ekc1SvBJled7vdmiVIbZLp+SxHutNCMrgYLVyNiYDxlLOAFhIMEhnzIWKMNbBsIx2hZQlNmMSDD7nlvJBcyHHUAYSS1NByEp9jKCTmdSJJEdIoSWL1IwBwDpf4jWJtzoEOhW8lDQy4uIhLf60k1PvQXWg5gq+6T1BiOt+X65g3bkQpF1bixPZ1Di6MJFBTDJKVdcxW0FlsNouBlnwBBT6uL536YCRSrM0gfIKvozbAU1KcRB+XUMz86gDRSfi5ltNyuVxDScIjb6u6mHolJozbPRNMfyDMsoA7B/zp9/tDgIkcJI+HSBsMnrmDxHcS7goZE8/06EgLxqCZzLMs24ebLDubQPv9U8EtGILUwKiR6PHtv5LxMxIGyHGmJBM1HsPlk+PBniXh5pGdJ0kwcVsSguWryRT3+3qCZknyCxxei+HuXU6Sck5ClyR7q61Yj+4kQyO5c47TIivfcYrtRXl4gyGVcqwuTFyEATI21UWJ/T4MP2bzezASuD01jne/beJJy6PUU1sWRiI4Nje3fZKUAwJKak7BYCVVotQS2Wb0Kx1P3N/AdnzLdkpZctdsXrV3SYitLldyMSZ++wtnJRDqNQKQcuIfYQsaxlqhu4xIPB2NdAyYDGBd+UxdTkgBl2GUEUn4jKQJFQQVUKEaoxReoq8cc5RcQl2cSckNHCpJG+pi+PnTDzm1r5oP8N/5C2lh6f6gSLLwAAAAAElFTkSuQmCC" alt="" class="hidden dark:block">
+                    </div><!-- end grid-col -->
+                    
+                    <div class="shadow-lg rounded-lg bg-white h-24 flex items-center justify-center dark:bg-default-50">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAYCAMAAAA73KjcAAAAWlBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAD/AAAAAAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAAAAAD/AABXvnTqAAAAHHRSTlMAn99gH79AEO+AUJBwMK/fYM8gn78874AQz3BQ1TJ17wAAAfZJREFUSMe9lNly5CAMRcWOAbv3mUkG/v83gwREZWdxkirnPjRGCB0uNMDxul7hcN3KDY7WtZQHfFE6V4UfQP6WO3wLYn8AOZXH4ZBzOQEcvV2ncoZ35aydv0631m1nu62RRUq5wPiaAKzJVV7oGgo1ZGrERy2rQpKshIToMdkoqIo1GJ3AQJ18u5/ZyIRBx7sec5esbhS2iWZhSE2ZNQEkPzpLrSCwlX2yey5PfCKOZkMv2JjZt8QW8x9BVGaZBuHRf3/KA+7lGUgGa4xWU4IDLVdlfIcEQfLUoRxpQVP11CExUevxgjzK6QqkhKHuyIpOBItR1yDRATQIkMjP0lagxzp9g6jeza5aeeovyqgOgXZL4posiqIqDyhDWvGLo1qGI2RIcrdaKaUZ6eAIgn7zSonS5zVkpvOqDtqO8qAgKEOqFX4a1auHmbJZkdJhBdG+MfYh8P/Mj7zDaY1EThYxpN5C6LQ9mZPk/dVc2ELWMv1Pm9rExCNbSGXw87JszuRTCJ15j09oiK7mYoyxW4i7ZF6FGm+mQ/IFPoLwfmHa+JRqDhds3zhJlChJhmx7ZQOR1Q6kXyPVElhhBdneeAmz594EexCbORzkuOUBdiAwS2bsQkBUTdCklfHZm8khHQco6vDLBsGKGMbcLCNVDKOIxVEHv6wXZApQ4uUexnYAAAAASUVORK5CYII=" alt="" class="block dark:hidden">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAYCAMAAAA73KjcAAAAYFBMVEUAAAD/////////////////////////////////////////////////////////AAD/AAD/////AAD/AAD/AAD/AAD/////AAD/AAD/AAD/AAD/AAD/////AAD/////AADYKspXAAAAHnRSTlMAn99gH79AEO+AkFBwMK/fYM8gv5+Ef0DvEM9wX1As1ffgAAAB/UlEQVRIx72U2XKrMAyG5d3YQBLSNud0sd//LWtJEA10oc1M+l9gI8v6kIwM99c0wd31UB/g3ppqvcAPZUtTvgHyWM/wK4i/AXKol7tDjvUAv4OYWxI5wqcK3g8/p3sftrvDNpFRaz3CMusAvCtNUdlmys3kmiUmq5tyr0U9ElJEZ0cppmZMQaGhbX48HyWRDo1Bqp7KLN2yMTj2uIvL1RVRB9A3BGtsERSOet4cXuqznEjgYs8B4Yl8IjuyLX4FMUXkGCKr///VC5zrC5AcxlhGSw4BrF6FiTMkK1KkF/LRHixF72dI6mmM2CCXepgY0pMJgKqlZiJ4tAaGpLD6uzjbkb/ALt8ZGWLotSm0VJ6vN0rgs8hULY3f5FFkNYWhK8grTk+BYjmyMA4hWl5bKrVyIjM4gaJnWakn92ENGei8LABXVBYVQQXSUpGr0VxzGOwaksgdVhAbmbEPgbfjJN2D25gEVG21yHyE0GnHAWZIgmtyeQsRXc+NfhA+E1nZQhpDbuNxcybfQ3xhWW5NTa05Ouf8FhJO/LdKaI+lQPIJvoJIvdBtmWoz5BOOsIX03M4kB1Q54zORzQ5kbiPDDqK8gmw7XsMQV5fMDsQXMWddWDHDDgQGLYxdCKimJ2BZ42KJrgtIxwUuKc58VqKEZvQtOlHEzEF4Vwrwx3oHXIxWEG92480AAAAASUVORK5CYII=" alt="" class="hidden dark:block">
+                    </div><!-- end grid-col -->
+
+                    <div class="shadow-lg rounded-lg bg-white h-24 flex items-center justify-center dark:bg-default-50">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAUCAMAAABMHminAAAAdVBMVEUAAAAxMTwxMTssNEAwMDwxMTwwMDgyMjwxMTsxMTwwMDoAZEUBikQyMj0xMToxMT0yMjwxMTsxMTsyMjwAZUY58jkyMj0AiEMAwyQ68joAdEUz5TsAZEYAxCUyMjw68joAikQAZEYApzUk4DIAd0UKf0Q26TtKbYb4AAAAHXRSTlMAv2AQQO8ggN/PML+/nx9Qr3CgkM+/j4SAn7+fjzBsVWgAAAGmSURBVDjLtdPpVtswEAXgO9ptMN7aQLdpKLTv/4gdjQQKDuEHJ77nZLEt65NnLPx6mz/H4/EW187W2B9RoyEu4NOxNOqP6Z3BudEQjp9HApu6UBPxdGrsgGh+PzVjP+RFebj/AOnJ+yEAY18KPskZS76LmJNegI3JkwH1cJM9pLEgIRakKg/A/UVkZJplkgDjs2K7Do6JYuIprQsTgI4pLryykzHiOkVCGioiihqiXELSpFOTfETRL8eDnPICY2WLyHNeuM8IT7aUq/cpFEQVNapyjoysY2e2GXDZEGQEIC5g+E6XIYmKOChifGdREM23Uuovz+8ikSknyWSisBiC6FRUEVuHjorcKUK8WFSkKmo8Pj6/jwwl9jIyI8edIB1PDamKGqKcI3pbTS3XFoEnlIo2xBhu5ar5IYYq54j1UynGa+PNFomlEekUgWuNL/n3V4CiNCRRToThNJuDJ/kz6uOkLWITDzJiacj2FW6G5jtqqGTWzchpDTCmbcbcmfWQH5Byr5YkKwH15RCBXNuMW0Nyg2unGbsiauyLfJXc3rzJz2sb/wGIbD4N0phG7wAAAABJRU5ErkJggg==" alt="" class="block dark:hidden">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAUCAMAAABMHminAAAAclBMVEUAAAD///////////////////////////////////8AZUX///8BikT///////////////////////////8AZUY58jk47zoAwyQAiUQAYEAAdUT///8AxCX///868joAikQAZEYApzUk4DIAd0UKf0Q26TsqXz/2AAAAHHRSTlMAv2AQQO8ggN/PvzC/nx9Qr5BwoM+/n4CAEJA/fDrEzQAAAaRJREFUOMu102tXwjAMBuCk18w5d1PxFvH6//+iaVopDvADh73nwEbp+mzJCi9/877dbq/h0lka6yNqVMQFODsWez2Y1hk4NCrC8XwksNHjczARPvaNFRDN60c11kN+lc3DP0iL3ncBoG9zwQcZseibCBPpH2AjeTSALbjBjtRnJMSMFGUD8HAS6RknWSSA8UmxTQOOESPxQOPMKGMNY5x5ZCdzxHWKBOoKIooaopxCaNClUT6i6JfjToa8wDCyhchTunGfEB5sLlfrKWRElQ1ono4jPevciW0CXDIE6WVIXADDN3obkqiIA0WMbyxkRHOv54+3n0eRyJhCspgoLIYguhQWxJapvSI3iiDPFgpSFDXe3j6PI12OPY1MkOL2kIaHihRFDVWWiF5WUsq1RMAj5IpWxBjelWuniKHKIWL9kIuxa7xZIjE3gvYRcLXxOd9fAmSlIoQpEQzTZEaPctLr49ASscSdzJgrsnyFq6G5ghLMmXQzMo0BjKmbMXVmHNMDYurVTEwTYJt/QkBXN+PSUOTSqcaqiBrrIneS66s/ebq08QM/Qzyp25qeaAAAAABJRU5ErkJggg==" alt="" class="hidden dark:block">
+                    </div><!-- end grid-col -->
+
+                    <div class="shadow-lg rounded-lg bg-white h-24 flex items-center justify-center dark:bg-default-50">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAWCAMAAAAB1smsAAAAgVBMVEUAAABwbW5wbGxwbW1wbW1wbW1wbGxwbG5wbW5ldoBwa21wbG5wamoAre/yUhsAq+3vUBpwam2Ayyj6ugiAzCj7vAmAzSj8vAiAyyj5uwhwbGwAtff3Uhlwbm5wbm5wbW37uQbvUBCBzSj4uweAyyiAyiVwbW4Are/xURuAzCj7vAkZ9WJQAAAAJnRSTlMA30C/YJ8ggO8QcKAwn5+AgGBgYL+/n5+AgFAfH8+QrzgQf3BAMBJc6c8AAAG6SURBVEjH7ZLpjtwgEISBhsYQ55jdnE5s7+aoHO//gCnMwGykaC1L82u1JQ1095T9QbvNq677r++bvpvr6lfXl7e/m26eIf9q9OMuRL333e6d0ZAPMQSQXYgD4KrLAsFE4AjDY4jZJL8PkRYRopKPXYT2CXYPYoFUooCBkIMSnHidfYgIIgOFfUGIk7VUZcDsTRC3Wm9GZjYo69Fi4NETd0j9YxZhUWQH4jBv3Q2E1FNFYChoixmI05bBqlkYWN6W1ZmY7HCRedN1f/Ox6UeDmAGufHZtEEW5m46sWZfUlozrUo1j8eh2kvSwXa+70u2nprsOiVi3vUEipM1bpqN+swzLfFWGtb9Enh5CfnZ9fven6bZDEoYU4DtkxdIgrr2isAgCgrI8mco6AKF1oa9DuP8fYthRCMunNr4HIK5O76VdQ7pARmBkHCBnlgp9BALuCITthV4giYPpNOYKMQLLDOBIOyUk8RdHN9NZIRNxbh8Sy9ohZrKg4hmiFjU1bY8osnqGpGJ4DJL8tK1jAXpntORcQ8jJTF5NkV9C1mKIYXGloAzoK49oTfMjkOvpCUFedqVvH5rursv4Czp/aK6L6JFKAAAAAElFTkSuQmCC" alt="">
+                    </div><!-- end grid-col -->
+                </div><!-- end grid -->
+            </div><!-- end grid -->
+        </div><!-- end container -->
+    </section>
+
+
+    <!-- start footer -->
+    <footer class="bg-white dark:bg-black">
+        <div class="container">
+            <div class="lg:py-10 py-6">
+                <div class="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
+                    <div class="shrink">
+                        <img src="assets/logo-dark-befc834f.png" alt="logo" class="block dark:hidden h-10">
+                        <img src="assets/logo-light-43c180d2.png" alt="logo" class="hidden dark:block h-10">
+                    </div><!-- end grid-col -->
+    
+                    <div class="grow">
+                        <form class="lg:w-1/2 mx-auto">
+                            <div class="flex items-center flex-wrap sm:flex-nowrap gap-4">
+                                <input type="email" id="subcribe" class="py-2 px-4 w-full text-base text-default-900 rounded border-default-200 bg-transparent focus:ring-0 focus:border-default-300" placeholder="Enter your email :" name="email">
+                                <button type="submit" class="inline-flex items-center justify-center gap-2 px-6 py-2 transition-all text-base bg-primary rounded hover:bg-primary-500 border-primary text-white hover:border-primary-500">
+                                    Subscribe
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="shrink">
+                        <div class="flex items-center gap-3 justify-end">
+                            <p class="text-base text-default-800">Follow Us :</p>
+                            <div class="inline-flex items-center gap-4">
+                                <i class="ph-fill ph-whatsapp-logo text-2xl text-default-500 hover:text-primary transition-all"></i>
+                                <i class="ph-fill ph-instagram-logo text-2xl text-default-500 hover:text-primary transition-all"></i>
+                                <i class="ph-fill ph-globe text-2xl text-default-500 hover:text-primary transition-all"></i>
+                                <i class="ph-fill ph-twitter-logo text-2xl text-default-500 hover:text-primary transition-all"></i>
+                            </div>
+                        </div>
+                    </div><!-- end grid-col -->
+                </div><!-- end grid -->
+            </div>
+        
+            <div class="lg:py-10 py-6">
+                <div class="grid grid-cols-3 gap-6 gap-y-10">
+                    <div class="col-span-3 lg:col-span-1">
+                        <div class="flex flex-col gap-3">
+                            <h5 class="mb-3 text-lg font-semibold text-default-900">About us</h5>
+                            <p class="text-sm text-default-600 font-medium max-w-xs mb-4">At the webinar, you will learn how to quickly create effective websites, as well as become a highly paid expert.</p>
+
+                            <div class="flex items-start gap-4">
+                                <i class="ph ph-map-pin text-xl text-default-800"></i>
+                                <p class="text-sm font-medium text-default-800">23 Data St. View, San Francisco, <br> USA 94107</p>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <i class="ph ph-phone text-xl text-default-800"></i>
+                                <p class="text-sm font-medium text-default-800">(123) XXX-7890, 123-XXXX 89</p>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <i class="ph ph-envelope text-xl text-default-800"></i>
+                                <p class="text-sm font-medium text-default-800">demo123@example.com</p>
+                            </div>
+                        </div><!-- end grid-col -->
+                    </div><!-- end grid-col -->
+                    
+                    <div class="col-span-3 lg:col-span-1">
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="flex flex-col gap-3">
+                                <h5 class="mb-3 text-lg font-semibold text-default-900">Explore</h5>
+                                <div class="text-default-800"><a href="javascript:void(0);">Home</a></div>
+                                <div class="text-default-800"><a href="javascript:void(0);">Services</a></div>
+                                <div class="text-default-800"><a href="javascript:void(0);">Blog</a></div>
+                                <div class="text-default-800"><a href="javascript:void(0);">Shop</a></div>
+                                <div class="text-default-800"><a href="javascript:void(0);">Contacts</a></div>
+                                <div class="text-default-800"><a href="javascript:void(0);">F.A.Qs</a></div>
+                                <div class="text-default-800"><a href="javascript:void(0);">About us</a></div>
+                            </div><!-- end grid-col -->
+
+                            <div class="flex flex-col gap-3">
+                                <h5 class="mb-3 text-lg font-semibold text-default-900">Quick Links</h5>
+                                <div class="text-default-800"><a href="javascript:void(0);">Special Offer</a></div>
+                                <div class="text-default-800"><a href="javascript:void(0);">Help Center</a></div>
+                                <div class="text-default-800"><a href="javascript:void(0);">Free Webinar</a></div>
+                                <div class="text-default-800"><a href="javascript:void(0);">Book Presentation</a></div>
+                                <div class="text-default-800"><a href="javascript:void(0);">Privacy Policy</a></div>
+                            </div><!-- end grid-col -->
+                        </div><!-- end grid -->
+                    </div><!-- end grid-col -->
+
+                    <div class="col-span-3 lg:col-span-1">
+                        <div class="flex flex-col gap-3">
+                            <h5 class="mb-3 text-lg font-semibold text-default-900">Downlaod our app</h5>
+                            <div class="flex flex-col items-start gap-4">
+                                <div class="grid grid-cols-3 items-center gap-4">
+                                    <div class="shrink">
+                                        <img src="assets/footer-img-1-68121449.png" alt="" class="rounded">
+                                    </div>
+                                    <div class="col-span-2">
+                                        <h3 class="text-lg/tight font-medium text-default-900 mb-2">How to start learning as a beginner?</h3>
+                                        <p class="text-sm text-default-600">July 4, 2023</p>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-3 items-center gap-4">
+                                    <div class="shrink">
+                                        <img src="assets/footer-img-2-715e9f51.png" alt="" class="rounded">
+                                    </div>
+                                    <div class="col-span-2">
+                                        <h3 class="text-lg/tight font-medium text-default-900 mb-2">How to create websites with ease? Let’s Start!</h3>
+                                        <p class="text-sm text-default-600">March 23, 2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- end flex -->
+                    </div><!-- end grid-col -->
+                </div><!-- end grid -->
+            </div>
+        </div>
+    
+        <div class="py-6 border-t border-default-200">
+            <div class="container">
+                <div class="grid grid-cols-2 items-center justify-between gap-6">
+                    <div>
+                        <p class="text-default-800">
+                            <script>document.write(new Date().getFullYear())</script> Design crafted <i data-lucide="heart" class="inline h-4 w-4 text-red-500 fill-red-500"></i> by Coderthemes.com
+                        </p>
+                    </div><!-- end grid-col -->
+    
+                    <div class="hs-dropdown relative flex justify-center lg:justify-end [--placement:bottom-right]">
+                        <button id="hs-dropdown-slideup-animation2" type="button" class="hs-dropdown-toggle flex items-center gap-2 font-medium text-default-900">
+                            <a class="inline-flex items-center justify-end gap-6 text-sm py-2.5 px-4 xl:px-5 rounded border border-default-950/10 text-default-900 transition-all" href="#collection">
+                                English
+                                <i class="ph ph-caret-down"></i>
+                            </a>
+                        </button><!-- end dropdown button -->
+    
+                        <div class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-[200px] transition-[opacity,margin] opacity-0 z-20 duration-300 bg-white shadow-lg rounded-lg border border-default-100 dark:bg-default-50 py-2 hidden" aria-labelledby="hs-dropdown-slideup-animation2">
+                            <ul class="flex flex-col">
+                                <li><a class="flex items-center font-normal py-2 px-2 text-default-950 bg-default-100" href="#">German</a></li>
+                                <li><a class="flex items-center font-normal text-default-800 py-2 px-2 hover:text-default-950 hover:bg-default-100" href="#">Italian</a></li>
+                                <li><a class="flex items-center font-normal text-default-800 py-2 px-2 hover:text-default-950 hover:bg-default-100" href="#">Spanish</a></li>
+                                <li><a class="flex items-center font-normal text-default-800 py-2 px-2 hover:text-default-950 hover:bg-default-100" href="#">Russian</a></li>
+                            </ul><!-- end dropdown items -->
+                        </div><!-- end dropdown menu -->
+                    </div><!-- end grid-col -->
+                </div><!-- end grid -->
+            </div><!-- end flex -->
+        </div><!-- end flex -->
+    </footer><!-- end footer -->
+        
+    <div class="fixed bottom-5 end-5 flex flex-col items-center bg-primary/25 rounded-full z-10 print:hidden">
+        <button class="h-0 w-8 opacity-0 flex justify-center items-center transition-all duration-500 translate-y-5 z-10" data-toggle="back-to-top">
+            <i class="h-5 w-5 text-primary-500 mt-1" data-lucide="chevron-up"></i>
+        </button>
+        <button class="rounded-full h-10 w-10 bg-primary text-white flex justify-center items-center z-20">
+            <i class="h-5 w-5" data-lucide="sun" id="light-theme"></i>
+            <i class="h-5 w-5" data-lucide="moon" id="dark-theme"></i>
+        </button>
+    </div>
+    <!-- Theme Js -->
+    
+    <!-- Swiper JS -->
+    
+
+    <!-- <script src="assets/js/home.js" type="module"></script> -->
+</body>
+
+
+<!-- Mirrored from coderthemes.com/studyzen/home-2.html by HTTrack Website Copier/3.x [XR&CO'2017], Tue, 09 Jan 2024 16:00:19 GMT -->
+</html>
